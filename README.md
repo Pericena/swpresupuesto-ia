@@ -20,7 +20,7 @@ Aplicación móvil para gestionar un presupuesto basado en la variación de los 
 ### Git 
 https://github.com/Pericena/swpresupuesto-ia
 ### Jira 
-
+https://andresintel773.atlassian.net/jira/software/projects/PPIS/boards/3
 ### trello 
 
 ## Lenguajes  
