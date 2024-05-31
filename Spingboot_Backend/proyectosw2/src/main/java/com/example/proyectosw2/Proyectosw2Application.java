@@ -1,13 +1,13 @@
-package com.example.demo_springboot_with_GraphQL;
+package com.example.proyectosw2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoSpringbootWithGraphQlApplication {
+public class Proyectosw2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoSpringbootWithGraphQlApplication.class, args);
+		SpringApplication.run(Proyectosw2Application.class, args);
 	}
 
 }
