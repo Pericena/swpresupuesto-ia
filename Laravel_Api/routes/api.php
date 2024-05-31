@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GastoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/getall', [GastoController::class, 'all']);
+Route::get('/anomalies', [GastoController::class, 'detectAnomalies']);
+Route::get('/predictions-begin/{startDate}/months/{numberOfMonths}', [GastoController::class, 'predictBetweenDatesWithMonths']);
