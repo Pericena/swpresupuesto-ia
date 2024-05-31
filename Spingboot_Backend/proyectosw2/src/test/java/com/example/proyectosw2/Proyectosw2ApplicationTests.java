@@ -1,10 +1,10 @@
-package com.example.demo_springboot_with_GraphQL;
+package com.example.proyectosw2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoSpringbootWithGraphQlApplicationTests {
+class Proyectosw2ApplicationTests {
 
 	@Test
 	void contextLoads() {

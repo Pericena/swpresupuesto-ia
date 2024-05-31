@@ -1,0 +1,11 @@
+type Query {
+    login (email:String,password:String):Usuario
+
+
+}
+type Usuario{
+    id:String
+    nombre:String
+    email:String
+    password:String
+}
