@@ -1,0 +1,23 @@
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+type Query {
+  detectAnomalies: AnomalyResult! @field(resolver: "App\\GraphQL\\Queries\\GastoAnomalyQuery@detectAnomalies")
+  predictBetweenDatesWithMonths(startDate: String!, numberOfMonths: Int!): PredictionResult! @field(resolver: "App\\GraphQL\\Queries\\GastoPredictionQuery@predictBetweenDatesWithMonths")
+}
+
+type AnomalyResult {
+  original_data: [Gasto!]!
+  anomalies: [Gasto!]!
+}
+
+type PredictionResult {
+  original_data: [Gasto!]!
+  predictions: [Gasto!]!
+}
+
+type Gasto {
+  year: Int!
+  month: Int!
+  monto: Float!
+}

@@ -50,7 +50,7 @@ class GastoController extends Controller
         return sqrt($sumSquaredDiffs / count($expenses));
     }
 
-    // Método para detectar anomalías
+    // Método para detectar anomalías Principal 1
     public function detectAnomalies()
     {
         $expenses = $this->getGroupedExpenses(); // Obtener los datos agrupados y sumados
@@ -65,11 +65,11 @@ class GastoController extends Controller
 
         return response()->json([
             'original_data' => $expenses,
-            'anoamlies' => $anomalies,
+            'anomalies' => $anomalies,
         ]);
     }
 
-    // Nuevo método para predecir entre dos fechas con un número específico de meses
+    // Nuevo método para predecir entre fecha de inicio con un número específico de meses Ejemplo: $starDate= "2024-01-01" y $numnerOfMonths= "4" Principal 2
     public function predictBetweenDatesWithMonths($startDate, $numberOfMonths)
     {
         $expenses = $this->getGroupedExpensesBetweenDates($startDate);
@@ -122,7 +122,7 @@ class GastoController extends Controller
     }
 
     // Método auxiliar para obtener los gastos agrupados entre dos fechas
-    public function getGroupedExpensesBetweenDates($startDate)
+    private function getGroupedExpensesBetweenDates($startDate)
     {
         $expenses = Gasto::whereBetween('fecha', [$startDate, '2024-05-24'])->orderBy('fecha', 'asc')->get();
 
