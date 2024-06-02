@@ -1,11 +1,33 @@
 type Query {
     login (email:String,password:String):Usuario
-
-
+    getCategoriaById(id: String): CategiriaEntity
+    getCuentaById(id: String): CuentaEntity
+    Egreso(id: String): EgresoEntity
 }
-type Usuario{
-    id:String
-    nombre:String
-    email:String
-    password:String
+
+type Usuario {
+    id: String
+    nombre: String
+    email: String
+    password: String
+}
+
+type CategiriaEntity {
+    id: String
+    nombre: String
+}
+ type CuentaEntity{
+ id :String
+  nombre:String
+  saldo:String
+  usuarioID:String
+ }
+type EgresoEntity {
+      id:String
+      concepto:String
+      monto:String
+      fechaEgreso:String
+      CuentaID:String
+      CategoriaID:String
+
 }
