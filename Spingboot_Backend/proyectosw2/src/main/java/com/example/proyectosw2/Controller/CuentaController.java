@@ -6,15 +6,30 @@ import com.example.proyectosw2.Services.CategoriaServices;
 import com.example.proyectosw2.Services.CuentaServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.MutationMapping;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
-
+@Controller
 public class CuentaController {
     @Autowired
     private CuentaServices cuentaServices;
 
-    public List<CuentaEntity> getCuentaById(@Argument String id){
-        return cuentaServices.buscarPorUsuarioID(id);
+    //para Obtener Solo el get
+    @QueryMapping
+    public List<CuentaEntity> getCuentaById(@Argument String usuarioID){
+        return cuentaServices.buscarPorUsuarioID(usuarioID);
     }
+//para hacer insertar eliminar y actualizar , crud
+    @MutationMapping
+    //poner argument a todos los parametros
+    public String  createCuenta(@Argument  Integer id,@Argument String nombre, @Argument String saldo,@Argument String usuarioID){
+        if (cuentaServices.crearCuenta(id,nombre,saldo,usuarioID) ){
+        return "exito al crear cuenta";
+        }
 
+        return "Fallo algo";
+
+    }
 }

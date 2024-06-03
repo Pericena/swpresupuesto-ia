@@ -1,9 +1,16 @@
 type Query {
     login (email:String,password:String):Usuario
     getCategoriaById(id: String): CategiriaEntity
-    getCuentaById(id: String): CuentaEntity
+    getCuentaById(usuarioID: ID): [CuentaEntity]
     Egreso(id: String): EgresoEntity
+
 }
+type Mutation{
+    createCuenta(  id:ID , nombre:String, saldo:String ,usuarioID:String):String
+}
+
+
+
 
 type Usuario {
     id: String
@@ -20,7 +27,7 @@ type CategiriaEntity {
  id :String
   nombre:String
   saldo:String
-  usuarioID:String
+  usuarioID:ID
  }
 type EgresoEntity {
       id:String
@@ -29,5 +36,6 @@ type EgresoEntity {
       fechaEgreso:String
       CuentaID:String
       CategoriaID:String
-
 }
+
+

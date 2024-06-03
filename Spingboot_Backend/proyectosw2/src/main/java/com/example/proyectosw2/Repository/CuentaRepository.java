@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 
 
-public interface CuentaRepository  extends MongoRepository<CuentaEntity,String> {
+public interface CuentaRepository  extends MongoRepository<CuentaEntity,Integer> {
     List<CuentaEntity> findByUsuarioID(String usuarioID);
+
 }

@@ -12,10 +12,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Document(collection = "Cuenta")
 public class CuentaEntity {
-private String id;
+private Integer id;
     private String nombre;
-    private String saldo;
+    private double saldo;
     private String usuarioID;
-
-
 }
