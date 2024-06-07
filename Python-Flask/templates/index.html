@@ -3,45 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard KPI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 20px;
-            text-align: center;
-            width: 300px;
-        }
-        img {
-            width: 100%;
-        }
-    </style>
+    <title>Distribución de Gastos</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
 </head>
 <body>
-    <h1>Dashboard KPI</h1>
-    <div class="container">
-        <div class="card">
-            <h2>KPI 1</h2>
-            <img src="/plot?type=line" alt="KPI 1">
-        </div>
-        <div class="card">
-            <h2>KPI 2</h2>
-            <img src="/plot?type=bar" alt="KPI 2">
-        </div>
+    <h1 style="text-align: center;">Distribución de Gastos por Categoría</h1>
+    
+    <!-- Gráfico de dona -->
+    <div style="width: 45%; margin: auto;">
+        <canvas id="myChartDoughnut"></canvas>
     </div>
+
+    <!-- Gráfico de barras -->
+    <div style="width: 45%; margin: auto;">
+        <canvas id="myChartBar"></canvas>
+    </div>
+
+    <!-- Gráfico de líneas -->
+    <div style="width: 45%; margin: auto;">
+        <canvas id="myChartLine"></canvas>
+    </div>
+
+    <!-- Gráfico de dispersión -->
+    <div style="width: 45%; margin: auto;">
+        <canvas id="myChartScatter"></canvas>
+    </div>
+
+    <!-- Análisis y sugerencias -->
+    <div style="text-align: center; margin-top: 20px;">
+        <p id="analisisTexto"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+ 
 </body>
 </html>

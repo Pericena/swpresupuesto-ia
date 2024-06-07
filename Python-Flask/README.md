@@ -25,6 +25,7 @@ cd Python_Flask
 ```bash
 python -m venv venv
 venv\Scripts\activate
+python app.py
 ```
 
 #### En macOS/Linux
@@ -42,6 +43,10 @@ Con el entorno virtual activado, instala las dependencias necesarias utilizando 
 bash
 pip install -r requirements.txt
 ```
+
+python -m pip install openai==0.28
+pip install flask-socketio
+
 
 ### Paso 4: Ejecutar la aplicación
 
