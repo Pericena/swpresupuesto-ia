@@ -26,6 +26,8 @@ cd Python_Flask
 python -m venv venv
 venv\Scripts\activate
 python app.py
+python run.py
+
 ```
 
 #### En macOS/Linux
@@ -43,9 +45,12 @@ Con el entorno virtual activado, instala las dependencias necesarias utilizando 
 bash
 pip install -r requirements.txt
 ```
+export OPENAI_API_KEY='tu_clave_de_api'
 
 python -m pip install openai==0.28
 pip install flask-socketio
+pip install flask-cors
+
 
 
 ### Paso 4: Ejecutar la aplicación
@@ -84,6 +89,7 @@ Ejemplo de respuesta:
 }
 ```
 
+
 #### Generar Gráficos
 
 Puedes generar gráficos accediendo a las siguientes rutas:
@@ -103,13 +109,16 @@ GET /plot?type=bar
 ## Estructura del Proyecto
 
 ```
-flask_project/
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
-├── requirements.txt
-└── README.md
+my_flask_app/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── models.py
+│   ├── services.py
+│   └── utils.py
+├── config.py
+└── run.py
+
 ```
 
 - **app.py**: El archivo principal de la aplicación Flask que define las rutas y la lógica para generar gráficos y datos KPI.
