@@ -2,10 +2,14 @@ package com.example.proyectosw2.Services;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.util.Date; // Agrega esta importación
+import javax.annotation.PostConstruct;
+import javax.crypto.SecretKey;
+import java.util.Base64;
+import java.util.Date;
 
 @Service
 public class TokenService {
@@ -16,6 +20,14 @@ public class TokenService {
     @Value("${jwt.expirationMs}")
     private int jwtExpirationMs;
 
+    private SecretKey secretKey;
+
+    @PostConstruct
+    public void init() {
+        byte[] decodedKey = Base64.getDecoder().decode(jwtSecret);
+        this.secretKey = Keys.hmacShaKeyFor(decodedKey);
+    }
+
     public String generateToken(String email) {
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + jwtExpirationMs);
@@ -24,7 +36,20 @@ public class TokenService {
                 .setSubject(email)
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .signWith(secretKey, SignatureAlgorithm.HS512)
                 .compact();
+    }
+
+    public boolean validateToken(String token) {
+        try {
+            Jwts.parserBuilder()
+                    .setSigningKey(secretKey)
+                    .build()
+                    .parseClaimsJws(token);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
