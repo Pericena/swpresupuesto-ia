@@ -60,11 +60,6 @@ public class UsuarioServices {
 
 
     }
-
-
-
-
-
     public Map<String, Object> login(String email, String password) {
         UsuarioEntity usuario = usuarioRepository.findByEmail(email).orElse(null);
         if (usuario == null) {
@@ -80,4 +75,16 @@ public class UsuarioServices {
             return null;
         }
     }
+    public UsuarioEntity createUsuario(int id ,String nombre, String email, String password) {
+        try {
+            UsuarioEntity nuevoUsuario = new UsuarioEntity(id,nombre,email,password);
+            return usuarioRepository.save(nuevoUsuario);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
+
+
 }
