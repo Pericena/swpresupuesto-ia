@@ -1,0 +1,26 @@
+---
+import ExpensesData from './ExpensesData.tsx'
+---
+
+<div class="rounded-md p-6 shadow-md shadow-black/5" style="background-color: #181B3A;">
+  <div class="mb-4 flex items-start justify-between">
+    <h3 class="text-base font-semibold text-white">Top 5 gastos</h3>
+  </div>
+  <div class="">
+    <!-- Agregar texto descriptivo -->
+    <p class="mb-2 text-sm text-white">
+      Detalle: Aquí se muestran los top 5 gastos de la persona, indicando las principales categorías
+      en las que ha gastado más. Este KPI proporciona una visión general de los hábitos de gasto y
+      puede ser útil para tomar decisiones financieras.
+    </p>
+    <!-- Tabla para mostrar los datos de los gastos -->
+    <table class="w-100">
+      <tbody>
+        <!-- Renderizar los datos de los gastos -->
+        <ExpensesData client:only />
+        <!-- Mostrar mensaje de error si la carga de datos falla -->
+        <div id="errorMessageExpenses" style="color: red;"></div>
+      </tbody>
+    </table>
+  </div>
+</div>

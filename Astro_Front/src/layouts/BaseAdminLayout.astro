@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/admin/BaseAdminLayout.css" />
+    <link rel="stylesheet" href="/styles/admin/NEXMainSearchAdmin.css" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <script src="@assets/js/NEXSidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </head>
+  <body>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="bots"
+      agent-id="86938b5f-1e37-43dc-9f38-1bd5322b1eb7"
+      language-code="es"
+    >
+    </df-messenger>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
+    ></script>
+    <slot />
+  </body>
+</html>

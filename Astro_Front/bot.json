@@ -1,0 +1,151 @@
+{
+  "richContent": [
+    [
+      {
+        "type": "image",
+        "accessibilityText": "Logo de la aplicación",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2FLogo.png?alt=media&token=813b2387-fc06-438d-960b-1539b2444658"
+      },
+      {
+        "type": "info",
+        "title": "Manual de Usuario",
+        "subtitle": "Aplicación Móvil y Web"
+      },
+      {
+        "type": "chips",
+        "options": [
+          {
+            "link": "https://drive.google.com/file/d/1ezbsAwMqPHzvZD14QJBCWuZ0PcnHwmIL/view",
+            "text": "Descagar app"
+          },
+          { 
+            "link": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2FMovilManualdeUsuario.docx.pdf?alt=media&token=3484c8ee-b538-4f5a-83b0-b2a10a5691ca",
+            "text": "Descagar manual PDF" 
+          },
+          { "text": "Movil" },
+          { "text": "Menú" }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "title": "Inicio de Sesión",
+        "subtitle": "Aplicación Móvil",
+        "text": "1. Al abrir la aplicación, se te solicitará iniciar sesión con tu usuario y contraseña. Asegúrate de ingresar los datos correctos para acceder a todas las funcionalidades.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F1.png?alt=media&token=785d94fe-d6e6-42f5-a96e-16b273af4b96",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F1.png?alt=media&token=785d94fe-d6e6-42f5-a96e-16b273af4b96"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "title": "Pantalla Principal",
+        "subtitle": "Aplicación Móvil",
+        "text": "2. Después de iniciar sesión, serás dirigido a la pantalla principal.\n- Presupuesto: Verás la información de tu presupuesto desde 2018-01-01 hasta la actualidad, con una proyección adicional para los próximos 3 meses.\n- Interfaz Intuitiva: La interfaz está diseñada para ser intuitiva, permitiéndote navegar fácilmente entre las diferentes secciones de la aplicación.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F2.png?alt=media&token=8145367f-48ff-454f-bf38-fbe0e26e5d7b",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F2.png?alt=media&token=8145367f-48ff-454f-bf38-fbe0e26e5d7b"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "title": "Configuración de Fechas y Presupuesto",
+        "subtitle": "Aplicación Móvil",
+        "text": "3. En la pantalla principal, tendrás la opción de ajustar las fechas para el presupuesto.\n- Fecha de Inicio: Selecciona desde qué fecha deseas empezar a considerar los datos.\n- Duración de la Proyección: Puedes especificar cuántos meses deseas que abarque la proyección.\n- Actualizar Proyección: Una vez que hayas seleccionado las fechas, pulsa en el botón de actualización para ver los resultados según los parámetros establecidos.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F3.png?alt=media&token=f2dd055c-9bb6-4b33-a589-6b90c9dd4295",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F3.png?alt=media&token=f2dd055c-9bb6-4b33-a589-6b90c9dd4295"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "title": "Detector de Anomalías",
+        "subtitle": "Aplicación Móvil",
+        "text": "4. Desplázate hacia abajo en la pantalla principal para acceder al Detector de Anomalías.\n- Identificación de Gastos Anómalos: Verás una lista detallada de los gastos más altos y más bajos que has tenido hasta el momento.\n- Organización Detallada: La información está organizada de manera clara y detallada, permitiéndote identificar fácilmente las anomalías en tus gastos.\n- Alertas y Notificaciones: Si se detectan anomalías significativas, recibirás alertas y notificaciones para que puedas tomar las medidas necesarias.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F1.png?alt=media&token=785d94fe-d6e6-42f5-a96e-16b273af4b96",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F1.png?alt=media&token=785d94fe-d6e6-42f5-a96e-16b273af4b96"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "title": "Menú de Opciones",
+        "subtitle": "Aplicación Móvil",
+        "text": "5. Accede al menú principal para explorar más opciones y configuraciones.\n- Perfil de Usuario: Gestiona tu información personal, cambia tu contraseña y configura tus preferencias.\n- Reportes y Análisis: Genera reportes detallados de tus gastos y análisis de las tendencias a lo largo del tiempo.\n- Configuración: Ajusta las configuraciones de la aplicación, incluyendo notificaciones, idioma y preferencias de visualización.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F4.png?alt=media&token=f1747147-8953-4288-9aaa-c213b001bb10",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2F4.png?alt=media&token=f1747147-8953-4288-9aaa-c213b001bb10"
+          }
+        }
+      },
+      {
+        "type": "info",
+        "title": "Soporte y Ayuda",
+        "subtitle": "Aplicación Móvil",
+        "text": "6. Si necesitas asistencia, accede al Centro de Ayuda desde el menú principal.\n- FAQs: Consulta las preguntas frecuentes para resolver dudas comunes.\n- Contacto: Ponte en contacto con el soporte técnico para obtener ayuda personalizada.\n- Tutoriales: Visualiza tutoriales en video y guías paso a paso para aprovechar al máximo todas las funcionalidades de la aplicación.",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": ""
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "info",
+        "title": "Bot de Preguntas",
+        "subtitle": "Detalles y Uso",
+        "text": "Nuestro bot de preguntas está diseñado para ayudarte a navegar y utilizar tanto la aplicación móvil como la aplicación web de manera eficiente. Puedes hacer preguntas sobre el uso de las diferentes funcionalidades y recibir respuestas rápidas y precisas.",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": ""
+          }
+        }
+      },
+      {
+        "type": "info",
+        "title": "Bot de Preguntas",
+        "subtitle": "Detalles y Uso",
+        "text": "Nuestro bot de preguntas está diseñado para ayudarte a navegar y utilizar tanto la aplicación móvil como la aplicación web de manera eficiente. Puedes hacer preguntas sobre el uso de las diferentes funcionalidades y recibir respuestas rápidas y precisas.",
+        "onClick": {
+          "action": {
+            "type": "openUrl",
+            "url": ""
+          }
+        }
+      },
+      {
+        "type": "chips",
+        "options": [
+          {
+            "link": "https://drive.google.com/file/d/1ezbsAwMqPHzvZD14QJBCWuZ0PcnHwmIL/view",
+            "text": "Descagar app"
+          },
+          { 
+            "link": "https://firebasestorage.googleapis.com/v0/b/imagenes-972f4.appspot.com/o/presupuesto%2FMovilManualdeUsuario.docx.pdf?alt=media&token=3484c8ee-b538-4f5a-83b0-b2a10a5691ca",
+            "text": "Descagar manual PDF" 
+          },
+          { "text": "Movil" },
+          { "text": "Menú" }
+        ]
+      }
+    ]
+  ]
+}

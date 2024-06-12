@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import imgLogo from '@images/cliente/Logo.png';
+const login = {
+  name: 'Presupuesto',
+  branch: 'Tu nuevo sistema de presupuesto personal. Administra tu dinero, alcanza tus metas.'
+}
+---
+
+<div class="content">
+  <h3>{login.name}</h3>
+  <p>{login.branch}</p>
+  <Image src={imgLogo} alt={login.name} width={200} height={80}/>
+</div>

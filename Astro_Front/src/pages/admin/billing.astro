@@ -1,0 +1,14 @@
+---
+import BaseAdminLayout from '@layouts/BaseAdminLayout.astro'
+import NEXClientSidebar from '@components/admin/sidebar/NEXSidebar.astro'
+import NEXBilling from '@components/admin/billing/NEXBilling.astro'
+import NEXSidebar from '@components/admin/sidebar/NEXSidebar.astro'
+import NEXMainSearch from '@components/admin/headernav/NEXMainSearch.astro'
+---
+
+<BaseAdminLayout>
+  <NEXSidebar />
+  <NEXMainSearch />
+  <NEXClientSidebar />
+  <NEXBilling />
+</BaseAdminLayout>

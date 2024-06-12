@@ -1,0 +1,193 @@
+/*===== VARIABLES CSS =====*/
+:root {
+  --nav-width: 80px;
+  --nav-width-1: 70px;
+  --first-color: #ff5c28;
+  --sub-color: #da3805;
+  --white-color: #000000;
+  --bg-color: #f3f3f3;
+  --bg-color-1: #ffff;
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: -10px;
+  height: 100vh;
+  background-color: var(--bg-color);
+  padding: 1rem 1.2rem 1rem;
+  width: var(--nav-width-1);
+  transition: 0.5s;
+  z-index: var(--z-fixed);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 1rem 1.3rem 1rem;
+    width: var(--nav-width-1);
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 1rem 1.1rem 1rem;
+    width: var(--nav-width-1);
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 1rem 1.1rem 1rem;
+    width: var(--nav-width-1);
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 1rem 1.1rem 1rem;
+    width: var(--nav-width-1);
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+  }
+}
+.nav {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.nav__brand {
+  color: var(--white-color);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+
+.nav__toggle {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.nav__logo {
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.nav__link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0.4rem;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.nav__link:hover {
+  background-color: var(--first-color);
+  color: var(--bg-color-1);
+}
+
+.nav__icon {
+  font-size: 1.25rem;
+}
+
+.nav__name {
+  font-size: var(--small-font-size);
+}
+
+.expander {
+  width: calc(var(--nav-width) + 9.25rem);
+}
+
+.active {
+  background-color: var(--first-color);
+}
+
+.collapse {
+  grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse__link {
+  justify-self: flex-end;
+  transition: 0.5s;
+}
+
+.collapse__menu {
+  display: none;
+  padding: 0.75rem 2.25rem;
+}
+
+.collapse__sublink {
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+
+.collapse__sublink:hover {
+  color: var(--white-color);
+}
+
+.showCollapse {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+

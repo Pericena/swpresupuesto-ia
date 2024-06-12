@@ -1,0 +1,102 @@
+[
+  {
+    "id": "Factura 001",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 002",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 003",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 004",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 005",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 006",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 007",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 008",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 009",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  },
+  {
+    "id": "Factura 010",
+    "fecha": "01/01/2024",
+    "monto": "100.00 BS",
+    "sucursal": "Presupuesto",
+    "estado": "Realizado",
+    "cajero": "Juan",
+    "accion": "01/01/2024",
+    "img": "../images/cliente/Logo.png"
+  }
+]

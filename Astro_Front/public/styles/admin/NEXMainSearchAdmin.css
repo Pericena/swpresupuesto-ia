@@ -1,0 +1,336 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+  /* Colores */
+
+  --salmon-pink: #ff5c28;
+  --bittersweet: #090d28;
+  --bittersweet-2: #f3f3f3;
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --white-color: #ffffff;
+  --onyx: #aeafbb;
+
+  /* Tipografía */
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /* Radio de borde */
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+
+  /* Transición */
+  --transition-timing: 0.2s ease;
+}
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bittersweet);
+  padding: 0rem 1.1rem 0 4.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+/**
+ * scrollbar style
+ */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid var(--white);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+  padding: 0 10px;
+  top: 0;
+}
+
+.has-scrollbar {
+  padding-bottom: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 3px solid var(--white);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 90%);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 80%);
+}
+
+/*-----------------------------------*\
+  #BEGIN
+\*-----------------------------------*/
+
+.search-field::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* Botón de búsqueda */
+.search-btn {
+  color: #aeafbb;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 8px 15px;
+  -webkit-border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-md);
+  -webkit-transition: color var(--transition-timing);
+  -o-transition: color var(--transition-timing);
+  transition: color var(--transition-timing);
+  left: 550px;
+}
+
+/**
+* #HEADER
+*/
+
+.header-top .container,
+.header-main .container {
+  background-color: #090d28;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-main .container {
+  gap: 10px;
+}
+
+/**
+* #header-user-actions
+*/
+
+.header-user-actions {
+  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-user-actions .action-btn {
+  position: relative;
+  font-size: 10px;
+  color: var(--bittersweet-2);
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #181b3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-user-actions .count {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background: var(--bittersweet);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+
+
+.mobile-bottom-navigation .action-btn {
+  position: relative;
+  font-size: 26px;
+  color: var(--eerie-black);
+  padding: 10px;
+}
+
+
+/* Menú desplegable */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--bittersweet-2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid var(--bittersweet-2);
+  border-radius: 5px;
+  right: 0;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+/* Mostrar el menú desplegable al pasar el ratón */
+.action-btn-head:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+/* Elementos del menú desplegable */
+.dropdown-item {
+  padding: 8px 20px;
+  font-size: var(--fs-12);
+  color: var(--eerie-black);
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+/**
+* #NEXBranchHeaderLogo
+*/
+/* Acciones del usuario */
+.header-logo {
+  margin: 20px;
+}
+
+.header-logo img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/**
+* # NEXBranchHeaderTheme
+theme modo oscuro o blanco
+*/
+header .theme-toggler {
+  background: var(--bittersweet-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+  margin-right: 2rem;
+}
+
+header .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .theme-toggler span.active {
+  background-color: #181B3A;
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+/* NEXBranchHeaderCalendar */
+.calendar {
+  background:#181B3A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 6.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+  margin-right: 2rem;
+  color: #AEAFBB;
+}
+
+.calendar span {
+  font-size: 12px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar span.active {
+  background-color: var(--bittersweet);
+  color: white;
+  border-radius: var(--border-radius-1);
+}

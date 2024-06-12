@@ -1,0 +1,10 @@
+{
+  "presupuestoPersonal": {
+    "nombre": "Presupuesto Mensual",
+    "descripcion": "Presupuesto para gastos personales del mes de junio",
+    "montoTotal": 1500,
+    "fechaInicio": "2024-06-01",
+    "fechaFinal": "2024-06-30"
+
+  }
+}

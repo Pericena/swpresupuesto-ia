@@ -1,0 +1,24 @@
+---
+import EarningData from './EarningData.tsx'
+---
+
+<div class="rounded-md p-6 shadow-md shadow-black/5" style="background-color: #181B3A;">
+  <div class="mb-4 flex items-start justify-between">
+    <h3 class="text-base font-semibold text-white">Distribución de Gastos por Categorías</h3>
+  </div>
+  <div class="">
+    <p class="text-sm text-white">
+      Detalle: Esta visualización muestra la distribución de gastos por categorías en tu presupuesto
+      personal. Te brinda una visión general de cómo se distribuyen tus gastos en diferentes áreas,
+      como alimentos, vivienda, transporte, entre otros. Los datos se actualizan automáticamente
+      para reflejar los cambios en tus gastos, lo que te permite tomar decisiones informadas sobre
+      tu gestión financiera.
+    </p>
+    <table class="w-100">
+      <tbody>
+        <EarningData client:only />
+        <p id="errorMessage" style="color: red;"></p>
+      </tbody>
+    </table>
+  </div>
+</div>

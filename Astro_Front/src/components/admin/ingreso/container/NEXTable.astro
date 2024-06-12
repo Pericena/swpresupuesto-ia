@@ -1,0 +1,129 @@
+---
+import NexShowProduct from './NexShowProduct.astro'
+import Product from '@interfaces/Product.ts'
+let Products: Product[] = []
+let errorLoadingData = false
+let error: string | null = null
+
+try {
+  const response = await fetch('http://localhost:4321/api/admin/product.json')
+  if (response.ok) {
+    const data: Product[] | null = await response.json()
+    if (data) {
+      Products = data
+    } else {
+      throw new Error('La respuesta está vacía')
+    }
+  } else if (response.status === 400) {
+    throw new Error('Error: Solicitud incorrecta (400)')
+  } else if (response.status === 404) {
+    throw new Error('Error: Recurso no encontrado (404)')
+  } else if (response.status === 500) {
+    throw new Error('Error: Error interno del servidor (500)')
+  } else {
+    throw new Error(
+      'Error al cargar los datos. Estado: ' + response.status + ' ' + response.statusText
+    )
+  }
+} catch (err: any) {
+  console.error('Error al obtener los datos de la API:', err.message)
+  error = err.message
+  errorLoadingData = true
+}
+
+export { Products, errorLoadingData, error }
+---
+
+<table class="w-full divide-y divide-gray-200 text-sm text-white">
+  <thead
+    style="background: linear-gradient(135deg,#e53f52, #f05f22, #e53f52 );"
+    class="items-center text-xs text-white dark:text-white"
+  >
+    <tr>
+      <td class="px-4 py-1">
+        <a href="#" type="button" class="font-medium text-white hover:underline">Seleccionar </a>
+        <label for="checkbox-all-search" class="sr-only">Seleccionar todo</label>
+      </td>
+      <th scope="col" class="px-6 py-3"> Nombre </th>
+      <th scope="col" class="px-6 py-3"> Descripción larga</th>
+      <th scope="col" class="px-6 py-3"> Descripción corta</th>
+      <th scope="col" class="px-6 py-3"> Stock </th>
+      <th scope="col" class="px-6 py-3"> Estado </th>
+      <th scope="col" class="px-6 py-3"> </th>
+    </tr>
+  </thead>
+  <tbody class="text-white" style="background-color: #181B3A;">
+    {
+      Products.map((product, index) => (
+        <tr class="border-b from-blue-950 from-blue-950 to-blue-900 to-blue-950 hover:bg-gradient-to-r dark:border-white dark:text-black dark:hover:bg-gradient-to-r">
+          <td class="px-9">
+            <div class="flex items-center">
+              <input
+                id={`checkbox-table-search-${index}`}
+                type="checkbox"
+                class="h-4 w-4 rounded border-orange-600 bg-white text-orange-600 dark:dark:border-orange-600"
+              />
+              <label
+                for={`checkbox-table-search-${index}`}
+                class="sr-only font-medium hover:text-orange-600"
+              >
+                Seleccionar usuario
+              </label>
+            </div>
+          </td>
+          <td class="p-4">
+            <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+              <li class="pb-1 sm:pb-1">
+                <div class="flex items-center space-x-4 text-center rtl:space-x-reverse">
+                  <div class="flex-shrink-0">
+                    <img class="h-14 w-14 rounded" src={product.img} alt="avatar" />
+                  </div>
+                  <div class="flex-3 min-w-0">
+                    <p class="truncate text-center text-sm font-medium text-white dark:text-white">
+                      {product.name}:{product.short_description}
+                    </p>
+                    <p class="truncate text-center text-sm text-white dark:text-gray-400">
+                      Precio : {product.price} Bs
+                    </p>
+                    <p class="truncate text-center text-sm text-white dark:text-gray-400">
+                      Descuento: {product.discount} %
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </td>
+          <td class="white px-6 py-4 text-center text-white dark:text-white">
+            {' '}
+            {product.long_description}
+          </td>
+          <td class="white px-6 py-4 text-center text-white dark:text-white">
+            {' '}
+            {product.short_description}{' '}
+          </td>
+          <td class="white px-6 py-4 text-center text-white dark:text-white"> {product.stock} </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-center text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300"
+            >
+              <span class="me-1 h-2 w-2 rounded-full bg-green-500" />
+              {product.status}
+            </a>
+          </td>
+          <td class="items-center px-6 py-4 text-center text-white dark:text-white">
+            <button
+              data-modal-target="showproduct_modal"
+              data-modal-toggle="showproduct_modal"
+              class="block text-xl text-white"
+              type="button"
+            >
+              <i class="bx bx-link-external" />
+            </button>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<NexShowProduct />

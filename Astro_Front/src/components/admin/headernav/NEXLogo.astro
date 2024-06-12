@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+import imgLogo from '@images/cliente/Logo.png'
+
+const logo = {
+  name: 'Presupuesto'
+}
+---
+
+<a href="#" class="hidden transform transition-transform hover:scale-110 sm:inline-block">
+  <Image src={imgLogo} alt={logo.name} class="rounded-full" width={40} height={20} />
+</a>
