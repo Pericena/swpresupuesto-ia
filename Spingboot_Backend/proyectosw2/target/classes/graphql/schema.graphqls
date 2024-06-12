@@ -1,14 +1,17 @@
 type Query {
-    login (email:String,password:String):Usuario
-    getCategoriaById(id: String): CategiriaEntity
+    login(email: String, password: String): Usuario
+    getCategoriaById(id: String): CategoriaEntity
     getCuentaById(usuarioID: ID): [CuentaEntity]
-    Egreso(id: String): EgresoEntity
-
-}
-type Mutation{
-    createCuenta(  id:ID , nombre:String, saldo:String ,usuarioID:String):String
+    egreso(id: String): EgresoEntity
+    ingreso(id: String): IngresoEntity
+    getAllData: AllDataResponse
 }
 
+type Mutation {
+    createCuenta(id: ID, nombre: String, saldo: String, usuarioID: String): String
+    createEgreso(id: ID, concepto: String, monto: Float, fechaEgreso: String,cuentaID:ID ,categoriaID:ID): String
+    createIngreso(id:ID,concepto:String ,monto:Float,fechaIngreso:String,cuentaID:ID,categoriaID:ID ): String
+}
 
 
 
@@ -17,25 +20,55 @@ type Usuario {
     nombre: String
     email: String
     password: String
+    token: String
 }
-
-type CategiriaEntity {
+type CategoriaEntity {
     id: String
     nombre: String
 }
- type CuentaEntity{
- id :String
-  nombre:String
-  saldo:String
-  usuarioID:ID
- }
-type EgresoEntity {
-      id:String
-      concepto:String
-      monto:String
-      fechaEgreso:String
-      CuentaID:String
-      CategoriaID:String
+
+type CuentaEntity {
+    id: ID
+    nombre: String
+    saldo: Float
+    usuarioID: ID
 }
 
+type EgresoEntity {
+    id: ID
+    concepto: String
+    monto: Float
+    fechaEgreso: String
+    cuentaID: ID
+    categoriaID: ID
+}
 
+type IngresoEntity {
+    id: ID
+    concepto: String
+    monto: Float
+    fechaIngreso: String
+    cuentaID: ID
+    categoriaID: ID
+}
+
+input EgresoInput {
+    concepto: String
+    monto: Float
+    fechaEgreso: String
+    cuentaID: String
+    categoriaID: String
+}
+
+input IngresoInput {
+    concepto: String
+    monto: Float
+    fechaIngreso: String
+    cuentaID: String
+    categoriaID: String
+}
+type AllDataResponse {
+    cuentas: [CuentaEntity]
+    ingresos: [IngresoEntity]
+    egresos: [EgresoEntity]
+}

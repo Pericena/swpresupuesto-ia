@@ -1,10 +1,20 @@
 package com.example.proyectosw2.Services;
 
+import com.example.proyectosw2.Entity.CuentaEntity;
+import com.example.proyectosw2.Entity.EgresoEntity;
+import com.example.proyectosw2.Entity.IngresoEntity;
 import com.example.proyectosw2.Entity.UsuarioEntity;
+import com.example.proyectosw2.Repository.CuentaRepository;
+import com.example.proyectosw2.Repository.EgresoRepository;
+import com.example.proyectosw2.Repository.IngresoRepository;
 import com.example.proyectosw2.Repository.UsuarioRepository;
+import com.example.proyectosw2.dto.AllDataResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 @Service
@@ -12,6 +22,17 @@ import java.util.Objects;
 public class UsuarioServices {
     @Autowired
     private UsuarioRepository usuarioRepository;
+    @Autowired
+    private CuentaRepository cuentaRepository;
+    @Autowired
+    private IngresoRepository ingresoRepository;
+    @Autowired
+    private EgresoRepository egresoRepository;
+
+
+
+    @Autowired
+    private TokenService tokenService;
 
     public String Login2(String email,String Password){
         UsuarioEntity usuario=usuarioRepository.findByEmail(email).orElse(null);
@@ -26,17 +47,37 @@ public class UsuarioServices {
         }
 
     }
-    public UsuarioEntity Login(String email,String Password){
-        UsuarioEntity usuario=usuarioRepository.findByEmail(email).orElse(null);
-        if (usuario==null){
+
+    public AllDataResponse getAllData(){
+      List <CuentaEntity> cuenta =cuentaRepository.findAll();
+      List <IngresoEntity> ingreso =ingresoRepository.findAll();
+        List <EgresoEntity> egreso =egresoRepository.findAll();
+
+        AllDataResponse response= new AllDataResponse(cuenta,ingreso,egreso);
+        return response;
+
+
+
+
+    }
+
+
+
+
+
+    public Map<String, Object> login(String email, String password) {
+        UsuarioEntity usuario = usuarioRepository.findByEmail(email).orElse(null);
+        if (usuario == null) {
             return null;
         }
-        if (Objects.equals(usuario.getPassword(), Password) && Objects.equals(usuario.getEmail(), email)){
-
-            return usuario;
-        }else {
+        if (Objects.equals(usuario.getPassword(), password) && Objects.equals(usuario.getEmail(), email)) {
+            String token = tokenService.generateToken(email);
+            Map<String, Object> response = new HashMap<>();
+            response.put("usuario", usuario);
+            response.put("token",token);
+            return response;
+        } else {
             return null;
         }
-
     }
 }

@@ -11,13 +11,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "Egreso")
-public class EgresoEntity {
+@Document(collection = "Presupuesto")
+public class PresupuestoEntity {
     @Id
     private Integer id;
-    private String concepto;
-    private Double monto;
-    private String fechaEgreso;
-    private Integer cuentaID;
-    private Integer categoriaID;
+    private String nombre;
+    private String descripcion;
+    private Double montoTotal;
+    private String fechaInicio;
+    private String fechaFin;
+
 }
