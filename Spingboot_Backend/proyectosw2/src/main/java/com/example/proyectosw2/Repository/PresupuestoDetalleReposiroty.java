@@ -3,11 +3,10 @@ package com.example.proyectosw2.Repository;
 import com.example.proyectosw2.Entity.PresupuestoDetalle;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface PresupuestoDetalleReposiroty extends MongoRepository<PresupuestoDetalle, String> {
-    @Query("{ 'idUsuario' : ?0 }")
-    List<PresupuestoDetalle> findByUsuarioId(String idUsuario);
+    List<PresupuestoDetalle> findByIdPresupuesto(Integer idPresupuesto);
 }

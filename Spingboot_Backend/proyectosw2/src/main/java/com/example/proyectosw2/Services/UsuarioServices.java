@@ -75,9 +75,9 @@ public class UsuarioServices {
             return null;
         }
     }
-    public UsuarioEntity createUsuario(int id ,String nombre, String email, String password) {
+    public UsuarioEntity createUsuario(UsuarioEntity newUsuario) {
         try {
-            UsuarioEntity nuevoUsuario = new UsuarioEntity(id,nombre,email,password);
+            UsuarioEntity nuevoUsuario =newUsuario;
             return usuarioRepository.save(nuevoUsuario);
         } catch (Exception ex) {
             ex.printStackTrace();

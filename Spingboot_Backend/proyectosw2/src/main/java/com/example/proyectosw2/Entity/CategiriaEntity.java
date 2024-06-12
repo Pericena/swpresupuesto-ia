@@ -13,6 +13,7 @@ import org.yaml.snakeyaml.events.Event;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "Categoria")
+
 public class CategiriaEntity {
     @Id
     private Integer id;

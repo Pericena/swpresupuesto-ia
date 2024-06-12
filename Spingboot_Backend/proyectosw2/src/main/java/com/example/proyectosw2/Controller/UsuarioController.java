@@ -37,7 +37,7 @@ public class UsuarioController {
     public UsuarioEntity createUsuario(@Argument int id, @Argument String nombre,@Argument  String email,@Argument  String password) {
         try {
             UsuarioEntity nuevoUsuario = new UsuarioEntity(id, nombre, email, password);
-            return usuarioServices.createUsuario( id , nombre,  email,  password);
+            return usuarioServices.createUsuario(nuevoUsuario);
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
