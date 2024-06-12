@@ -1,0 +1,92 @@
+---
+import '@styles/client/NEXBranchBillingTable.css'
+import { Image } from 'astro:assets'
+import imgSideBarLogo from '@images/cliente/Logo.png'
+
+const data = {
+  id: 'Factura 001',
+  cajero: 'Juan Albare',
+  ci: '0000 sc',
+  idfactura: '001',
+  fecha: '01/01/2024',
+  monto: '100.00 Bs',
+  sucursal: 'Presupuesto',
+  descuento: '5%',
+  impuesto: '90 Bs',
+  total: '95.00 Bs',
+  pago: 'qr',
+  direccion: 'Calle 123, Ciudad, País',
+  correo: 'cliente@example.com',
+  telefono: '+1234567890',
+  cliente: 'Pedro perez'
+}
+---
+
+<div class="sidebar has-scrollbar-billing" data-mobile-menu>
+  <div class="sidebar-category">
+    <div class="category-item">
+      <Image src={imgSideBarLogo} alt={data.id} width={30} height={30} />
+      <p class="menu-title">Factura</p>
+      <h2 class="sidebar-title">{data.fecha}</h2>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Cajero</p>
+      <p class="billing-subtitle">{data.cajero}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">CI:</p>
+      <p class="billing-subtitle">{data.ci}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Cliente</p>
+      <p class="billing-subtitle">{data.cliente}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">
+        ID
+        <i class="bx bx-chevron-down"></i>
+      </p>
+      <p class="billing-subtitle">{data.id}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Fecha emitida:</p>
+      <p class="billing-subtitle">{data.fecha}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Monto total:</p>
+      <p class="billing-subtitle">{data.monto}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Sucursal:</p>
+      <p class="billing-subtitle">{data.sucursal}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Forma de pago:</p>
+      <p class="billing-subtitle">{data.pago}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Descuento:</p>
+      <p class="billing-subtitle">{data.descuento}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Impuestos:</p>
+      <p class="billing-subtitle">{data.impuesto}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Total a pagar:</p>
+      <p class="billing-subtitle">{data.total}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Dirección:</p>
+      <p class="billing-subtitle">{data.direccion}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Correo:</p>
+      <p class="billing-subtitle">{data.correo}</p>
+    </div>
+    <div class="sidebar-top">
+      <p class="menu-title">Teléfono:</p>
+      <p class="billing-subtitle">{data.telefono}</p>
+    </div>
+  </div>
+</div>

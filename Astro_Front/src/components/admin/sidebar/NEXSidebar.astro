@@ -1,0 +1,135 @@
+---
+import { Image } from 'astro:assets'
+import imgUser from '@images/caja/usuario.jpg'
+---
+
+<div class="l-navbar" id="navbar">
+  <nav class="nav flex flex-col">
+    <div>
+      <div class="nav__brand mb-8">
+        <i class="bx bx-menu" id="nav-toggle"></i>
+        <a href="#" class="nav__logo"></a>
+      </div>
+      <div class="nav__list flex flex-col gap-y-2">
+        <a href="/admin/" class="nav__link active">
+          <i class="bx bxs-dashboard"></i>
+          <span class="nav__name">Overview</span>
+        </a>
+        <div class="relative" x-data="{ open: false }">
+          <button
+            type="button"
+            class="nav__link group flex w-full items-center rounded-lg p-1 text-base transition duration-75"
+            aria-controls="dropdown-example-1"
+            data-collapse-toggle="dropdown-example-1"
+            @click="open = !open"
+          >
+            <i class="bx bx-user"></i>
+            <span class="ms-3 flex-1 whitespace-nowrap text-left rtl:text-right">Usuario</span>
+            <i class="bx bxs-chevron-down"></i>
+          </button>
+          <ul
+            id="dropdown-example-1"
+            class="hidden space-y-2 py-2"
+            x-show="open"
+            @click.away="open = false"
+          >
+            <li>
+              <a
+                href="/admin/user"
+                class="nav__link group flex w-full items-center rounded-lg p-1 pl-4 transition duration-75"
+                :class="{ 'bg-orange-600 text-white': open }"
+              >
+                <i class="bx bxs-user-detail"></i>
+                Mostrar Usuarios
+              </a>
+            </li>
+            <li>
+              <a
+                href="/admin/user/create"
+                class="nav__link group flex w-full items-center rounded-lg p-1 pl-4 transition duration-75"
+                :class="{ 'bg-orange-600 text-white': open }"
+              >
+                <i class="bx bx-user-plus"></i>
+                Crear Usuarios
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="relative" x-data="{ open: false }">
+          <button
+            type="button"
+            class="nav__link group flex w-full items-center rounded-lg p-1 text-base transition duration-75"
+            aria-controls="dropdown-example-2"
+            data-collapse-toggle="dropdown-example-2"
+            @click="open = !open"
+          >
+            <i class="bx bx-store"></i>
+            <span class="ms-3 flex-1 whitespace-nowrap text-left rtl:text-right">Categorias</span>
+            <i class="bx bxs-chevron-down"></i>
+          </button>
+          <ul
+            id="dropdown-example-2"
+            class="hidden space-y-2 py-2"
+            x-show="open"
+            @click.away="open = false"
+          >
+            <li>
+              <a
+                href="/admin/branch"
+                class="nav__link group flex w-full items-center rounded-lg p-1 pl-4 transition duration-75"
+                :class="{ 'bg-orange-600 text-white': open }"
+              >
+                <i class="bx bxs-store"></i>
+                Mostrar Categoria
+              </a>
+            </li>
+            <li>
+              <a
+                href="/admin/branch/create"
+                class="nav__link group flex w-full items-center rounded-lg p-1 pl-4 transition duration-75"
+                :class="{ 'bg-orange-600 text-white': open }"
+              >
+                <i class="bx bxs-store"></i>
+                Crear Categoria
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="/admin/nobilling" class="nav__link">
+          <i class="bx bx-task"></i>
+          <span class="nav__name">Ingreso</span>
+        </a>
+        <a href="/admin/nobilling" class="nav__link">
+          <i class="bx bx-task"></i>
+          <span class="nav__name">Egreso</span>
+        </a>
+        <a href="/admin/nobilling" class="nav__link">
+          <i class="bx bxs-report"></i>
+          <span class="nav__name">Presupuesto</span>
+        </a>
+        <a href="/admin/nobilling" class="nav__link">
+          <i class="bx bxs-report"></i>
+          <span class="nav__name">Tipo</span>
+        </a>
+        <a href="/admin/nobilling" class="nav__link">
+          <i class="bx bxs-report"></i>
+          <span class="nav__name">Recordatorio</span>
+        </a>
+      </div>
+    </div>
+    <div class="nav__brand-1">
+      <a href="#" class="nav__link">
+        <i class="bx bx-help-circle"></i>
+        <span class="nav__name">Ayuda</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="bx bxs-cog"></i>
+        <span class="nav__name">Configuración</span>
+      </a>
+      <a href="#" class="nav__link">
+        <Image src={imgUser} alt="user" width="20" height="20" />
+        <span class="nav__name"><i class="bx bx-exit"></i> Cerrar sesión</span>
+      </a>
+    </div>
+  </nav>
+</div>

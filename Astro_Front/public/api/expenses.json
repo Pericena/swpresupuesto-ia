@@ -1,0 +1,5 @@
+{
+  "labels": ["Investment", "Food", "Shopping", "Others", "Shopping"],
+  "backgroundColor": ["#5C28B1", "#01D492", "#E87309", "#E53F52", "#FFC107"],
+  "data": [20, 20, 20, 20, 20]
+}

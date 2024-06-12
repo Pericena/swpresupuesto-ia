@@ -1,0 +1,78 @@
+---
+import Branch from '@interfaces/Branch.ts'
+
+let branchs: Branch[] = []
+let errorLoadingData = false
+let error: string | null = null
+
+try {
+  const response = await fetch('http://localhost:4321/api/branch/branch_select.json')
+  if (response.ok) {
+    const data: Branch[] | null = await response.json()
+    if (data) {
+      branchs = data
+    } else {
+      throw new Error('La respuesta está vacía')
+    }
+  } else if (response.status === 400) {
+    throw new Error('Error: Solicitud incorrecta (400)')
+  } else if (response.status === 404) {
+    throw new Error('Error: Recurso no encontrado (404)')
+  } else if (response.status === 500) {
+    throw new Error('Error: Error interno del servidor (500)')
+  } else {
+    throw new Error(
+      'Error al cargar los datos. Estado: ' + response.status + ' ' + response.statusText
+    )
+  }
+} catch (err: any) {
+  console.error('Error al obtener los datos de la API:', err.message)
+  error = err.message
+  errorLoadingData = true
+}
+
+export { branchs, errorLoadingData, error }
+---
+
+<table class="w-full divide-y divide-gray-200 text-sm text-white">
+  <thead
+    style="background: linear-gradient(135deg,#e53f52, #f05f22, #e53f52 );"
+    class="items-center text-xs text-white dark:text-white"
+  >
+    <tr>
+      <td class="px-4 py-1">
+        <a href="#" type="button" class="font-medium text-white hover:underline">Seleccionar </a>
+        <label for="checkbox-all-search" class="sr-only">Seleccionar todo</label>
+      </td>
+      <th scope="col" class="px-6 py-3"> Nombre </th>
+
+    </tr>
+  </thead>
+  <tbody class="text-white" style="background-color: #181B3A;">
+    {
+      branchs.map((branch, index) => (
+        <tr class="border-b from-blue-950 from-blue-950 to-blue-900 to-blue-950 hover:bg-gradient-to-r dark:border-white dark:text-black dark:hover:bg-gradient-to-r">
+          <td class="px-9">
+            <div class="flex items-center">
+              <input
+                id={`checkbox-table-search-${index}`}
+                type="checkbox"
+                class="h-4 w-4 rounded border-orange-600 bg-white text-orange-600 dark:dark:border-orange-600"
+              />
+              <label
+                for={`checkbox-table-search-${index}`}
+                class="sr-only font-medium hover:text-orange-600"
+              >
+                Seleccionar usuario
+              </label>
+            </div>
+          </td>
+          <td scope="row" class="px-6 py-4 text-white dark:text-white">
+            {' '}
+            {branch.branch}{' '}
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

@@ -1,0 +1,44 @@
+{
+  "name": "nexventa",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sst bind astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "sst:deploy": "sst deploy --stage prod",
+    "sst:dev": "sst dev"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/node": "^8.2.5",
+    "@astrojs/react": "^3.4.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.9.2",
+    "astro-aws-amplify": "^0.1.0",
+    "jquery": "^3.7.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "rxjs": "^7.8.1",
+    "select2": "^4.1.0-rc.0",
+    "tailwindcss": "^3.4.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "zone.js": "^0.14.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.10.0",
+    "astro-sst": "^2.42.0",
+    "aws-cdk-lib": "2.143.0",
+    "constructs": "10.3.0",
+    "prettier": "^3.2.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "sst": "^2.42.0"
+  }
+}

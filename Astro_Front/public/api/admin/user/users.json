@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Juan López Pérez",
+    "email": "juan.lopez@example.com",
+    "ci": "123456789",
+    "address": "Calle A #123",
+    "dob": "1990-01-01",
+    "phone": "123456789",
+    "gender": "Masculino",
+    "status": "Activo",
+    "avatar": "../../../public/images/caja/usuario.jpg"
+  },
+  {
+    "id": 2,
+    "name": "María García Fernández",
+    "email": "maria.garcia@example.com",
+    "ci": "987654321",
+    "address": "Avenida B #456",
+    "dob": "1985-05-15",
+    "phone": "987654321",
+    "gender": "Femenino",
+    "status": "Inactivo",
+    "avatar": "../../../public/images/caja/usuario.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Sánchez Gómez",
+    "email": "carlos.sanchez@example.com",
+    "ci": "123123123",
+    "address": "Calle C #789",
+    "dob": "1975-03-10",
+    "phone": "123123123",
+    "gender": "Masculino",
+    "status": "Activo",
+    "avatar": "../../../public/images/caja/usuario.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ana Ruiz Martínez",
+    "email": "ana.ruiz@example.com",
+    "ci": "321321321",
+    "address": "Avenida D #321",
+    "dob": "1992-07-20",
+    "phone": "321321321",
+    "gender": "Femenino",
+    "status": "Activo",
+    "avatar": "../../../public/images/caja/usuario.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pedro Rodríguez Hernández",
+    "email": "pedro.rodriguez@example.com",
+    "ci": "456456456",
+    "address": "Calle E #654",
+    "dob": "1980-11-30",
+    "phone": "456456456",
+    "gender": "Masculino",
+    "status": "Inactivo",
+    "avatar": "../../../public/images/caja/usuario.jpg"
+  }
+]

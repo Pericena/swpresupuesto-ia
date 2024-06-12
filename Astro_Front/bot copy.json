@@ -1,0 +1,162 @@
+{
+  "richContent": [
+    [
+      {
+        "accessibilityText": "logo",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/e-commerce-qualitystore.appspot.com/o/LogoNovatech.jpg?alt=media&token=c78fed0f-39e7-4c33-b2a0-0c2b64e46ab6",
+        "type": "image"
+      },
+      {
+        "type": "info",
+        "actionLink": "#",
+        "title": "Manual de Usuario",
+        "subtitle": "Aplicación Móvil y Web"
+      },
+      {
+        "type": "chips",
+        "options": [
+          {
+            "link": "https://novatechboliviascz.blogspot.com/p/about.html",
+            "text": "Sobre nosotros"
+          },
+          {
+            "link": "https://novatechboliviascz.blogspot.com/p/contact-us.html",
+            "text": "Contactanos"
+          },
+          {
+            "link": "https://novatechboliviascz.blogspot.com/2023/12/blog-post_5.html",
+            "text": "Emocare"
+          },
+          {
+            "text": "Menú"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "title": "Inicio de Sesión",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "1. Login: Al abrir la aplicación, se te solicitará iniciar sesión con tu usuario y contraseña. Asegúrate de ingresar los datos correctos para acceder a todas las funcionalidades.",
+        "rawUrl": "https://firebasestorage.googleapis.com/v0/b/e-commerce-qualitystore.appspot.com/o/LogoNovatech.jpg?alt=media&token=c78fed0f-39e7-4c33-b2a0-0c2b64e46ab6"
+      },
+      {
+        "type": "info",
+        "title": "Pantalla Principal",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "2. Vista General: Después de iniciar sesión, serás dirigido a la pantalla principal.\n- Presupuesto: En esta sección, verás la información de tu presupuesto desde la fecha 2018-01-01 hasta la actualidad, con una proyección adicional para los próximos 3 meses.\n- Interfaz Intuitiva: La interfaz está diseñada para ser intuitiva, permitiéndote navegar fácilmente entre las diferentes secciones de la aplicación."
+      },
+      {
+        "type": "info",
+        "title": "Configuración de Fechas y Presupuesto",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "3. Seleccionar Fechas: En la pantalla principal, tendrás la opción de ajustar las fechas para el presupuesto.\n- Fecha de Inicio: Selecciona desde qué fecha deseas empezar a considerar los datos.\n- Duración de la Proyección: Puedes especificar cuántos meses deseas que abarque la proyección.\n- Actualizar Proyección: Una vez que hayas seleccionado las fechas, pulsa en el botón de actualización para ver los resultados según los parámetros establecidos."
+      },
+      {
+        "type": "info",
+        "title": "Detector de Anomalías",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "4. Vista de Anomalías: Desplázate hacia abajo en la pantalla principal para acceder al Detector de Anomalías.\n- Identificación de Gastos Anómalos: Aquí podrás ver una lista detallada de los gastos más altos y más bajos que has tenido hasta el momento.\n- Organización Detallada: La información está organizada de manera clara y detallada, permitiéndote identificar fácilmente las anomalías en tus gastos.\n- Alertas y Notificaciones: Si se detectan anomalías significativas, recibirás alertas y notificaciones para que puedas tomar las medidas necesarias."
+      },
+      {
+        "type": "info",
+        "title": "Menú de Opciones",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "5. Menú Principal: Accede al menú principal para explorar más opciones y configuraciones.\n- Perfil de Usuario: Aquí puedes gestionar tu información personal, cambiar tu contraseña y configurar tus preferencias.\n- Reportes y Análisis: Genera reportes detallados de tus gastos y análisis de las tendencias a lo largo del tiempo.\n- Configuración: Ajusta las configuraciones de la aplicación, incluyendo notificaciones, idioma y preferencias de visualización."
+      },
+      {
+        "type": "info",
+        "title": "Soporte y Ayuda",
+        "subtitle": "Aplicación Móvil",
+        "actionLink": "#",
+        "text": "6. Centro de Ayuda: Si necesitas asistencia, accede al Centro de Ayuda desde el menú principal.\n- FAQs: Consulta las preguntas frecuentes para resolver dudas comunes.\n- Contacto: Ponte en contacto con el soporte técnico para obtener ayuda personalizada.\n- Tutoriales: Visualiza tutoriales en video y guías paso a paso para aprovechar al máximo todas las funcionalidades de la aplicación."
+      }
+    ],
+    [
+      {
+        "type": "info",
+        "title": "Inicio de Sesión",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "1. Login: Abre la página web y inicia sesión con tu usuario y contraseña. Asegúrate de ingresar los datos correctos para acceder a todas las funcionalidades."
+      },
+      {
+        "type": "info",
+        "title": "Pantalla Principal",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "2. Vista General: Después de iniciar sesión, serás dirigido a la pantalla principal.\n- Presupuesto: En esta sección, verás la información de tu presupuesto desde la fecha 2018-01-01 hasta la actualidad, con una proyección adicional para los próximos 3 meses.\n- Interfaz Intuitiva: La interfaz está diseñada para ser intuitiva, permitiéndote navegar fácilmente entre las diferentes secciones de la aplicación."
+      },
+      {
+        "type": "info",
+        "title": "Configuración de Fechas y Presupuesto",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "3. Seleccionar Fechas: En la pantalla principal, tendrás la opción de ajustar las fechas para el presupuesto.\n- Fecha de Inicio: Selecciona desde qué fecha deseas empezar a considerar los datos.\n- Duración de la Proyección: Puedes especificar cuántos meses deseas que abarque la proyección.\n- Actualizar Proyección: Una vez que hayas seleccionado las fechas, pulsa en el botón de actualización para ver los resultados según los parámetros establecidos."
+      },
+      {
+        "type": "info",
+        "title": "Detector de Anomalías",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "4. Vista de Anomalías: Desplázate hacia abajo en la pantalla principal para acceder al Detector de Anomalías.\n- Identificación de Gastos Anómalos: Aquí podrás ver una lista detallada de los gastos más altos y más bajos que has tenido hasta el momento.\n- Organización Detallada: La información está organizada de manera clara y detallada, permitiéndote identificar fácilmente las anomalías en tus gastos.\n- Alertas y Notificaciones: Si se detectan anomalías significativas, recibirás alertas y notificaciones para que puedas tomar las medidas necesarias."
+      },
+      {
+        "type": "info",
+        "title": "Menú de Opciones",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "5. Menú Principal: Accede al menú principal para explorar más opciones y configuraciones.\n- Perfil de Usuario: Aquí puedes gestionar tu información personal, cambiar tu contraseña y configurar tus preferencias.\n- Reportes y Análisis: Genera reportes detallados de tus gastos y análisis de las tendencias a lo largo del tiempo.\n- Configuración: Ajusta las configuraciones de la aplicación, incluyendo notificaciones, idioma y preferencias de visualización."
+      },
+      {
+        "type": "info",
+        "title": "Soporte y Ayuda",
+        "subtitle": "Aplicación Web",
+        "actionLink": "#",
+        "text": "6. Centro de Ayuda: Si necesitas asistencia, accede al Centro de Ayuda desde el menú principal.\n- FAQs: Consulta las preguntas frecuentes para resolver dudas comunes.\n- Contacto: Ponte en contacto con el soporte técnico para obtener ayuda personalizada.\n- Tutoriales: Visualiza tutoriales en video y guías paso a paso para aprovechar al máximo todas las funcionalidades de la aplicación."
+      }
+    ],
+    [
+      {
+        "type": "info",
+        "title": "Bot de Preguntas",
+        "subtitle": "Detalles y Uso",
+        "actionLink": "#",
+        "text": "Nuestro bot de preguntas está diseñado para ayudarte a navegar y utilizar tanto la aplicación móvil como la aplicación web de manera eficiente. Puedes hacer preguntas sobre el uso de las diferentes funcionalidades y recibir respuestas rápidas y precisas."
+      },
+      {
+        "type": "info",
+        "title": "Ejemplo de Respuesta",
+        "subtitle": "Presupuesto",
+        "actionLink": "#",
+        "text": "Cuando preguntas sobre cómo gestionar tu presupuesto, el bot puede proporcionarte la siguiente información detallada:\n\n1. Inicio de Sesión: Asegúrate de haber iniciado sesión correctamente en la aplicación móvil o web.\n2. Acceso a Presupuesto: Navega a la pantalla principal donde se muestra el presupuesto.\n3. Configuración de Fechas: Selecciona la fecha de inicio y la duración de la proyección para ver un análisis detallado.\n4. Visualización de Datos: Observa los gráficos y tablas que muestran la evolución de tus gastos y proyecciones futuras.\n5. Detector de Anomalías: Utiliza esta herramienta para identificar cualquier gasto anómalo que pueda afectar tu presupuesto.\n6. Reportes y Análisis: Genera reportes detallados desde el menú principal para un análisis más profundo de tus tendencias de gasto."
+      },
+      {
+        "type": "chips",
+        "options": [
+          {
+            "link": "https://novatechboliviascz.blogspot.com/p/about.html",
+            "text": "Sobre nosotros"
+          },
+          {
+            "link": "https://novatechboliviascz.blogspot.com/p/contact-us.html",
+            "text": "Contactanos"
+          },
+          {
+            "link": "https://novatechboliviascz.blogspot.com/2023/12/blog-post_5.html",
+            "text": "Emocare"
+          },
+          {
+            "text": "Menú"
+          }
+        ]
+      }
+    ]
+  ]
+}

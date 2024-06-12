@@ -1,0 +1,129 @@
+---
+import NEXBillingPagination from './NEXPagination.astro'
+import NEXTable from './NEXTable.astro'
+
+import User from '@interfaces/User.ts'
+let users: User[] = []
+let errorLoadingData = false
+let error: string | null = null
+
+try {
+  const response = await fetch('http://localhost:4321/api/admin/user/users.json')
+  if (response.ok) {
+    const data: User[] | null = await response.json()
+    if (data) {
+      users = data
+    } else {
+      throw new Error('La respuesta está vacía')
+    }
+  } else if (response.status === 400) {
+    throw new Error('Error: Solicitud incorrecta (400)')
+  } else if (response.status === 404) {
+    throw new Error('Error: Recurso no encontrado (404)')
+  } else if (response.status === 500) {
+    throw new Error('Error: Error interno del servidor (500)')
+  } else {
+    throw new Error(
+      'Error al cargar los datos. Estado: ' + response.status + ' ' + response.statusText
+    )
+  }
+} catch (err: any) {
+  console.error('Error al obtener los datos de la API:', err.message)
+  error = err.message
+  errorLoadingData = true
+}
+
+export { users, errorLoadingData, error }
+---
+
+<div class="px-1 py-1">
+  <div
+    class="mx-auto max-w-5xl rounded-lg px-1 sm:px-6 sm:py-10 lg:px-8"
+    style="background-color: #181B3A;"
+  >
+    <div class="max-w-1xl mx-auto">
+      <div class="space-y-6 p-1 py-1">
+        <div class="space-y-12 rounded-lg p-1 shadow">
+          <div class="border-b border-gray-900/10 pb-1">
+            <label for="last-name" class="mb-2 block text-xl font-medium text-white"
+              >Modulo de Usuario</label
+            >
+            <div class="">
+              <div class="" style="background-color: #181B3A;">
+                <div class="border-b border-gray-50 px-6 text-white">
+                  <div class="mb-4 flex flex-wrap items-center justify-between">
+                    <div class="ml-auto">
+                      <a href="/admin/user/create">
+                        <button
+                          class="inline-flex items-center rounded-lg border bg-orange-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-orange-700 dark:bg-orange-600 dark:text-white dark:hover:bg-blue-950"
+                          type="button"
+                        >
+                          <i class="bx bx-user-plus"></i>
+                          Crear Usuario
+                        </button>
+                      </a>
+                      <button
+                        id="dropdownActionButton"
+                        data-dropdown-toggle="dropdownAction"
+                        class="inline-flex items-center rounded-lg border bg-orange-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-orange-600 dark:bg-orange-600 dark:text-white dark:hover:bg-blue-950"
+                        type="button"
+                      >
+                        <i class="bx bx-filter-alt"></i>
+                        Opción
+                      </button>
+                      <!-- Dropdown menu -->
+                      <div
+                        id="dropdownAction"
+                        class="z-10 hidden w-44 divide-y rounded-lg bg-white shadow dark:bg-white"
+                      >
+                        <ul
+                          class="py-1 text-sm text-black dark:text-black"
+                          aria-labelledby="dropdownActionButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-orange-600 dark:hover:text-white"
+                              >Descargar</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-orange-600 dark:hover:text-white"
+                              >Exportar</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-orange-600 dark:hover:text-white"
+                              >Importar</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-4 py-2 text-sm text-black hover:bg-white dark:text-black dark:hover:bg-orange-600 dark:hover:text-white"
+                            >Eliminar usuario</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="overflow-x-auto">
+                <NEXTable />
+                <div class="flex h-full items-center justify-center">
+                  <NEXBillingPagination />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

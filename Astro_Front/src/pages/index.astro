@@ -1,0 +1,21 @@
+---
+import BaseLoginLayout from '@layouts/BaseLoginLayout.astro'
+import LoginForm from '@components/login/NEXForm.astro'
+import LoginFormDate from '@components/login/NEXFormDate.astro'
+---
+
+<BaseLoginLayout>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <div class="loader"></div>
+        <LoginForm />
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <LoginFormDate />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLoginLayout>

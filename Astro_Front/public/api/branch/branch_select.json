@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Presupuesto",
+    "img": "../images/cliente/Logo.png",
+    "branch": "Sucursal Equipetrol",
+    "latitude": -17.773509,
+    "longitude": -63.195625,
+    "description": "dato",
+    "address": "av San Martín",
+    "active": false,
+    "phone": "+591 3 3333333"
+  },
+  {
+    "name": "Presupuesto",
+    "img": "../images/cliente/Logo.png",
+    "branch": "Sucursal Equipetrol",
+    "latitude": -17.773509,
+    "longitude": -63.195625,
+    "description": "dato",
+    "address": "av San Martín",
+    "active": true,
+    "phone": "+591 3 3333333"
+  },
+  {
+    "name": "Presupuesto",
+    "img": "../images/cliente/Logo.png",
+    "branch": "Sucursal Equipetrol",
+    "latitude": -17.773509,
+    "longitude": -63.195625,
+    "description": "dato",
+    "address": "av San Martín",
+    "active": true,
+    "phone": "+591 3 3333333"
+  }
+]
