@@ -1,5 +1,7 @@
 package com.example.proyectosw2.Services;
 
+import com.example.proyectosw2.Entity.CategiriaEntity;
+import com.example.proyectosw2.Entity.CuentaEntity;
 import com.example.proyectosw2.Entity.EgresoEntity;
 import com.example.proyectosw2.Entity.IngresoEntity;
 import com.example.proyectosw2.Repository.IngresoRepository;
@@ -25,9 +27,13 @@ public class IngresoServices {
         return ingresoRepository.findAll();
     }
 
+    public List<IngresoEntity> obtenerIngresosPorUsuario(Integer idUsuario) {
+        return ingresoRepository.findByCuentaID_UsuarioID(idUsuario);
+    }
+
     public String  createIngreso( int id,  String concepto,  double monto,   String fechaEgreso, int cuentaID,int categoriaID){
 
-        IngresoEntity ingreso = ingresoRepository.save(new IngresoEntity(id,concepto,monto,fechaEgreso,cuentaID,categoriaID)) ;
+        IngresoEntity ingreso = ingresoRepository.save(new IngresoEntity(id,concepto,monto,fechaEgreso, CuentaEntity.builder().id(cuentaID).build()  , CategiriaEntity.builder().id(categoriaID).build()) ) ;
         if (ingreso!= null){
             return "correcto";
         }return "incorrecto";

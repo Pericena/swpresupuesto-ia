@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -16,7 +17,9 @@ public class PresupuestoDetalle {
     @Id
     private Integer id;
     private Double monto;
-    private Integer idCategoria;
-    private Integer idPresupuesto;
+    @DBRef
+    private CategiriaEntity idCategoria;
+    @DBRef
+    private PresupuestoEntity idPresupuesto;
 
 }

@@ -15,6 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class PresupuestoEntity {
     @Id
     private Integer id;
+    private Integer idUsuario;
     private String nombre;
     private String descripcion;
     private Double montoTotal;

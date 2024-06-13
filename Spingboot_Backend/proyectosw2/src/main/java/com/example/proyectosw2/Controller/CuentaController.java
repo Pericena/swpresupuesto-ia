@@ -18,14 +18,14 @@ public class CuentaController {
 
     //para Obtener Solo el get
     @QueryMapping
-    public List<CuentaEntity> getCuentaById(@Argument String usuarioID){
+    public List<CuentaEntity> getCuentaById(@Argument Integer usuarioID){
         return cuentaServices.buscarPorUsuarioID(usuarioID);
     }
 //para hacer insertar eliminar y actualizar , crud
     @MutationMapping
     //poner argument a todos los parametros
-    public String  createCuenta(@Argument  Integer id,@Argument String nombre, @Argument String saldo,@Argument String usuarioID){
-        if (cuentaServices.crearCuenta(id,nombre,saldo,usuarioID) ){
+    public String  createCuenta(CuentaEntity cuenta){
+        if (cuentaServices.crearCuenta(cuenta) ){
         return "exito al crear cuenta";
         }
 

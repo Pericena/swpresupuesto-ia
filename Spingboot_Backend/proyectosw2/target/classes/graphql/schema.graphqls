@@ -8,6 +8,7 @@ type Query {
 }
 
 type Mutation {
+    createUsuario(id:ID,nombre: String, email: String, password: String): String
     createCuenta(id: ID, nombre: String, saldo: String, usuarioID: String): String
     createEgreso(id: ID, concepto: String, monto: Float, fechaEgreso: String,cuentaID:ID ,categoriaID:ID): String
     createIngreso(id:ID,concepto:String ,monto:Float,fechaIngreso:String,cuentaID:ID,categoriaID:ID ): String

@@ -22,9 +22,10 @@ HELP.md
 /nbproject/private/
 /nbbuild/
 /dist/
+/target/
 /nbdist/
 /.nb-gradle/
-build/
+/build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 

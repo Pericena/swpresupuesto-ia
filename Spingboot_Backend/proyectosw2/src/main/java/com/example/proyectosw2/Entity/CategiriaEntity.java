@@ -6,14 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.yaml.snakeyaml.events.Event;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "Categoria")
+
 public class CategiriaEntity {
     @Id
-    private String id;
+    private Integer id;
     private String nombre;
 }

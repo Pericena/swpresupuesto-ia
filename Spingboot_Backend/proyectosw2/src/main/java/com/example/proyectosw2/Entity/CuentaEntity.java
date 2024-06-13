@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -15,5 +16,6 @@ public class CuentaEntity {
 private Integer id;
     private String nombre;
     private double saldo;
-    private String usuarioID;
+    @DBRef
+    private UsuarioEntity usuarioID;
 }

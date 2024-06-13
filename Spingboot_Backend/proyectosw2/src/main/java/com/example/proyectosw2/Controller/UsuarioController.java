@@ -1,6 +1,7 @@
 package com.example.proyectosw2.Controller;
 
 import com.example.proyectosw2.Entity.UsuarioEntity;
+
 import com.example.proyectosw2.Services.UsuarioServices;
 import com.example.proyectosw2.dto.AllDataResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,15 +31,18 @@ public class UsuarioController {
 
     @QueryMapping
     public AllDataResponse getAllData() {
-
-
     return usuarioServices.getAllData();
-
     }
-
-
-
-
+    @QueryMapping
+    public UsuarioEntity createUsuario(@Argument int id, @Argument String nombre,@Argument  String email,@Argument  String password) {
+        try {
+            UsuarioEntity nuevoUsuario = new UsuarioEntity(id, nombre, email, password);
+            return usuarioServices.createUsuario(nuevoUsuario);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
 
 
     public static class UsuarioLoginResponse {
@@ -65,6 +69,23 @@ public class UsuarioController {
 
         public void setToken(String token) {
             this.token = token;
+        }
+    }
+
+    public static class UsuarioCreateResponse {
+        private UsuarioEntity usuario;
+
+        public UsuarioCreateResponse(UsuarioEntity usuario) {
+            this.usuario = usuario;
+        }
+
+        // Getter and Setter for usuario
+        public UsuarioEntity getUsuario() {
+            return usuario;
+        }
+
+        public void setUsuario(UsuarioEntity usuario) {
+            this.usuario = usuario;
         }
     }
 }
