@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets'
+import map from '@images/caja/mapa.png'
+import avatar from '@images/caja/usuario.jpg'
+---
+
+<form class="space-y-6 p-1 py-1">
+  <div class="space-y-12 rounded-lg p-1 shadow">
+    <div class="border-b border-gray-900/10 pb-1">
+      <label for="last-name" class="mb-2 block text-xl font-medium text-white"
+        >Registrar Categoria</label
+      >
+      <h2 class="text-base font-semibold leading-7 text-white">Informacion Categorias</h2>
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="col-span-full">
+          <label for="first-name" class="block text-sm font-medium leading-6 text-white"
+            >Descripción</label
+          >
+          <div class="mt-2">
+            <input
+              style="background-color: #181B3A;"
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="first-name"
+              placeholder="Nombre de la categoria"
+              required=""
+              class="block w-full rounded-md border-0 p-2.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset
+                      focus:ring-orange-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-b border-gray-900/10 pb-2">
+    <h2 class="leading-2 text-base font-semibold text-white">Categorias</h2>
+    <p class="text-sm leading-6 text-white">
+      Esta información se mostrará públicamente, así que tenga cuidado con lo que comparte.
+    </p>
+  </div>
+  <div class="border-b border-white/10 pb-12">
+    </div>
+  </div>
+</form>
+<div class="mt-6 flex items-center justify-end gap-x-6">
+  <button
+    type="button"
+    class="rounded-lg px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-gray-200"
+    >Cancelar</button
+  >
+  <button
+    type="submit"
+    class="rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+  >
+    Guardar</button
+  >
+</div>
