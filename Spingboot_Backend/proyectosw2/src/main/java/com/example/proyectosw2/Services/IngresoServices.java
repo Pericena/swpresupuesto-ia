@@ -27,6 +27,10 @@ public class IngresoServices {
         return ingresoRepository.findAll();
     }
 
+    public List<IngresoEntity> obtenerIngresosPorUsuario(Integer idUsuario) {
+        return ingresoRepository.findByCuentaID_UsuarioID(idUsuario);
+    }
+
     public String  createIngreso( int id,  String concepto,  double monto,   String fechaEgreso, int cuentaID,int categoriaID){
 
         IngresoEntity ingreso = ingresoRepository.save(new IngresoEntity(id,concepto,monto,fechaEgreso, CuentaEntity.builder().id(cuentaID).build()  , CategiriaEntity.builder().id(categoriaID).build()) ) ;

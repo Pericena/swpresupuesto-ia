@@ -15,7 +15,7 @@ public class EgresoController {
     private EgresoServices egresoServices;
 
     @QueryMapping
-    public EgresoEntity egreso(@Argument String id) {
+    public EgresoEntity egreso(@Argument Integer id) {
         return egresoServices.getEgresoById(id);
     }
 

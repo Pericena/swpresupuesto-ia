@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CuentaRepository  extends MongoRepository<CuentaEntity,Integer> {
-    List<CuentaEntity> findByUsuarioID(String usuarioID);
+    List<CuentaEntity> findByUsuarioID(Integer usuarioID);
 
 }

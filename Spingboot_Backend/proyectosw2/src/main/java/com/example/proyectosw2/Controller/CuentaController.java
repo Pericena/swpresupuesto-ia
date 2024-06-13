@@ -24,8 +24,8 @@ public class CuentaController {
 //para hacer insertar eliminar y actualizar , crud
     @MutationMapping
     //poner argument a todos los parametros
-    public String  createCuenta(@Argument  Integer id,@Argument String nombre, @Argument String saldo,@Argument String usuarioID){
-        if (cuentaServices.crearCuenta(id,nombre,saldo,usuarioID) ){
+    public String  createCuenta(CuentaEntity cuenta){
+        if (cuentaServices.crearCuenta(cuenta) ){
         return "exito al crear cuenta";
         }
 

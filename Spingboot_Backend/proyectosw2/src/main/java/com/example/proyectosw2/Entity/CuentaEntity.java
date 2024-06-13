@@ -17,5 +17,5 @@ private Integer id;
     private String nombre;
     private double saldo;
     @DBRef
-    private String usuarioID;
+    private UsuarioEntity usuarioID;
 }

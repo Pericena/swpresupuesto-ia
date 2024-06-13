@@ -14,7 +14,7 @@ public class EgresoServices {
     @Autowired
     private EgresoRepository egresoRepository;
 
-    public EgresoEntity getEgresoById(String id) {
+    public EgresoEntity getEgresoById(Integer id) {
         return egresoRepository.findById(id).orElse(null);
     }
 
@@ -23,6 +23,9 @@ public class EgresoServices {
     }
     public List<EgresoEntity> getAllEgresos() {
         return egresoRepository.findAll();
+    }
+    public List<EgresoEntity> obtenerEgresosPorUsuario(Integer idUsuario) {
+        return egresoRepository.findByCuentaID_UsuarioID(idUsuario);
     }
     public String  createEgreso( int id,  String concepto,  double monto,   String fechaEgreso, int cuentaID,int categoriaID){
 
