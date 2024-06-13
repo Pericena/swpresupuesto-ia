@@ -18,7 +18,7 @@ public class CuentaController {
 
     //para Obtener Solo el get
     @QueryMapping
-    public List<CuentaEntity> getCuentaById(@Argument String usuarioID){
+    public List<CuentaEntity> getCuentaById(@Argument Integer usuarioID){
         return cuentaServices.buscarPorUsuarioID(usuarioID);
     }
 //para hacer insertar eliminar y actualizar , crud
