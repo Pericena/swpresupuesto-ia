@@ -91,6 +91,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>proyectossw2-springboot</finalName>
 	</build>
 
 </project>
