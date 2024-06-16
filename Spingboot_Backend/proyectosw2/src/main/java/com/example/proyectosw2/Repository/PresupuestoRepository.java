@@ -10,7 +10,4 @@ import java.util.List;
 public interface PresupuestoRepository extends MongoRepository<PresupuestoEntity, String> {
     @Query("{ 'idUsuario' : ?0 }")
     List<PresupuestoEntity> findByUsuarioId(Integer idUsuario);
-
-
-
 }

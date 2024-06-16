@@ -2,6 +2,7 @@ package com.example.proyectosw2.Controller;
 import com.example.proyectosw2.Entity.PresupuestoEntity;
 import com.example.proyectosw2.Services.PresupuestoServices;
 import com.example.proyectosw2.dto.PresupuestoCompleto;
+import com.example.proyectosw2.dto.UsuarioPresupuestoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,4 +24,11 @@ public class PresupuestoController {
     public String crearPresupuesto(@RequestBody PresupuestoEntity presupuesto) {
         return presupuestoService.crearPresupuesto(presupuesto);
     }
+
+    @GetMapping("/presupuestosUsuarios")
+    public List<UsuarioPresupuestoResponse> getAllUsuariosConPresupuestos() {
+        return presupuestoService.getAllUsuariosConPresupuestos();
+    }
+
+
 }
