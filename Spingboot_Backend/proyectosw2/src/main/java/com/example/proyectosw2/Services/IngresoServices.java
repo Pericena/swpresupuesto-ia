@@ -39,4 +39,10 @@ public class IngresoServices {
         }return "incorrecto";
 
 }
+    public List<IngresoEntity> getAllCategorias() {
+        return ingresoRepository.findAll();
+    }
+
+
+
 }

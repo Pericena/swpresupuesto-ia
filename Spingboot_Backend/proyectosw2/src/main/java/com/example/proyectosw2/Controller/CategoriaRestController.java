@@ -7,6 +7,7 @@ import com.example.proyectosw2.Services.EgresoServices;
 import com.example.proyectosw2.Services.IngresoServices;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,15 +28,13 @@ public class CategoriaRestController {
             return "fallo al crear categoria";
 
     }
-    @PostMapping("/listaCategoria/EgresoIngreso")
-    public String ListCategoriaEgresoIngreso(@RequestBody CategiriaEntity categoria) {
-
-        if( categoriaServices.createCategoria(categoria)!= null){
-            return "categoria creada correctamente";
-        }
-        return "fallo al crear categoria";
-
+    @GetMapping("/listaCategoria")
+    public List<CategiriaEntity> listCategoria(@Argument String id) {
+        return categoriaServices.getAllCategorias();
     }
+
+
+
     @GetMapping("/usuario/{idUsuario}/detalle")
     public String obtenerDetalleUsuario(@PathVariable Integer idUsuario) {
 
