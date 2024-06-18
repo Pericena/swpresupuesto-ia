@@ -59,7 +59,7 @@
       const gastosInfo = document.getElementById("gastosInfo");
 
       // Consumir la API y mostrar la información en la página
-      fetch("http://127.0.0.1:5000/api/gastos")
+      fetch("http://152.67.56.238//api/gastos")
         .then((response) => response.json())
         .then((data) => {
           const { total_gastos, descripcion, categorias } = data;
@@ -124,7 +124,7 @@
         });
 
       // Obtener los datos de la API para el gráfico
-      fetch("/api/gastos")
+      fetch("http://152.67.56.238/api/gastos")
         .then((response) => response.json())
         .then((data) => {
           // Extraer los detalles de los gastos

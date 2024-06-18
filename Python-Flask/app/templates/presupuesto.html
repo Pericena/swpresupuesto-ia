@@ -81,7 +81,7 @@
       const presupuestoInfo = document.getElementById("presupuestoInfo");
 
       // Consumir la API y mostrar la información en la página
-      fetch("http://127.0.0.1:5000/api/presupuesto-total")
+      fetch("http://152.67.56.238/api/presupuesto-total")
         .then((response) => response.json())
         .then((data) => {
           const usuario = data.find((item) => item.usuario === "chile");
