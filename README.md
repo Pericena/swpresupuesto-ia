@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación para gestionar presupuestos que integra diversas tecnologías y servicios.
 
-![Vista de la Aplicación](https://via.placeholder.com/800x400) <!-- Reemplazar con la URL de tu imagen -->
+![Vista de la Aplicación](screencapture/screencapture1.png)
 
 ## Documentación
 
@@ -37,9 +37,6 @@ Este proyecto es una aplicación para gestionar presupuestos que integra diversa
 - **Docker**
 
 ### Nube
-- **Azure**
-- **Google Cloud**
-- **Amazon Web Services**
 - **Oracle**
 - **Railway**
 
@@ -57,7 +54,9 @@ Este proyecto es una aplicación para gestionar presupuestos que integra diversa
 ![Interfaz Principal](screencapture/screencapture2.png) <!-- Reemplazar con la URL de tu imagen -->
 *Interfaz principal de la aplicación*
 
-![Dashboard](screencapture/screencapture1.png) <!-- Reemplazar con la URL de tu imagen -->
+![Dashboard](screencapture/screencapture3.png)
+![Dashboard](screencapture/screencapture4.png)
+ <!-- Reemplazar con la URL de tu imagen -->
 *Vista del dashboard de inteligencia de negocio*
 
 ## Contribución
