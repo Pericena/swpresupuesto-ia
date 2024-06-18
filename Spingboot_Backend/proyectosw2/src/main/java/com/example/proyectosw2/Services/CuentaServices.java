@@ -1,5 +1,6 @@
 package com.example.proyectosw2.Services;
 
+import com.example.proyectosw2.Entity.CategiriaEntity;
 import com.example.proyectosw2.Entity.CuentaEntity;
 import com.example.proyectosw2.Entity.UsuarioEntity;
 import com.example.proyectosw2.Repository.CuentaRepository;
@@ -20,6 +21,11 @@ public class CuentaServices {
     public List<CuentaEntity> obtenerCuentasPorUsuario(Integer idUsuario) {
         return cuentaRepository.findByUsuarioID(idUsuario);
     }
+
+    public List<CuentaEntity> getAllCategorias() {
+        return cuentaRepository.findAll();
+    }
+
     //crear cuenta
     public boolean crearCuenta(CuentaEntity cuenta) {
         try {
