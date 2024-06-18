@@ -83,14 +83,18 @@ def obtener_descripcion_gpt3_turbo(categorias, total_gastos):
         return f'Error generating GPT-3 response: {str(e)}'
 
 
-@main_bp.route('/')
-def index():
-    return render_template('index.html')
+@main_bp.route('/gasto')
+def gasto():
+    return render_template('gasto.html')
+
+@main_bp.route('/presupuesto')
+def presupuesto():
+    return render_template('presupuesto.html')
 
 @main_bp.route('/distribucion')
 def distribucion():
     # Obtener datos de la API de distribución de gastos por categoría
-    api_url = 'http://152.67.56.238:5000/api/distribucion-gastos-por-categoria'
+    api_url = 'http://127.0.0.1:5000/api/distribucion-gastos-por-categoria'
     try:
         response = requests.get(api_url)
         response.raise_for_status()

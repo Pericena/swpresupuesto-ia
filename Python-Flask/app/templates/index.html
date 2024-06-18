@@ -1,59 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastos</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <canvas id="myChart" width="400" height="400"></canvas>
-    <script>
-        // Obtener los datos de la API
-        fetch('/api/gastos')
-            .then(response => response.json())
-            .then(data => {
-                // Extraer los detalles de los gastos
-                const categorias = Object.keys(data.categorias);
-                const montos = Object.values(data.categorias);
-                
-                // Crear el gráfico con Chart.js
-                const ctx = document.getElementById('myChart').getContext('2d');
-                const myChart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: categorias,
-                        datasets: [{
-                            label: 'Gastos por categoría',
-                            data: montos,
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(255, 206, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(255, 159, 64, 0.2)'
-                            ],
-                            borderColor: [
-                                'rgba(255, 99, 132, 1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
-                        }
-                    }
-                });
-            });
-    </script>
-</body>
-</html>
+chile
+Resumen:analiza los gastos de un usuario, los organiza por categoría y calcula el total de gastos.
+ Luego, utiliza inteligencia artificial para generar un informe detallado que 
+ayuda al usuario a entender mejor sus patrones de gasto y ofrece consejos para mejorar 
+la gestión financiera.
+http://127.0.0.1:5000/api/gastos
+
+Resumen: se encarga de obtener y mostrar la distribución de gastos por categoría
+http://127.0.0.1:5000/api/distribucion-gastos-por-categoria
+
+Resumen: se encarga de obtener los 5 principales categorías de gastos.
+http://127.0.0.1:5000/api/gastos-categoria-top5
+
+Resumen: se encarga de obtener el promedio de gastos por día, mes y año.
+http://127.0.0.1:5000/api/promedio-gastos
+
+oscar
+Resumen: se encarga de obtener el presupuesto total de cada usuario , teniendo cuenta
+cambio_mensual_promedio, crecimiento_presupuesto
+Crecimiento del presupuesto: Mide cómo ha cambiado el presupuesto en términos porcentuales entre dos momentos específicos en el tiempo.
+Duración del presupuesto: Determina la cantidad de días que abarca cada presupuesto.
+Promedio mensual del presupuesto: Estima cuánto dinero se gasta en promedio cada mes durante el periodo de cada presupuesto.
+Cambio mensual promedio del presupuesto: Calcula el porcentaje promedio de cambio en el presupuesto de un mes a otro.
+
+http://127.0.0.1:5000/api/presupuesto-total
+
+,duraciones,promedios_mensuales

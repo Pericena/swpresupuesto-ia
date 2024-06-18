@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #090D28; /* Fondo azul oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-3xl mx-auto">
+        <div class="card p-6 mb-4">
+            <h1 class="text-3xl font-semibold text-center mb-4 text-white">Información de Gastos</h1>
+            <div id="loading" class="flex justify-center items-center h-48">
+                <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+            </div>
+            <div class="text-white hidden" id="gastosInfo"></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-semibold text-center mb-4 text-white"> Distribución de Gastos por Categorías </h1>
+        <div class="rounded-lg shadow-lg p-6">
+            <canvas id="GastosChart" width="600" height="300"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Función para formatear números como moneda
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('es-BO', { style: 'currency', currency: 'BOB' }).format(amount);
+        }
+
+        // Mostrar spinner de carga
+        const loading = document.getElementById('loading');
+        const gastosInfo = document.getElementById('gastosInfo');
+
+        // Consumir la API y mostrar la información en la página
+        fetch('http://127.0.0.1:5000/api/gastos')
+            .then(response => response.json())
+            .then(data => {
+                const { total_gastos, descripcion, categorias } = data;
+                const cantidadCategorias = Object.keys(categorias).length;
+
+                // Encontrar las 3 categorías con mayores gastos
+                const sortedCategorias = Object.keys(categorias).sort((a, b) => categorias[b] - categorias[a]).slice(0, 3);
+
+                // Mostrar el total de gastos
+                gastosInfo.innerHTML += `
+                    <div class="bg-blue-800 shadow-lg rounded-lg p-4 mb-4">
+                        <h2 class="text-xl font-semibold mb-2 text-white">Total de Gastos</h2>
+                        <p class="text-lg text-white">${formatCurrency(total_gastos)}</p>
+                    </div>
+                `;
+
+                // Mostrar la cantidad de categorías
+                gastosInfo.innerHTML += `
+                    <div class="bg-blue-800 shadow-lg rounded-lg p-4 mb-4 text-white">
+                        <h2 class="text-xl font-semibold mb-2 text-white">Cantidad de Categorías</h2>
+                        <p class="text-lg text-white">${cantidadCategorias}</p>
+                    </div>
+                `;
+
+                // Mostrar los gastos significativos
+                gastosInfo.innerHTML += `
+                    <div class="bg-blue-800 text-white rounded-lg shadow-lg p-4 mb-4">
+                        <h2 class="text-xl font-semibold mb-2 text-white">Gastos Significativos</h2>
+                        <ul class="list-disc pl-4 text-white">
+                            ${sortedCategorias.map(categoria => `
+                                <li>${categoria}: ${formatCurrency(categorias[categoria])}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                `;
+
+                // Mostrar la descripción
+                gastosInfo.innerHTML += `
+                    <div class="text-white bg-blue-800 shadow-lg rounded-lg p-4 mb-4">
+                        <h2 class="text-xl font-semibold mb-2 text-white">Descripción</h2>
+                        <p>${descripcion}</p>
+                    </div>
+                `;
+
+                // Ocultar el spinner y mostrar los datos
+                loading.classList.add('hidden');
+                gastosInfo.classList.remove('hidden');
+            })
+            .catch(error => {
+                console.error('Error al obtener los datos:', error);
+                // Manejo de errores
+            });
+
+        // Obtener los datos de la API para el gráfico
+        fetch('/api/gastos')
+            .then(response => response.json())
+            .then(data => {
+                // Extraer los detalles de los gastos
+                const categorias = Object.keys(data.categorias);
+                const montos = Object.values(data.categorias);
+
+                // Crear el gráfico con Chart.js
+                const ctx = document.getElementById('GastosChart').getContext('2d');
+                const GastosChart = new Chart(ctx, {
+                    type: 'bar', // Gráfico de barras para mejor visualización
+                    data: {
+                        labels: categorias,
+                        datasets: [{
+                            label: 'Gastos por categoría (en bolivianos)',
+                            data: montos,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)',
+                                'rgba(255, 159, 64, 0.6)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function(value) {
+                                        return value.toLocaleString('es-BO', { style: 'currency', currency: 'BOB' }); // Formato de moneda boliviana
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Total</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #090D28; /* Fondo azul oscuro */
+        }
+        .card {
+            background-color: #1a202c; /* Fondo negro */
+            color: #ffffff; /* Texto blanco */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+        .loader {
+            border-top-color: transparent;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-3xl mx-auto">
+        <div class="p-6 mb-4">
+            <h1 class="text-3xl font-semibold text-center mb-4 text-white">Presupuesto Total</h1>
+            <div id="loading" class="flex justify-center items-center h-48">
+                <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+            </div>
+            <div class="text-white hidden" id="presupuestoInfo"></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-semibold text-center mb-4 text-white">Gráficos del Presupuesto Total</h1>
+        <div class="rounded-lg shadow-lg p-6 mb-4">
+            <canvas id="PromediosMensualesChart" width="600" height="300"></canvas>
+        </div>
+        <div class="rounded-lg shadow-lg p-6 mb-4">
+            <canvas id="DuracionesChart" width="600" height="300"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar spinner de carga
+        const loading = document.getElementById('loading');
+        const presupuestoInfo = document.getElementById('presupuestoInfo');
+
+        // Consumir la API y mostrar la información en la página
+        fetch('http://127.0.0.1:5000/api/presupuesto-total')
+            .then(response => response.json())
+            .then(data => {
+                const usuario = data.find(item => item.usuario === "chile");
+
+                if (usuario) {
+                    const { "presupuesto total": presupuestoTotal } = usuario;
+                    const { cambio_mensual_promedio, crecimiento_presupuesto, duraciones, promedios_mensuales } = presupuestoTotal;
+
+                    // Mostrar los datos de cambio mensual promedio y crecimiento del presupuesto
+                    presupuestoInfo.innerHTML += `
+                        <div class="bg-blue-800 shadow-lg rounded-lg p-4 mb-4">
+                            <h2 class="text-xl font-semibold mb-2 text-white">Cambio Mensual Promedio</h2>
+                            <p class="text-lg text-white">${cambio_mensual_promedio.toFixed(2)}%</p>
+                        </div>
+                        <div class="bg-blue-800 shadow-lg rounded-lg p-4 mb-4">
+                            <h2 class="text-xl font-semibold mb-2 text-white">Crecimiento del Presupuesto</h2>
+                            <p class="text-lg text-white">${crecimiento_presupuesto.toFixed(2)}%</p>
+                        </div>
+                    `;
+
+                    // Ocultar el spinner y mostrar los datos
+                    loading.classList.add('hidden');
+                    presupuestoInfo.classList.remove('hidden');
+
+                    // Crear el gráfico de promedios mensuales
+                    const ctxPromedios = document.getElementById('PromediosMensualesChart').getContext('2d');
+new Chart(ctxPromedios, {
+    type: 'line',
+    data: {
+        labels: Array.from({length: promedios_mensuales.length}, (_, i) => `Mes ${i + 1}`),
+        datasets: [{
+            label: 'Promedios Mensuales',
+            data: promedios_mensuales,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            lineTension: 0.4 // Suaviza la línea
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: 'rgb(54, 162, 235)',
+                    font: {
+                        size: 14
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Meses',
+                    color: '#666',
+                    font: {
+                        size: 16
+                    }
+                },
+                ticks: {
+                    color: '#666'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Promedios',
+                    color: '#666',
+                    font: {
+                        size: 16
+                    }
+                },
+                ticks: {
+                    color: '#666'
+                }
+            }
+        }
+    }
+});
+
+
+                    // Crear el gráfico de duraciones
+                    const ctxDuraciones = document.getElementById('DuracionesChart').getContext('2d');
+new Chart(ctxDuraciones, {
+    type: 'bar',
+    data: {
+        labels: Array.from({length: duraciones.length}, (_, i) => `Año ${i + 1}`),
+        datasets: [{
+            label: 'Duraciones',
+            data: duraciones,
+            backgroundColor: 'rgba(255, 159, 64, 0.6)', // Color de las barras
+            borderColor: 'rgba(255, 159, 64, 1)', // Borde de las barras
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: '#666',
+                    font: {
+                        size: 14
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Duraciones Anuales',
+                color: '#333',
+                font: {
+                    size: 18
+                }
+            },
+            tooltip: {
+                enabled: true,
+                callbacks: {
+                    label: function(tooltipItem) {
+                        return `Duración: ${tooltipItem.raw}`;
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Años',
+                    color: '#666',
+                    font: {
+                        size: 16
+                    }
+                },
+                ticks: {
+                    color: '#666'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Duraciones',
+                    color: '#ffff',
+                    font: {
+                        size: 16
+                    }
+                },
+                ticks: {
+                    color: '#ffff'
+                }
+            }
+        }
+    }
+});
+
+                } else {
+                    console.error('Usuario "chile" no encontrado en los datos.');
+                }
+            })
+            .catch(error => {
+                console.error('Error al obtener los datos:', error);
+                // Manejo de errores
+            });
+    </script>
+</body>
+</html>
