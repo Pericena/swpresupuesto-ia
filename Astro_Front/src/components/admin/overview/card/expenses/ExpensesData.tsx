@@ -32,7 +32,7 @@ const ExpensesChart: React.FC = () => {
   async function fetchDataAndDrawChart() {
     try {
       // Realiza la solicitud para obtener los datos de gastos
-      const response = await fetch('http://167.99.63.51:4000/', {
+      const response = await fetch('http://167.99.63.51:4000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

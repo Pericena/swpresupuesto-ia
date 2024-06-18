@@ -1,10 +1,9 @@
 ---
-import React from 'react'
 import NEXOverviewCardList from './card/NEXList.astro'
 import NEXOverviewCardExpenses from './card/expenses/NEXExpenses.astro'
 import NEXOverviewCardErning from './card/earning/NEXEarning.astro'
+import NEXPresupuesto from './card/presupuesto/NEXPresupuesto.astro'
 import NEXOverviewCardTransaction from './card/NEXTransaction.astro'
-import NEXOverviewCardInformation from './card/NEXInformation.astro'
 import PromedioGastosHistograma from './card/promediogastos/PromedioGastosHistograma.astro'
 ---
 
@@ -12,16 +11,13 @@ import PromedioGastosHistograma from './card/promediogastos/PromedioGastosHistog
   <NEXOverviewCardList />
   <div class="mb-3 grid grid-cols-1 gap-1 p-6 lg:grid-cols-2">
     <NEXOverviewCardExpenses />
-    <NEXOverviewCardErning />
+    <NEXPresupuesto />
   </div>
-
-  <div class="mb-3 grid grid-cols-1 gap-1 p-6 lg:grid-cols-2">
-    <NEXOverviewCardTransaction />
-    <PromedioGastosHistograma />
-  </div>
-
+  <NEXOverviewCardErning />
+  <br />
+  <br /><br />
   <div class="mb-3 grid grid-cols-1 gap-6 p-6 lg:grid-cols-2">
     <NEXOverviewCardTransaction />
-    <NEXOverviewCardInformation />
+    <PromedioGastosHistograma />
   </div>
 </main>

@@ -1,6 +1,6 @@
 ---
 import BaseLoginLayout from '@layouts/BaseLoginLayout.astro'
-import LoginForm from '@components/login/NEXForm.astro'
+import LoginForm from '@components/login/NEXForm.tsx'
 import LoginFormDate from '@components/login/NEXFormDate.astro'
 ---
 
@@ -9,7 +9,7 @@ import LoginFormDate from '@components/login/NEXFormDate.astro'
     <div class="forms-container">
       <div class="signin-signup">
         <div class="loader"></div>
-        <LoginForm />
+        <LoginForm client:load onLoginSuccess={() => {}} />
       </div>
       <div class="panels-container">
         <div class="panel left-panel">

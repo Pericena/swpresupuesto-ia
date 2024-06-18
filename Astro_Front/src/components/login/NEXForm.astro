@@ -1,10 +1,52 @@
-<!-- NEXForm.astro -->
 ---
-import { createEffect } from 'react';
+// Importar React y useEffect si es necesario
+import { useEffect } from 'react'
+
+export function setup() {
+  useEffect(() => {
+    const form = document.querySelector('.sign-in-form') as HTMLFormElement | null
+
+    if (form) {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault()
+
+        const formData = new FormData(form)
+        const email = formData.get('email') as string
+        const password = formData.get('password') as string
+
+        try {
+          const response = await fetch('http://167.99.63.51:27016/api/usuarios/Login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, password })
+          })
+
+          if (!response.ok) {
+            throw new Error('Error al iniciar sesión')
+          }
+
+          const data = await response.json()
+          const token = data.token as string // Asumiendo que el servidor devuelve un objeto con un campo 'token'
+
+          // Guardar el token en el almacenamiento local (localStorage)
+          localStorage.setItem('token', token)
+
+          // Redireccionar a la página de administración (por ejemplo)
+          window.location.href = '/admin' // Cambia esto según tu estructura de rutas
+        } catch (error) {
+          // console.error('Error al iniciar sesión:', error.message)
+          // Manejar el error (por ejemplo, mostrar un mensaje al usuario)
+        }
+      })
+    }
+  }, []) // Asegúrate de manejar adecuadamente las dependencias si es necesario
+}
 ---
 
-<form method="Post" class="sign-in-form" action="/admin" use:createEffect>
-  <h2 class="title">Iniciar Sesión</h2>
+<form method="GET" class="sign-in-form" action="/admin">
+  <h2 class="title">Iniciar Seccion</h2>
   <div class="input-field">
     <i class="fas fa-user"></i>
     <input
@@ -30,18 +72,3 @@ import { createEffect } from 'react';
   </div>
   <button type="submit" value="Ingresar" class="btn2 solid">Ingresar</button>
 </form>
-
-<@script>
-  createEffect(() => {
-    document.querySelector('.sign-in-form').addEventListener('submit', async (event) => {
-      event.preventDefault();
-      
-      const formData = new FormData(event.target);
-      const email = formData.get('email');
-      const password = formData.get('password');
-
-      // Llama a la función de prop onFormSubmit con los datos del formulario
-      onFormSubmit({ email, password });
-    });
-  });
-</@script>

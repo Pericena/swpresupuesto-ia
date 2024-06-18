@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top 5 Categorías de Gastos</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Top 5 Categorías de Gastos</h1>
     <canvas id="myChart"></canvas>
     <p>{{ descripcion }}</p>
 
     <script>
-        var top_5_categorias = {{ data | tojson }};
+      var top_5_categorias = {{ data | tojson }};
 
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'doughnut',  // Tipo de gráfico circular
-            data: {
-                labels: top_5_categorias.map(item => item[0]),  // Nombres de las categorías
-                datasets: [{
-                    label: 'Monto de Gastos',
-                    data: top_5_categorias.map(item => item[1]),  // Monto de gastos
-                    backgroundColor: [  // Colores de fondo para las secciones del gráfico
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    borderColor: [  // Colores de borde para las secciones del gráfico
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,  // Mantener el aspect ratio para que el gráfico sea redondo
-                cutout: '80%',  // Tamaño del agujero en el centro del gráfico
-                plugins: {
-                    legend: {
-                        position: 'right'  // Posición de la leyenda
-                    }
-                }
-            }
-        });
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'doughnut',  // Tipo de gráfico circular
+          data: {
+              labels: top_5_categorias.map(item => item[0]),  // Nombres de las categorías
+              datasets: [{
+                  label: 'Monto de Gastos',
+                  data: top_5_categorias.map(item => item[1]),  // Monto de gastos
+                  backgroundColor: [  // Colores de fondo para las secciones del gráfico
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)'
+                  ],
+                  borderColor: [  // Colores de borde para las secciones del gráfico
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              responsive: true,
+              maintainAspectRatio: false,  // Mantener el aspect ratio para que el gráfico sea redondo
+              cutout: '80%',  // Tamaño del agujero en el centro del gráfico
+              plugins: {
+                  legend: {
+                      position: 'right'  // Posición de la leyenda
+                  }
+              }
+          }
+      });
     </script>
-</body>
+  </body>
 </html>

@@ -1,35 +1,162 @@
 [
   {
-    "name": "Presupuesto",
-    "img": "../images/cliente/Logo.png",
-    "branch": "Sucursal Equipetrol",
-    "latitude": -17.773509,
-    "longitude": -63.195625,
-    "description": "dato",
-    "address": "av San Martín",
-    "active": false,
-    "phone": "+591 3 3333333"
+    "_id": 1,
+    "branch": "Salario"
   },
   {
-    "name": "Presupuesto",
-    "img": "../images/cliente/Logo.png",
-    "branch": "Sucursal Equipetrol",
-    "latitude": -17.773509,
-    "longitude": -63.195625,
-    "description": "dato",
-    "address": "av San Martín",
-    "active": true,
-    "phone": "+591 3 3333333"
+    "_id": 2,
+    "branch": "Bonificaciones"
   },
   {
-    "name": "Presupuesto",
-    "img": "../images/cliente/Logo.png",
-    "branch": "Sucursal Equipetrol",
-    "latitude": -17.773509,
-    "longitude": -63.195625,
-    "description": "dato",
-    "address": "av San Martín",
-    "active": true,
-    "phone": "+591 3 3333333"
+    "_id": 3,
+    "branch": "Comisiones"
+  },
+  {
+    "_id": 4,
+    "branch": "Ingresos por freelance"
+  },
+  {
+    "_id": 5,
+    "branch": "Rentas de propiedades"
+  },
+  {
+    "_id": 6,
+    "branch": "Dividendos"
+  },
+  {
+    "_id": 7,
+    "branch": " Intereses bancarios"
+  },
+  {
+    "_id": 8,
+    "branch": "Ingresos por inversiones"
+  },
+  {
+    "_id": 9,
+    "branch": "Reembolsos"
+  },
+  {
+    "_id": 10,
+    "branch": "Venta de bienes"
+  },
+  {
+    "_id": 11,
+    "branch": "Herencias"
+  },
+  {
+    "_id": 12,
+    "branch": "Donaciones recibidas"
+  },
+  {
+    "_id": 13,
+    "branch": "Premios y loterías"
+  },
+  {
+    "_id": 14,
+    "branch": "Reembolsos de impuestos"
+  },
+  {
+    "_id": 15,
+    "branch": "Ingresos por consultoría"
+  },
+  {
+    "_id": 16,
+    "branch": "Ingresos por clases particulares"
+  },
+  {
+    "_id": 17,
+    "branch": "Ingresos por negocios secundarios"
+  },
+  {
+    "_id": 18,
+    "branch": "Devoluciones de compras"
+  },
+  {
+    "_id": 19,
+    "branch": "Ingresos por regalías"
+  },
+  {
+    "_id": 20,
+    "branch": "Ahorros recuperados"
+  },
+  {
+    "_id": 21,
+    "branch": "Reparaciones del hogar"
+  },
+  {
+    "_id": 22,
+    "branch": "Muebles y electrodomésticos"
+  },
+  {
+    "_id": 23,
+    "branch": "Mascotas"
+  },
+  {
+    "_id": 24,
+    "branch": "Cuidado personal"
+  },
+  {
+    "_id": 25,
+    "branch": "Productos de limpieza"
+  },
+  {
+    "_id": 26,
+    "branch": "Cuotas bancarias"
+  },
+  {
+    "_id": 27,
+    "branch": "Imprevistos"
+  },
+  {
+    "_id": 28,
+    "branch": "Herramientas y equipos"
+  },
+  {
+    "_id": 29,
+    "branch": "Publicidad y marketing"
+  },
+  {
+    "_id": 30,
+    "branch": "Material de oficina"
+  },
+  {
+    "_id": 31,
+    "branch": "Préstamos"
+  },
+  {
+    "_id": 32,
+    "branch": "Honorarios profesionales"
+  },
+  {
+    "_id": 33,
+    "branch": "Multas y sanciones"
+  },
+  {
+    "_id": 34,
+    "branch": "Eventos sociales"
+  },
+  {
+    "_id": 35,
+    "branch": "Membresías"
+  },
+  {
+    "_id": 36,
+    "branch": "Ahorros"
+  },
+  {
+    "_id": 37,
+    "branch": "Inversiones"
+  },
+  {
+    "_id": 38,
+    "branch": "Mantenimiento del hogar"
+  },
+  {
+    "_id": 39,
+    "branch": "Guardería"
+  },
+  {
+    "_id": 40,
+    "branch": "Gastos legales"
   }
 ]

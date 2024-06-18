@@ -5,6 +5,8 @@ import aws from 'astro-sst';
 
 // https://astro.build/config
 export default defineConfig({
+  // site: 'https://pericena.github.io/',
+  // base: 'presupuesto.io',
   integrations: [tailwind(), react()],
   output: "server",
   adapter: aws({

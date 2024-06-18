@@ -1,0 +1,17 @@
+import { defineConfig } from "cypress";
+
+export default defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      // Implementa aquí los listeners de eventos de node
+    },
+    baseUrl: 'http://localhost:4321/', // Asegúrate de que esto coincida con la URL de tu aplicación Astro
+  },
+
+  component: {
+    devServer: {
+      framework: "react",
+      bundler: "vite",
+    },
+  },
+});

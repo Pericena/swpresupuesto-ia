@@ -1,21 +1,203 @@
----
-import BaseLoginLayout from '@layouts/BaseLoginLayout.astro'
-import LoginForm from '@components/login/NEXForm.astro'
-import LoginFormDate from '@components/login/NEXFormDate.astro'
----
-
-<BaseLoginLayout>
-  <div class="container">
-    <div class="forms-container">
-      <div class="signin-signup">
-        <div class="loader"></div>
-        <LoginForm />
-      </div>
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <LoginFormDate />
-        </div>
-      </div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfica de Presupuesto y Recordatorios</title>
+    <!-- Importamos Chart.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div style="width: 80%; margin: auto;">
+      <canvas id="graficaPresupuesto"></canvas>
     </div>
-  </div>
-</BaseLoginLayout>
+
+    <div style="width: 80%; margin: auto; margin-top: 20px;">
+      <h2>Recordatorios Próximos</h2>
+      <div id="recordatorios">Cargando...</div>
+    </div>
+
+    <script is:inline>
+      // Datos en formato JSON
+      const datosJSON = `{
+      "usuario": {
+        "_id": 2,
+        "nombre": "Luishiño",
+        "email": "user2@gmail.com",
+        "password": 12345678
+      },
+      "presupuestos": [
+        {
+          "_id": 1,
+          "nombre": "Presupuesto familiar",
+          "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+          "montoTotal": 17288,
+          "fechaInicio": "2024-09-01",
+          "fechaFin": "2024-09-01",
+          "idUsuario": 2
+        },
+        {
+          "_id": 2,
+          "nombre": "Presupuesto de Viaje",
+          "descripcion": "Presupuesto para unas vacaciones familiares.",
+          "montoTotal": 5000,
+          "fechaInicio": "2022-06-01",
+          "fechaFin": "2024-07-01",
+          "idUsuario": 2
+        },
+        {
+          "_id": 3,
+          "nombre": "Presupuesto de Educación",
+          "descripcion": "Gastos educativos para el próximo semestre.",
+          "montoTotal": 10000,
+          "fechaInicio": "2024-01-01",
+          "fechaFin": "2024-06-30",
+          "idUsuario": 2
+        },
+        {
+          "_id": 4,
+          "nombre": "Presupuesto de Mejoras del Hogar",
+          "descripcion": "Inversiones para mejorar la casa.",
+          "montoTotal": 8000,
+          "fechaInicio": "2024-12-01",
+          "fechaFin": "2024-12-01",
+          "idUsuario": 2
+        }
+      ],
+      "recordatorios": [
+        {
+          "id": 1,
+          "concepto": "Fecha límite para pago de hipoteca",
+          "fecha": "2024-07-15"
+        },
+        {
+          "id": 2,
+          "concepto": "Fecha de vencimiento de tarjetas de crédito",
+          "fecha": "2024-05-01"
+        },
+        {
+          "id": 3,
+          "concepto": "Cumpleaños de un familiar",
+          "fecha": "2024-08-10"
+        },
+        {
+          "id": 4,
+          "concepto": "Renovación de seguro de auto",
+          "fecha": "2024-06-30"
+        },
+        {
+          "id": 5,
+          "concepto": "Pago de impuestos",
+          "fecha": "2024-09-30"
+        },
+        {
+          "id": 6,
+          "concepto": "Reunión anual de la asociación de vecinos",
+          "fecha": "2024-07-20"
+        },
+        {
+          "id": 7,
+          "concepto": "Aniversario de bodas",
+          "fecha": "2024-11-15"
+        },
+        {
+          "id": 8,
+          "concepto": "Inscripción para curso de idiomas",
+          "fecha": "2024-10-01"
+        },
+        {
+          "id": 9,
+          "concepto": "Pago de matrícula universitaria",
+          "fecha": "2024-01-10"
+        },
+        {
+          "id": 10,
+          "concepto": "Renovación de membresía de gimnasio",
+          "fecha": "2024-08-01"
+        }
+      ],
+      "datosGrafica": {
+        "labels": ["Inicio Presupuesto", "Fin Presupuesto", "Recordatorios"],
+        "data": [17288, 0, 0]
+      }
+    }`
+
+      // Obtener el contexto del canvas
+      const ctx = document.getElementById('graficaPresupuesto').getContext('2d')
+
+      // Convertir el JSON a objeto JavaScript
+      const datos = JSON.parse(datosJSON)
+
+      // Datos para la gráfica
+      const data = {
+        labels: datos.datosGrafica.labels,
+        datasets: [
+          {
+            label: 'Valores',
+            data: datos.datosGrafica.data,
+            fill: true,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            tension: 0.4 // Curva más suave
+          }
+        ]
+      }
+
+      // Opciones de la gráfica
+      const options = {
+        scales: {
+          x: {
+            display: true,
+            title: {
+              display: true,
+              text: 'Etiquetas'
+            }
+          },
+          y: {
+            display: true,
+            title: {
+              display: true,
+              text: 'Valores'
+            }
+          }
+        }
+      }
+
+      // Crear la gráfica de línea
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+
+      // Función para encontrar los recordatorios próximos
+      function encontrarRecordatoriosProximos(recordatorios) {
+        const hoy = new Date()
+        const recordatoriosProximos = recordatorios
+          .filter((recordatorio) => new Date(recordatorio.fecha) >= hoy)
+          .sort((a, b) => new Date(a.fecha) - new Date(b.fecha))
+
+        return recordatoriosProximos
+      }
+
+      // Obtener el elemento donde mostraremos los recordatorios
+      const divRecordatorios = document.getElementById('recordatorios')
+
+      // Encontrar y mostrar los recordatorios próximos
+      const recordatoriosProximos = encontrarRecordatoriosProximos(datos.recordatorios)
+      if (recordatoriosProximos.length > 0) {
+        divRecordatorios.innerHTML = recordatoriosProximos
+          .map(
+            (recordatorio) => `
+          <div style="margin-bottom: 10px;">
+            <p><strong>Concepto:</strong> ${recordatorio.concepto}</p>
+            <p><strong>Fecha:</strong> ${recordatorio.fecha}</p>
+          </div>
+        `
+          )
+          .join('')
+      } else {
+        divRecordatorios.innerHTML = 'No hay recordatorios próximos.'
+      }
+    </script>
+  </body>
+</html>

@@ -45,9 +45,9 @@ const NEXTransaction = () => {
 
   if (loading) return <p className="text-white">Cargando...</p>;
 
-  // Encuentra el promedio más alto
+  // Encontrar el promedio más alto
   let maxAverage = 0;
-  if (data) {
+  if (data && data.promedio_gastos_por_anio) {
     data.promedio_gastos_por_anio.forEach(item => {
       if (item.promedio > maxAverage) {
         maxAverage = item.promedio;
@@ -56,7 +56,7 @@ const NEXTransaction = () => {
   }
 
   return (
-    <>
+    <div>
       <table className="w-full border-collapse items-center bg-transparent">
         <thead>
           <tr className="text-white">
@@ -69,23 +69,25 @@ const NEXTransaction = () => {
           </tr>
         </thead>
         <tbody>
-          {data && data.promedio_gastos_por_anio.map((item) => (
-            <tr key={item.anio} className="text-white">
-              <td className="border-r-0 border-t-0 p-2 px-2 align-middle text-sm">
-                {item.anio} Año
-              </td>
-              <td className={`border-r-0 border-t-0 p-2 px-4 align-middle text-sm ${item.promedio === maxAverage ? 'text-red-500' : ''}`}>
-                {Math.round(item.promedio)} 
-              </td>
-                      <td class="px-2 py-1 flex items-center">
-          <span class="block h-4 w-4 rounded-full bg-green-500 mr-2"></span>
-          <span class="text-sm font-medium text-[#F5F5F5]"></span>
-        </td>
+          {data && data.promedio_gastos_por_anio ? (
+            data.promedio_gastos_por_anio.map((item) => (
+              <tr key={item.anio} className="text-white">
+                <td className="border-r-0 border-t-0 p-2 px-2 align-middle text-sm">
+                  {item.anio} Año
+                </td>
+                <td className={`border-r-0 border-t-0 p-2 px-4 align-middle text-sm ${item.promedio === maxAverage ? 'text-red-500' : ''}`}>
+                  {Math.round(item.promedio)} 
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td className="text-white text-center p-4">No hay datos disponibles</td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 

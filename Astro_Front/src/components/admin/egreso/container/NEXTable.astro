@@ -1,16 +1,17 @@
 ---
-import NexShowProduct from './NexShowProduct.astro'
-import Product from '@interfaces/Product.ts'
-let Products: Product[] = []
+// Componente o archivo donde se carga y muestra la tabla de Egresos
+import Egreso from '@interfaces/Egreso.ts'
+
+let egresos: Egreso[] = []
 let errorLoadingData = false
 let error: string | null = null
 
 try {
-  const response = await fetch('http://localhost:4321/api/admin/product.json')
+  const response = await fetch('')
   if (response.ok) {
-    const data: Product[] | null = await response.json()
+    const data: Egreso[] | null = await response.json()
     if (data) {
-      Products = data
+      egresos = data
     } else {
       throw new Error('La respuesta está vacía')
     }
@@ -31,9 +32,10 @@ try {
   errorLoadingData = true
 }
 
-export { Products, errorLoadingData, error }
+export { egresos, errorLoadingData, error }
 ---
 
+<!-- HTML/JSX donde renderizas la tabla de Egresos -->
 <table class="w-full divide-y divide-gray-200 text-sm text-white">
   <thead
     style="background: linear-gradient(135deg,#e53f52, #f05f22, #e53f52 );"
@@ -41,27 +43,29 @@ export { Products, errorLoadingData, error }
   >
     <tr>
       <td class="px-4 py-1">
-        <a href="#" type="button" class="font-medium text-white hover:underline">Seleccionar </a>
+        <a href="#" type="button" class="font-medium text-white hover:underline">Seleccionar</a>
         <label for="checkbox-all-search" class="sr-only">Seleccionar todo</label>
       </td>
-      <th scope="col" class="px-6 py-3"> Nombre </th>
-      <th scope="col" class="px-6 py-3"> Descripción larga</th>
-      <th scope="col" class="px-6 py-3"> Descripción corta</th>
-      <th scope="col" class="px-6 py-3"> Stock </th>
-      <th scope="col" class="px-6 py-3"> Estado </th>
-      <th scope="col" class="px-6 py-3"> </th>
+      <th scope="col" class="px-6 py-3">Concepto</th>
+      <th scope="col" class="px-6 py-3">Monto</th>
+      <th scope="col" class="px-6 py-3">Fecha de Egreso</th>
+      <th scope="col" class="px-6 py-3">Cuenta ID</th>
+      <th scope="col" class="px-6 py-3">Categoría ID</th>
     </tr>
   </thead>
   <tbody class="text-white" style="background-color: #181B3A;">
     {
-      Products.map((product, index) => (
-        <tr class="border-b from-blue-950 from-blue-950 to-blue-900 to-blue-950 hover:bg-gradient-to-r dark:border-white dark:text-black dark:hover:bg-gradient-to-r">
+      egresos.map((egreso, index) => (
+        <tr
+          key={egreso._id}
+          class="border-b from-blue-950 to-blue-900 hover:bg-gradient-to-r dark:border-white dark:text-black dark:hover:bg-gradient-to-r"
+        >
           <td class="px-9">
             <div class="flex items-center">
               <input
                 id={`checkbox-table-search-${index}`}
                 type="checkbox"
-                class="h-4 w-4 rounded border-orange-600 bg-white text-orange-600 dark:dark:border-orange-600"
+                class="h-4 w-4 rounded border-orange-600 bg-white text-orange-600 dark:border-orange-600"
               />
               <label
                 for={`checkbox-table-search-${index}`}
@@ -71,59 +75,13 @@ export { Products, errorLoadingData, error }
               </label>
             </div>
           </td>
-          <td class="p-4">
-            <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
-              <li class="pb-1 sm:pb-1">
-                <div class="flex items-center space-x-4 text-center rtl:space-x-reverse">
-                  <div class="flex-shrink-0">
-                    <img class="h-14 w-14 rounded" src={product.img} alt="avatar" />
-                  </div>
-                  <div class="flex-3 min-w-0">
-                    <p class="truncate text-center text-sm font-medium text-white dark:text-white">
-                      {product.name}:{product.short_description}
-                    </p>
-                    <p class="truncate text-center text-sm text-white dark:text-gray-400">
-                      Precio : {product.price} Bs
-                    </p>
-                    <p class="truncate text-center text-sm text-white dark:text-gray-400">
-                      Descuento: {product.discount} %
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </td>
-          <td class="white px-6 py-4 text-center text-white dark:text-white">
-            {' '}
-            {product.long_description}
-          </td>
-          <td class="white px-6 py-4 text-center text-white dark:text-white">
-            {' '}
-            {product.short_description}{' '}
-          </td>
-          <td class="white px-6 py-4 text-center text-white dark:text-white"> {product.stock} </td>
-          <td class="px-6 py-4">
-            <a
-              href="#"
-              class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-center text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300"
-            >
-              <span class="me-1 h-2 w-2 rounded-full bg-green-500" />
-              {product.status}
-            </a>
-          </td>
-          <td class="items-center px-6 py-4 text-center text-white dark:text-white">
-            <button
-              data-modal-target="showproduct_modal"
-              data-modal-toggle="showproduct_modal"
-              class="block text-xl text-white"
-              type="button"
-            >
-              <i class="bx bx-link-external" />
-            </button>
-          </td>
+          <td class="px-6 py-4 text-white dark:text-white">{egreso.concepto}</td>
+          <td class="px-6 py-4 text-white dark:text-white">{egreso.monto}</td>
+          <td class="px-6 py-4 text-white dark:text-white">{egreso.fechaEgreso}</td>
+          <td class="px-6 py-4 text-white dark:text-white">{egreso.cuentaID}</td>
+          <td class="px-6 py-4 text-white dark:text-white">{egreso.categoriaID}</td>
         </tr>
       ))
     }
   </tbody>
 </table>
-<NexShowProduct />

@@ -1,23 +1,23 @@
 ---
 const data = [
+  // {
+  //   title: 'Total Balance',
+  //   total: '$4,156.45',
+  //   iconClass: 'bx bxs-credit-card'
+  // },
+  // {
+  //   title: 'Total Presupuesto',
+  //   total: 'Bs 0.0',
+  //   iconClass: 'bx bx-dollar'
+  // },
   {
-    title: 'Total Balance',
-    total: '$4,156.45',
-    iconClass: 'bx bxs-credit-card'
-  },
-  {
-    title: 'Total Income',
-    total: '$4,156.45',
+    title: 'Total Egreso',
+    total: 'Bs 0.0',
     iconClass: 'bx bx-dollar'
   },
   {
-    title: 'Total Expenses',
-    total: '$4,156.45',
-    iconClass: 'bx bx-dollar'
-  },
-  {
-    title: 'Total Savings',
-    total: '$4,156.45',
+    title: 'Total Ingreso',
+    total: 'Bs 0.0',
     iconClass: 'bx bx-line-chart-down'
   }
 ]
@@ -25,6 +25,12 @@ const data = [
 
 <div class="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-4">
   <!-- For each item in data -->
+
+  <div id="loading" class="flex h-48 items-center justify-center">
+    <div class="loader h-16 w-16 rounded-full border-8 border-t-8 border-gray-200 ease-linear">
+    </div>
+  </div>
+  <div class="text-white" id="gastosInfo"></div>
   {
     data.map((item) => (
       <div
@@ -34,44 +40,13 @@ const data = [
         <div class="mb-6 flex items-center justify-between">
           <div class="flex items-center">
             <div class="cursor-pointer rounded-full bg-white text-black transition duration-300 hover:bg-gray-200 hover:shadow-md">
-              <div class="text-xl inline-flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 text-center text-black shadow-lg">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 text-center text-xl text-black shadow-lg">
                 <i class={item.iconClass} />
               </div>
             </div>
             <div class="ml-2 rounded bg-emerald-500/10 p-1 text-[12px] font-semibold leading-none text-emerald-500">
               +30%
             </div>
-          </div>
-          <div class="dropdown relative">
-            <button type="button" class="dropdown-toggle text-white hover:text-black">
-              <i class="bx bx-dots-vertical-rounded" />
-            </button>
-            <ul class="dropdown-menu absolute z-30 hidden w-full max-w-[140px] rounded-md border border-gray-100 bg-white py-1.5 shadow-md shadow-black/5">
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center px-4 py-1.5 text-[13px] text-gray-600 hover:bg-gray-50 hover:text-blue-500"
-                >
-                  Profile
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center px-4 py-1.5 text-[13px] text-gray-600 hover:bg-gray-50 hover:text-blue-500"
-                >
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center px-4 py-1.5 text-[13px] text-gray-600 hover:bg-gray-50 hover:text-blue-500"
-                >
-                  Logout
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <div class="text-sm font-medium text-white">{item.title}</div>
@@ -83,3 +58,59 @@ const data = [
     ))
   }
 </div>
+
+<script is:inline>
+  // Función para formatear números como moneda
+  function formatCurrency(amount) {
+    return new Intl.NumberFormat('es-BO', { style: 'currency', currency: 'BOB' }).format(amount)
+  }
+
+  // Consumir la API y mostrar la información en la página
+  fetch('http://152.67.56.238:5000/api/gastos')
+    .then((response) => response.json())
+    .then((data) => {
+      const { total_gastos, descripcion, categorias } = data
+      const cantidadCategorias = Object.keys(categorias).length
+
+      // Encontrar las 3 categorías con mayores gastos
+      const sortedCategorias = Object.keys(categorias)
+        .sort((a, b) => categorias[b] - categorias[a])
+        .slice(0, 3)
+      const loading = document.getElementById('loading')
+      const gastosCards = document.getElementById('gastosInfo')
+
+      // Mostrar el total de gastos
+      gastosCards.innerHTML += `
+        
+            <div
+        class="w-full rounded-md p-6 shadow-md transition duration-300 hover:shadow-lg"
+        style="background: linear-gradient(135deg, #f05f22, #e53f52, #e53f52);"
+      >
+        <div class="mb-6 flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="cursor-pointer rounded-full bg-white text-black transition duration-300 hover:bg-gray-200 hover:shadow-md">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 text-center text-xl text-black shadow-lg">
+                <a target="_blank" href="http://152.67.56.238:5000/gasto">
+      <i class="Total Balance" />
+        </a>
+              </div>
+            </div>
+            <div class="ml-2 rounded bg-emerald-500/10 p-1 text-[12px] font-semibold leading-none text-emerald-500">
+              Cantidad de Categorías:${cantidadCategorias}
+            </div>
+          </div>
+        </div>
+        <div class="text-sm font-medium text-white">Total Gasto</div>
+        <a target="_blank" href="http://152.67.56.238:5000/gasto" class="text-sm font-medium text-white hover:text-black">
+        ${formatCurrency(total_gastos)} <i class="bx bx-link-external"></i>
+        </a>
+        <div class="text-2xl font-semibold text-white">${formatCurrency(total_gastos)}</div>
+      </div>
+      `
+      loading.classList.add('hidden')
+      gastosInfo.classList.remove('hidden')
+    })
+    .catch((error) => {
+      console.error('Error al obtener los datos:', error)
+    })
+</script>

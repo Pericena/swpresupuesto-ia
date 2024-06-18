@@ -1,0 +1,2702 @@
+[
+  {
+    "_id": 1,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 17288,
+    "fechaInicio": "01-09-2022",
+    "fechaFin": "01-09-2023",
+    "idUsuario": 16
+  },
+  {
+    "_id": 2,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 40512,
+    "fechaInicio": "05-04-2018",
+    "fechaFin": "05-04-2019",
+    "idUsuario": 2
+  },
+  {
+    "_id": 3,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 74690,
+    "fechaInicio": "01-09-2018",
+    "fechaFin": "01-09-2019",
+    "idUsuario": 2
+  },
+  {
+    "_id": 4,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 80701,
+    "fechaInicio": "14-05-2018",
+    "fechaFin": "14-05-2019",
+    "idUsuario": 16
+  },
+  {
+    "_id": 5,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 61564,
+    "fechaInicio": "04-12-2018",
+    "fechaFin": "04-12-2019",
+    "idUsuario": 6
+  },
+  {
+    "_id": 6,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 14349,
+    "fechaInicio": "07-06-2022",
+    "fechaFin": "07-06-2023",
+    "idUsuario": 20
+  },
+  {
+    "_id": 7,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 49506,
+    "fechaInicio": "29-08-2022",
+    "fechaFin": "29-08-2023",
+    "idUsuario": 12
+  },
+  {
+    "_id": 8,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 12043,
+    "fechaInicio": "18-10-2018",
+    "fechaFin": "18-10-2019",
+    "idUsuario": 15
+  },
+  {
+    "_id": 9,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 95175,
+    "fechaInicio": "08-06-2019",
+    "fechaFin": "08-06-2020",
+    "idUsuario": 4
+  },
+  {
+    "_id": 10,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 35012,
+    "fechaInicio": "09-08-2021",
+    "fechaFin": "09-08-2022",
+    "idUsuario": 15
+  },
+  {
+    "_id": 11,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 51414,
+    "fechaInicio": "12-03-2023",
+    "fechaFin": "12-03-2024",
+    "idUsuario": 13
+  },
+  {
+    "_id": 12,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 51244,
+    "fechaInicio": "27-03-2018",
+    "fechaFin": "27-03-2019",
+    "idUsuario": 12
+  },
+  {
+    "_id": 13,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 33860,
+    "fechaInicio": "28-01-2021",
+    "fechaFin": "28-01-2022",
+    "idUsuario": 14
+  },
+  {
+    "_id": 14,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 74213,
+    "fechaInicio": "03-04-2019",
+    "fechaFin": "03-04-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 15,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 95100,
+    "fechaInicio": "22-11-2018",
+    "fechaFin": "22-11-2019",
+    "idUsuario": 19
+  },
+  {
+    "_id": 16,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 92187,
+    "fechaInicio": "27-01-2023",
+    "fechaFin": "27-01-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 17,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 40736,
+    "fechaInicio": "18-03-2022",
+    "fechaFin": "18-03-2023",
+    "idUsuario": 11
+  },
+  {
+    "_id": 18,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 33690,
+    "fechaInicio": "07-08-2020",
+    "fechaFin": "07-08-2021",
+    "idUsuario": 14
+  },
+  {
+    "_id": 19,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 51075,
+    "fechaInicio": "30-12-2022",
+    "fechaFin": "30-12-2023",
+    "idUsuario": 16
+  },
+  {
+    "_id": 20,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 58662,
+    "fechaInicio": "27-10-2020",
+    "fechaFin": "27-10-2021",
+    "idUsuario": 10
+  },
+  {
+    "_id": 21,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 74948,
+    "fechaInicio": "13-12-2018",
+    "fechaFin": "13-12-2019",
+    "idUsuario": 6
+  },
+  {
+    "_id": 22,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 79214,
+    "fechaInicio": "22-09-2019",
+    "fechaFin": "22-09-2020",
+    "idUsuario": 7
+  },
+  {
+    "_id": 23,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 91353,
+    "fechaInicio": "19-07-2023",
+    "fechaFin": "19-07-2024",
+    "idUsuario": 17
+  },
+  {
+    "_id": 24,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 96282,
+    "fechaInicio": "03-09-2022",
+    "fechaFin": "03-09-2023",
+    "idUsuario": 2
+  },
+  {
+    "_id": 25,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 27039,
+    "fechaInicio": "02-05-2021",
+    "fechaFin": "02-05-2022",
+    "idUsuario": 4
+  },
+  {
+    "_id": 26,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 91607,
+    "fechaInicio": "15-12-2019",
+    "fechaFin": "15-12-2020",
+    "idUsuario": 4
+  },
+  {
+    "_id": 27,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 41627,
+    "fechaInicio": "02-01-2021",
+    "fechaFin": "02-01-2022",
+    "idUsuario": 5
+  },
+  {
+    "_id": 28,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 76489,
+    "fechaInicio": "22-05-2023",
+    "fechaFin": "22-05-2024",
+    "idUsuario": 19
+  },
+  {
+    "_id": 29,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 35979,
+    "fechaInicio": "23-01-2019",
+    "fechaFin": "23-01-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 30,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 20146,
+    "fechaInicio": "08-11-2023",
+    "fechaFin": "08-11-2024",
+    "idUsuario": 8
+  },
+  {
+    "_id": 31,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 82571,
+    "fechaInicio": "28-02-2023",
+    "fechaFin": "28-02-2024",
+    "idUsuario": 12
+  },
+  {
+    "_id": 32,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 77256,
+    "fechaInicio": "19-04-2018",
+    "fechaFin": "19-04-2019",
+    "idUsuario": 4
+  },
+  {
+    "_id": 33,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 67971,
+    "fechaInicio": "18-11-2018",
+    "fechaFin": "18-11-2019",
+    "idUsuario": 7
+  },
+  {
+    "_id": 34,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 26854,
+    "fechaInicio": "22-06-2019",
+    "fechaFin": "22-06-2020",
+    "idUsuario": 12
+  },
+  {
+    "_id": 35,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 28722,
+    "fechaInicio": "25-05-2019",
+    "fechaFin": "25-05-2020",
+    "idUsuario": 11
+  },
+  {
+    "_id": 36,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 49869,
+    "fechaInicio": "04-06-2019",
+    "fechaFin": "04-06-2020",
+    "idUsuario": 3
+  },
+  {
+    "_id": 37,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 94008,
+    "fechaInicio": "12-01-2023",
+    "fechaFin": "12-01-2024",
+    "idUsuario": 17
+  },
+  {
+    "_id": 38,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 50905,
+    "fechaInicio": "11-05-2024",
+    "fechaFin": "11-05-2025",
+    "idUsuario": 18
+  },
+  {
+    "_id": 39,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 37541,
+    "fechaInicio": "18-02-2021",
+    "fechaFin": "18-02-2022",
+    "idUsuario": 10
+  },
+  {
+    "_id": 40,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 68340,
+    "fechaInicio": "06-04-2022",
+    "fechaFin": "06-04-2023",
+    "idUsuario": 16
+  },
+  {
+    "_id": 41,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 40253,
+    "fechaInicio": "25-11-2020",
+    "fechaFin": "25-11-2021",
+    "idUsuario": 4
+  },
+  {
+    "_id": 42,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 39465,
+    "fechaInicio": "16-12-2022",
+    "fechaFin": "16-12-2023",
+    "idUsuario": 1
+  },
+  {
+    "_id": 43,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 40298,
+    "fechaInicio": "30-06-2021",
+    "fechaFin": "30-06-2022",
+    "idUsuario": 7
+  },
+  {
+    "_id": 44,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 86938,
+    "fechaInicio": "24-05-2022",
+    "fechaFin": "24-05-2023",
+    "idUsuario": 5
+  },
+  {
+    "_id": 45,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 59139,
+    "fechaInicio": "15-09-2023",
+    "fechaFin": "15-09-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 46,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 52368,
+    "fechaInicio": "08-01-2019",
+    "fechaFin": "08-01-2020",
+    "idUsuario": 6
+  },
+  {
+    "_id": 47,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 26968,
+    "fechaInicio": "18-12-2022",
+    "fechaFin": "18-12-2023",
+    "idUsuario": 18
+  },
+  {
+    "_id": 48,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 57068,
+    "fechaInicio": "15-04-2022",
+    "fechaFin": "15-04-2023",
+    "idUsuario": 1
+  },
+  {
+    "_id": 49,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 82741,
+    "fechaInicio": "13-03-2019",
+    "fechaFin": "13-03-2020",
+    "idUsuario": 18
+  },
+  {
+    "_id": 50,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 97722,
+    "fechaInicio": "12-04-2019",
+    "fechaFin": "12-04-2020",
+    "idUsuario": 2
+  },
+  {
+    "_id": 51,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 10285,
+    "fechaInicio": "11-09-2023",
+    "fechaFin": "11-09-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 52,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 47434,
+    "fechaInicio": "04-09-2020",
+    "fechaFin": "04-09-2021",
+    "idUsuario": 1
+  },
+  {
+    "_id": 53,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 67832,
+    "fechaInicio": "21-10-2019",
+    "fechaFin": "21-10-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 54,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 58204,
+    "fechaInicio": "08-03-2023",
+    "fechaFin": "08-03-2024",
+    "idUsuario": 3
+  },
+  {
+    "_id": 55,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 36922,
+    "fechaInicio": "11-10-2021",
+    "fechaFin": "11-10-2022",
+    "idUsuario": 18
+  },
+  {
+    "_id": 56,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 52473,
+    "fechaInicio": "05-04-2018",
+    "fechaFin": "05-04-2019",
+    "idUsuario": 17
+  },
+  {
+    "_id": 57,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 25826,
+    "fechaInicio": "05-09-2019",
+    "fechaFin": "05-09-2020",
+    "idUsuario": 2
+  },
+  {
+    "_id": 58,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 68298,
+    "fechaInicio": "26-07-2021",
+    "fechaFin": "26-07-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 59,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 47042,
+    "fechaInicio": "24-08-2019",
+    "fechaFin": "24-08-2020",
+    "idUsuario": 2
+  },
+  {
+    "_id": 60,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 19574,
+    "fechaInicio": "10-09-2023",
+    "fechaFin": "10-09-2024",
+    "idUsuario": 6
+  },
+  {
+    "_id": 61,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 30168,
+    "fechaInicio": "31-07-2020",
+    "fechaFin": "31-07-2021",
+    "idUsuario": 3
+  },
+  {
+    "_id": 62,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 65823,
+    "fechaInicio": "11-09-2019",
+    "fechaFin": "11-09-2020",
+    "idUsuario": 7
+  },
+  {
+    "_id": 63,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 86264,
+    "fechaInicio": "01-02-2018",
+    "fechaFin": "01-02-2019",
+    "idUsuario": 11
+  },
+  {
+    "_id": 64,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 15594,
+    "fechaInicio": "08-05-2023",
+    "fechaFin": "08-05-2024",
+    "idUsuario": 20
+  },
+  {
+    "_id": 65,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 92711,
+    "fechaInicio": "09-07-2022",
+    "fechaFin": "09-07-2023",
+    "idUsuario": 16
+  },
+  {
+    "_id": 66,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 43698,
+    "fechaInicio": "06-04-2023",
+    "fechaFin": "06-04-2024",
+    "idUsuario": 6
+  },
+  {
+    "_id": 67,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 91527,
+    "fechaInicio": "25-01-2019",
+    "fechaFin": "25-01-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 68,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 67366,
+    "fechaInicio": "04-02-2023",
+    "fechaFin": "04-02-2024",
+    "idUsuario": 1
+  },
+  {
+    "_id": 69,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 79387,
+    "fechaInicio": "11-02-2018",
+    "fechaFin": "11-02-2019",
+    "idUsuario": 3
+  },
+  {
+    "_id": 70,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 66825,
+    "fechaInicio": "12-06-2018",
+    "fechaFin": "12-06-2019",
+    "idUsuario": 11
+  },
+  {
+    "_id": 71,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 74816,
+    "fechaInicio": "15-06-2020",
+    "fechaFin": "15-06-2021",
+    "idUsuario": 20
+  },
+  {
+    "_id": 72,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 34249,
+    "fechaInicio": "12-03-2024",
+    "fechaFin": "12-03-2025",
+    "idUsuario": 18
+  },
+  {
+    "_id": 73,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 26528,
+    "fechaInicio": "06-07-2020",
+    "fechaFin": "06-07-2021",
+    "idUsuario": 15
+  },
+  {
+    "_id": 74,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 67717,
+    "fechaInicio": "14-05-2024",
+    "fechaFin": "14-05-2025",
+    "idUsuario": 17
+  },
+  {
+    "_id": 75,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 71367,
+    "fechaInicio": "22-05-2019",
+    "fechaFin": "22-05-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 76,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 82824,
+    "fechaInicio": "23-03-2021",
+    "fechaFin": "23-03-2022",
+    "idUsuario": 2
+  },
+  {
+    "_id": 77,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 52185,
+    "fechaInicio": "24-07-2021",
+    "fechaFin": "24-07-2022",
+    "idUsuario": 13
+  },
+  {
+    "_id": 78,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 65091,
+    "fechaInicio": "02-03-2021",
+    "fechaFin": "02-03-2022",
+    "idUsuario": 8
+  },
+  {
+    "_id": 79,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 46949,
+    "fechaInicio": "22-01-2019",
+    "fechaFin": "22-01-2020",
+    "idUsuario": 13
+  },
+  {
+    "_id": 80,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 59939,
+    "fechaInicio": "03-01-2023",
+    "fechaFin": "03-01-2024",
+    "idUsuario": 17
+  },
+  {
+    "_id": 81,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 82026,
+    "fechaInicio": "22-04-2022",
+    "fechaFin": "22-04-2023",
+    "idUsuario": 5
+  },
+  {
+    "_id": 82,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 46971,
+    "fechaInicio": "16-10-2022",
+    "fechaFin": "16-10-2023",
+    "idUsuario": 4
+  },
+  {
+    "_id": 83,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 38869,
+    "fechaInicio": "21-01-2023",
+    "fechaFin": "21-01-2024",
+    "idUsuario": 4
+  },
+  {
+    "_id": 84,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 16242,
+    "fechaInicio": "16-06-2019",
+    "fechaFin": "16-06-2020",
+    "idUsuario": 3
+  },
+  {
+    "_id": 85,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 72925,
+    "fechaInicio": "30-11-2022",
+    "fechaFin": "30-11-2023",
+    "idUsuario": 7
+  },
+  {
+    "_id": 86,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 87651,
+    "fechaInicio": "14-12-2019",
+    "fechaFin": "14-12-2020",
+    "idUsuario": 13
+  },
+  {
+    "_id": 87,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 85998,
+    "fechaInicio": "02-07-2020",
+    "fechaFin": "02-07-2021",
+    "idUsuario": 9
+  },
+  {
+    "_id": 88,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 29372,
+    "fechaInicio": "04-02-2019",
+    "fechaFin": "04-02-2020",
+    "idUsuario": 8
+  },
+  {
+    "_id": 89,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 57692,
+    "fechaInicio": "29-07-2020",
+    "fechaFin": "29-07-2021",
+    "idUsuario": 11
+  },
+  {
+    "_id": 90,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 18456,
+    "fechaInicio": "06-07-2021",
+    "fechaFin": "06-07-2022",
+    "idUsuario": 5
+  },
+  {
+    "_id": 91,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 13567,
+    "fechaInicio": "09-06-2021",
+    "fechaFin": "09-06-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 92,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 83820,
+    "fechaInicio": "18-09-2019",
+    "fechaFin": "18-09-2020",
+    "idUsuario": 9
+  },
+  {
+    "_id": 93,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 71869,
+    "fechaInicio": "11-07-2019",
+    "fechaFin": "11-07-2020",
+    "idUsuario": 18
+  },
+  {
+    "_id": 94,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 98301,
+    "fechaInicio": "15-05-2020",
+    "fechaFin": "15-05-2021",
+    "idUsuario": 10
+  },
+  {
+    "_id": 95,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 45739,
+    "fechaInicio": "19-08-2019",
+    "fechaFin": "19-08-2020",
+    "idUsuario": 12
+  },
+  {
+    "_id": 96,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 34977,
+    "fechaInicio": "01-01-2022",
+    "fechaFin": "01-01-2023",
+    "idUsuario": 20
+  },
+  {
+    "_id": 97,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 17477,
+    "fechaInicio": "26-01-2020",
+    "fechaFin": "26-01-2021",
+    "idUsuario": 8
+  },
+  {
+    "_id": 98,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 29743,
+    "fechaInicio": "10-10-2021",
+    "fechaFin": "10-10-2022",
+    "idUsuario": 15
+  },
+  {
+    "_id": 99,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 83688,
+    "fechaInicio": "09-08-2021",
+    "fechaFin": "09-08-2022",
+    "idUsuario": 6
+  },
+  {
+    "_id": 100,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 71238,
+    "fechaInicio": "09-03-2022",
+    "fechaFin": "09-03-2023",
+    "idUsuario": 12
+  },
+  {
+    "_id": 101,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 69137,
+    "fechaInicio": "24-02-2022",
+    "fechaFin": "24-02-2023",
+    "idUsuario": 17
+  },
+  {
+    "_id": 102,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 43218,
+    "fechaInicio": "22-06-2019",
+    "fechaFin": "22-06-2020",
+    "idUsuario": 2
+  },
+  {
+    "_id": 103,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 89838,
+    "fechaInicio": "20-04-2023",
+    "fechaFin": "20-04-2024",
+    "idUsuario": 14
+  },
+  {
+    "_id": 104,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 32158,
+    "fechaInicio": "04-03-2019",
+    "fechaFin": "04-03-2020",
+    "idUsuario": 15
+  },
+  {
+    "_id": 105,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 99690,
+    "fechaInicio": "27-01-2021",
+    "fechaFin": "27-01-2022",
+    "idUsuario": 3
+  },
+  {
+    "_id": 106,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 58238,
+    "fechaInicio": "13-04-2021",
+    "fechaFin": "13-04-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 107,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 60443,
+    "fechaInicio": "25-02-2019",
+    "fechaFin": "25-02-2020",
+    "idUsuario": 8
+  },
+  {
+    "_id": 108,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 73851,
+    "fechaInicio": "06-03-2022",
+    "fechaFin": "06-03-2023",
+    "idUsuario": 10
+  },
+  {
+    "_id": 109,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 55210,
+    "fechaInicio": "01-04-2024",
+    "fechaFin": "01-04-2025",
+    "idUsuario": 17
+  },
+  {
+    "_id": 110,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 48512,
+    "fechaInicio": "17-09-2018",
+    "fechaFin": "17-09-2018",
+    "idUsuario": 7
+  },
+  {
+    "_id": 111,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 92471,
+    "fechaInicio": "17-09-2021",
+    "fechaFin": "17-09-2021",
+    "idUsuario": 8
+  },
+  {
+    "_id": 112,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 23535,
+    "fechaInicio": "28-04-2021",
+    "fechaFin": "28-04-2022",
+    "idUsuario": 11
+  },
+  {
+    "_id": 113,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 90604,
+    "fechaInicio": "11-04-2022",
+    "fechaFin": "11-04-2023",
+    "idUsuario": 15
+  },
+  {
+    "_id": 114,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 82899,
+    "fechaInicio": "09-03-2021",
+    "fechaFin": "09-03-2022",
+    "idUsuario": 15
+  },
+  {
+    "_id": 115,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 62573,
+    "fechaInicio": "25-10-2019",
+    "fechaFin": "25-10-2020",
+    "idUsuario": 19
+  },
+  {
+    "_id": 116,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 85582,
+    "fechaInicio": "01-11-2023",
+    "fechaFin": "01-11-2024",
+    "idUsuario": 17
+  },
+  {
+    "_id": 117,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 80188,
+    "fechaInicio": "06-08-2018",
+    "fechaFin": "06-08-2019",
+    "idUsuario": 16
+  },
+  {
+    "_id": 118,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 44068,
+    "fechaInicio": "26-11-2021",
+    "fechaFin": "26-11-2022",
+    "idUsuario": 2
+  },
+  {
+    "_id": 119,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 85406,
+    "fechaInicio": "12-07-2022",
+    "fechaFin": "12-07-2023",
+    "idUsuario": 19
+  },
+  {
+    "_id": 120,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 24189,
+    "fechaInicio": "10-09-2019",
+    "fechaFin": "10-09-2020",
+    "idUsuario": 19
+  },
+  {
+    "_id": 121,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 49180,
+    "fechaInicio": "21-12-2022",
+    "fechaFin": "21-12-2023",
+    "idUsuario": 15
+  },
+  {
+    "_id": 122,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 36480,
+    "fechaInicio": "05-11-2021",
+    "fechaFin": "05-11-2022",
+    "idUsuario": 16
+  },
+  {
+    "_id": 123,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 25532,
+    "fechaInicio": "21-08-2019",
+    "fechaFin": "21-08-2020",
+    "idUsuario": 9
+  },
+  {
+    "_id": 124,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 90145,
+    "fechaInicio": "14-02-2023",
+    "fechaFin": "14-02-2024",
+    "idUsuario": 19
+  },
+  {
+    "_id": 125,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 92420,
+    "fechaInicio": "22-12-2019",
+    "fechaFin": "22-12-2020",
+    "idUsuario": 3
+  },
+  {
+    "_id": 126,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 82488,
+    "fechaInicio": "26-09-2020",
+    "fechaFin": "26-09-2021",
+    "idUsuario": 16
+  },
+  {
+    "_id": 127,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 92484,
+    "fechaInicio": "29-09-2021",
+    "fechaFin": "29-09-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 128,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 69988,
+    "fechaInicio": "19-06-2021",
+    "fechaFin": "19-06-2022",
+    "idUsuario": 7
+  },
+  {
+    "_id": 129,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 55831,
+    "fechaInicio": "11-03-2018",
+    "fechaFin": "11-03-2019",
+    "idUsuario": 20
+  },
+  {
+    "_id": 130,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 59331,
+    "fechaInicio": "10-10-2019",
+    "fechaFin": "10-10-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 131,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 43590,
+    "fechaInicio": "21-06-2020",
+    "fechaFin": "21-06-2021",
+    "idUsuario": 6
+  },
+  {
+    "_id": 132,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 35921,
+    "fechaInicio": "16-06-2021",
+    "fechaFin": "16-06-2022",
+    "idUsuario": 6
+  },
+  {
+    "_id": 133,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 16451,
+    "fechaInicio": "24-06-2020",
+    "fechaFin": "24-06-2021",
+    "idUsuario": 15
+  },
+  {
+    "_id": 134,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 96992,
+    "fechaInicio": "09-06-2022",
+    "fechaFin": "09-06-2023",
+    "idUsuario": 12
+  },
+  {
+    "_id": 135,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 76802,
+    "fechaInicio": "18-02-2019",
+    "fechaFin": "18-02-2020",
+    "idUsuario": 11
+  },
+  {
+    "_id": 136,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 20535,
+    "fechaInicio": "20-04-2023",
+    "fechaFin": "20-04-2024",
+    "idUsuario": 15
+  },
+  {
+    "_id": 137,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 45228,
+    "fechaInicio": "14-11-2019",
+    "fechaFin": "14-11-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 138,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 14010,
+    "fechaInicio": "31-03-2018",
+    "fechaFin": "31-03-2019",
+    "idUsuario": 18
+  },
+  {
+    "_id": 139,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 47797,
+    "fechaInicio": "03-03-2023",
+    "fechaFin": "03-03-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 140,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 22951,
+    "fechaInicio": "18-10-2018",
+    "fechaFin": "18-10-2019",
+    "idUsuario": 16
+  },
+  {
+    "_id": 141,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 81499,
+    "fechaInicio": "26-12-2018",
+    "fechaFin": "26-12-2019",
+    "idUsuario": 2
+  },
+  {
+    "_id": 142,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 10874,
+    "fechaInicio": "14-05-2023",
+    "fechaFin": "14-05-2024",
+    "idUsuario": 11
+  },
+  {
+    "_id": 143,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 42534,
+    "fechaInicio": "23-11-2022",
+    "fechaFin": "23-11-2023",
+    "idUsuario": 9
+  },
+  {
+    "_id": 144,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 57047,
+    "fechaInicio": "16-01-2019",
+    "fechaFin": "16-01-2020",
+    "idUsuario": 16
+  },
+  {
+    "_id": 145,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 80087,
+    "fechaInicio": "25-08-2023",
+    "fechaFin": "25-08-2024",
+    "idUsuario": 18
+  },
+  {
+    "_id": 146,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 61898,
+    "fechaInicio": "03-03-2020",
+    "fechaFin": "03-03-2021",
+    "idUsuario": 16
+  },
+  {
+    "_id": 147,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 33926,
+    "fechaInicio": "28-09-2020",
+    "fechaFin": "28-09-2021",
+    "idUsuario": 3
+  },
+  {
+    "_id": 148,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 22435,
+    "fechaInicio": "27-03-2021",
+    "fechaFin": "27-03-2022",
+    "idUsuario": 15
+  },
+  {
+    "_id": 149,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 72583,
+    "fechaInicio": "01-04-2020",
+    "fechaFin": "01-04-2021",
+    "idUsuario": 15
+  },
+  {
+    "_id": 150,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 85833,
+    "fechaInicio": "09-10-2020",
+    "fechaFin": "09-10-2021",
+    "idUsuario": 10
+  },
+  {
+    "_id": 151,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 66007,
+    "fechaInicio": "12-10-2023",
+    "fechaFin": "12-10-2024",
+    "idUsuario": 3
+  },
+  {
+    "_id": 152,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 65873,
+    "fechaInicio": "15-12-2019",
+    "fechaFin": "15-12-2020",
+    "idUsuario": 11
+  },
+  {
+    "_id": 153,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 58479,
+    "fechaInicio": "26-07-2020",
+    "fechaFin": "26-07-2021",
+    "idUsuario": 9
+  },
+  {
+    "_id": 154,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 56670,
+    "fechaInicio": "01-11-2019",
+    "fechaFin": "01-11-2020",
+    "idUsuario": 2
+  },
+  {
+    "_id": 155,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 57864,
+    "fechaInicio": "15-02-2018",
+    "fechaFin": "15-02-2019",
+    "idUsuario": 6
+  },
+  {
+    "_id": 156,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 59242,
+    "fechaInicio": "29-07-2022",
+    "fechaFin": "29-07-2023",
+    "idUsuario": 5
+  },
+  {
+    "_id": 157,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 69563,
+    "fechaInicio": "25-04-2022",
+    "fechaFin": "25-04-2023",
+    "idUsuario": 8
+  },
+  {
+    "_id": 158,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 46041,
+    "fechaInicio": "26-10-2022",
+    "fechaFin": "26-10-2023",
+    "idUsuario": 5
+  },
+  {
+    "_id": 159,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 40964,
+    "fechaInicio": "24-01-2019",
+    "fechaFin": "24-01-2020",
+    "idUsuario": 3
+  },
+  {
+    "_id": 160,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 86996,
+    "fechaInicio": "05-05-2022",
+    "fechaFin": "05-05-2023",
+    "idUsuario": 8
+  },
+  {
+    "_id": 161,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 14023,
+    "fechaInicio": "07-05-2024",
+    "fechaFin": "07-05-2025",
+    "idUsuario": 10
+  },
+  {
+    "_id": 162,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 56836,
+    "fechaInicio": "09-09-2020",
+    "fechaFin": "09-09-2021",
+    "idUsuario": 17
+  },
+  {
+    "_id": 163,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 69100,
+    "fechaInicio": "29-04-2020",
+    "fechaFin": "29-04-2021",
+    "idUsuario": 13
+  },
+  {
+    "_id": 164,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 45981,
+    "fechaInicio": "16-08-2019",
+    "fechaFin": "16-08-2019",
+    "idUsuario": 1
+  },
+  {
+    "_id": 165,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 30257,
+    "fechaInicio": "16-08-2018",
+    "fechaFin": "16-08-2018",
+    "idUsuario": 19
+  },
+  {
+    "_id": 166,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 33987,
+    "fechaInicio": "29-09-2018",
+    "fechaFin": "29-09-2019",
+    "idUsuario": 6
+  },
+  {
+    "_id": 167,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 16901,
+    "fechaInicio": "20-12-2018",
+    "fechaFin": "20-12-2019",
+    "idUsuario": 15
+  },
+  {
+    "_id": 168,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 93480,
+    "fechaInicio": "23-03-2019",
+    "fechaFin": "23-03-2020",
+    "idUsuario": 15
+  },
+  {
+    "_id": 169,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 54750,
+    "fechaInicio": "19-02-2019",
+    "fechaFin": "19-02-2020",
+    "idUsuario": 11
+  },
+  {
+    "_id": 170,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 25514,
+    "fechaInicio": "20-06-2023",
+    "fechaFin": "20-06-2024",
+    "idUsuario": 16
+  },
+  {
+    "_id": 171,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 65010,
+    "fechaInicio": "06-09-2023",
+    "fechaFin": "06-09-2024",
+    "idUsuario": 12
+  },
+  {
+    "_id": 172,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 66100,
+    "fechaInicio": "20-02-2023",
+    "fechaFin": "20-02-2024",
+    "idUsuario": 11
+  },
+  {
+    "_id": 173,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 45806,
+    "fechaInicio": "01-11-2021",
+    "fechaFin": "01-11-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 174,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 78096,
+    "fechaInicio": "17-03-2020",
+    "fechaFin": "17-03-2021",
+    "idUsuario": 20
+  },
+  {
+    "_id": 175,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 87513,
+    "fechaInicio": "25-05-2020",
+    "fechaFin": "25-05-2021",
+    "idUsuario": 10
+  },
+  {
+    "_id": 176,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 68714,
+    "fechaInicio": "07-01-2024",
+    "fechaFin": "07-01-2025",
+    "idUsuario": 16
+  },
+  {
+    "_id": 177,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 92110,
+    "fechaInicio": "25-06-2020",
+    "fechaFin": "25-06-2021",
+    "idUsuario": 18
+  },
+  {
+    "_id": 178,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 31956,
+    "fechaInicio": "08-12-2018",
+    "fechaFin": "08-12-2019",
+    "idUsuario": 18
+  },
+  {
+    "_id": 179,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 58078,
+    "fechaInicio": "09-07-2019",
+    "fechaFin": "09-07-2020",
+    "idUsuario": 17
+  },
+  {
+    "_id": 180,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 91987,
+    "fechaInicio": "02-08-2020",
+    "fechaFin": "02-08-2021",
+    "idUsuario": 6
+  },
+  {
+    "_id": 181,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 74121,
+    "fechaInicio": "10-04-2022",
+    "fechaFin": "10-04-2023",
+    "idUsuario": 7
+  },
+  {
+    "_id": 182,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 45302,
+    "fechaInicio": "22-09-2021",
+    "fechaFin": "22-09-2022",
+    "idUsuario": 6
+  },
+  {
+    "_id": 183,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 63012,
+    "fechaInicio": "04-08-2023",
+    "fechaFin": "04-08-2024",
+    "idUsuario": 1
+  },
+  {
+    "_id": 184,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 72704,
+    "fechaInicio": "06-11-2023",
+    "fechaFin": "06-11-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 185,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 21805,
+    "fechaInicio": "02-06-2018",
+    "fechaFin": "02-06-2019",
+    "idUsuario": 10
+  },
+  {
+    "_id": 186,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 72064,
+    "fechaInicio": "25-12-2018",
+    "fechaFin": "25-12-2019",
+    "idUsuario": 8
+  },
+  {
+    "_id": 187,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 86229,
+    "fechaInicio": "18-05-2018",
+    "fechaFin": "18-05-2019",
+    "idUsuario": 19
+  },
+  {
+    "_id": 188,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 18457,
+    "fechaInicio": "06-10-2021",
+    "fechaFin": "06-10-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 189,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 85235,
+    "fechaInicio": "24-05-2023",
+    "fechaFin": "24-05-2024",
+    "idUsuario": 9
+  },
+  {
+    "_id": 190,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 77635,
+    "fechaInicio": "08-11-2020",
+    "fechaFin": "08-11-2021",
+    "idUsuario": 8
+  },
+  {
+    "_id": 191,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 60349,
+    "fechaInicio": "18-11-2019",
+    "fechaFin": "18-11-2020",
+    "idUsuario": 5
+  },
+  {
+    "_id": 192,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 37050,
+    "fechaInicio": "03-03-2022",
+    "fechaFin": "03-03-2023",
+    "idUsuario": 12
+  },
+  {
+    "_id": 193,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 97538,
+    "fechaInicio": "06-10-2023",
+    "fechaFin": "06-10-2024",
+    "idUsuario": 20
+  },
+  {
+    "_id": 194,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 60652,
+    "fechaInicio": "06-04-2021",
+    "fechaFin": "06-04-2022",
+    "idUsuario": 14
+  },
+  {
+    "_id": 195,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 80854,
+    "fechaInicio": "07-09-2019",
+    "fechaFin": "07-09-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 196,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 85168,
+    "fechaInicio": "05-10-2018",
+    "fechaFin": "05-10-2019",
+    "idUsuario": 14
+  },
+  {
+    "_id": 197,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 76411,
+    "fechaInicio": "28-02-2022",
+    "fechaFin": "28-02-2023",
+    "idUsuario": 7
+  },
+  {
+    "_id": 198,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 80331,
+    "fechaInicio": "09-04-2021",
+    "fechaFin": "09-04-2022",
+    "idUsuario": 19
+  },
+  {
+    "_id": 199,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 85008,
+    "fechaInicio": "10-08-2021",
+    "fechaFin": "10-08-2022",
+    "idUsuario": 4
+  },
+  {
+    "_id": 200,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 20778,
+    "fechaInicio": "27-06-2023",
+    "fechaFin": "27-06-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 201,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 69077,
+    "fechaInicio": "22-06-2020",
+    "fechaFin": "22-06-2021",
+    "idUsuario": 17
+  },
+  {
+    "_id": 202,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 95150,
+    "fechaInicio": "13-03-2023",
+    "fechaFin": "13-03-2024",
+    "idUsuario": 1
+  },
+  {
+    "_id": 203,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 71699,
+    "fechaInicio": "10-01-2021",
+    "fechaFin": "10-01-2022",
+    "idUsuario": 16
+  },
+  {
+    "_id": 204,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 90505,
+    "fechaInicio": "16-06-2020",
+    "fechaFin": "16-06-2021",
+    "idUsuario": 4
+  },
+  {
+    "_id": 205,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 51148,
+    "fechaInicio": "05-09-2019",
+    "fechaFin": "05-09-2020",
+    "idUsuario": 20
+  },
+  {
+    "_id": 206,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 65819,
+    "fechaInicio": "15-11-2018",
+    "fechaFin": "15-11-2019",
+    "idUsuario": 7
+  },
+  {
+    "_id": 207,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 78458,
+    "fechaInicio": "23-04-2020",
+    "fechaFin": "23-04-2021",
+    "idUsuario": 3
+  },
+  {
+    "_id": 208,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 29895,
+    "fechaInicio": "08-04-2023",
+    "fechaFin": "08-04-2024",
+    "idUsuario": 11
+  },
+  {
+    "_id": 209,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 15394,
+    "fechaInicio": "21-03-2022",
+    "fechaFin": "21-03-2023",
+    "idUsuario": 10
+  },
+  {
+    "_id": 210,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 99421,
+    "fechaInicio": "01-03-2021",
+    "fechaFin": "01-03-2022",
+    "idUsuario": 8
+  },
+  {
+    "_id": 211,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 34467,
+    "fechaInicio": "13-11-2022",
+    "fechaFin": "13-11-2023",
+    "idUsuario": 9
+  },
+  {
+    "_id": 212,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 13506,
+    "fechaInicio": "31-03-2022",
+    "fechaFin": "31-03-2023",
+    "idUsuario": 4
+  },
+  {
+    "_id": 213,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 98697,
+    "fechaInicio": "29-03-2024",
+    "fechaFin": "29-03-2025",
+    "idUsuario": 19
+  },
+  {
+    "_id": 214,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 67249,
+    "fechaInicio": "08-05-2021",
+    "fechaFin": "08-05-2022",
+    "idUsuario": 11
+  },
+  {
+    "_id": 215,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 67405,
+    "fechaInicio": "05-03-2024",
+    "fechaFin": "05-03-2025",
+    "idUsuario": 20
+  },
+  {
+    "_id": 216,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 22502,
+    "fechaInicio": "24-09-2019",
+    "fechaFin": "24-09-2020",
+    "idUsuario": 8
+  },
+  {
+    "_id": 217,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 81083,
+    "fechaInicio": "05-02-2023",
+    "fechaFin": "05-02-2024",
+    "idUsuario": 6
+  },
+  {
+    "_id": 218,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 37657,
+    "fechaInicio": "19-01-2024",
+    "fechaFin": "19-01-2025",
+    "idUsuario": 18
+  },
+  {
+    "_id": 219,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 83373,
+    "fechaInicio": "14-04-2020",
+    "fechaFin": "14-04-2021",
+    "idUsuario": 7
+  },
+  {
+    "_id": 220,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 29976,
+    "fechaInicio": "08-04-2018",
+    "fechaFin": "08-04-2019",
+    "idUsuario": 1
+  },
+  {
+    "_id": 221,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 71777,
+    "fechaInicio": "06-03-2019",
+    "fechaFin": "06-03-2020",
+    "idUsuario": 9
+  },
+  {
+    "_id": 222,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 87596,
+    "fechaInicio": "13-04-2024",
+    "fechaFin": "13-04-2025",
+    "idUsuario": 4
+  },
+  {
+    "_id": 223,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 45742,
+    "fechaInicio": "12-08-2020",
+    "fechaFin": "12-08-2021",
+    "idUsuario": 19
+  },
+  {
+    "_id": 224,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 36218,
+    "fechaInicio": "18-01-2019",
+    "fechaFin": "18-01-2020",
+    "idUsuario": 1
+  },
+  {
+    "_id": 225,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 98247,
+    "fechaInicio": "24-01-2019",
+    "fechaFin": "24-01-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 226,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 91490,
+    "fechaInicio": "26-09-2018",
+    "fechaFin": "26-09-2019",
+    "idUsuario": 19
+  },
+  {
+    "_id": 227,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 65522,
+    "fechaInicio": "03-01-2020",
+    "fechaFin": "03-01-2021",
+    "idUsuario": 15
+  },
+  {
+    "_id": 228,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 28852,
+    "fechaInicio": "13-11-2020",
+    "fechaFin": "13-11-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 229,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 47967,
+    "fechaInicio": "13-11-2023",
+    "fechaFin": "13-11-2023",
+    "idUsuario": 8
+  },
+  {
+    "_id": 230,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 51369,
+    "fechaInicio": "06-04-2018",
+    "fechaFin": "06-04-2019",
+    "idUsuario": 13
+  },
+  {
+    "_id": 231,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 65363,
+    "fechaInicio": "11-05-2018",
+    "fechaFin": "11-05-2019",
+    "idUsuario": 3
+  },
+  {
+    "_id": 232,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 26161,
+    "fechaInicio": "30-06-2018",
+    "fechaFin": "30-06-2019",
+    "idUsuario": 8
+  },
+  {
+    "_id": 233,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 84105,
+    "fechaInicio": "07-07-2019",
+    "fechaFin": "07-07-2020",
+    "idUsuario": 8
+  },
+  {
+    "_id": 234,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 69153,
+    "fechaInicio": "20-08-2022",
+    "fechaFin": "20-08-2023",
+    "idUsuario": 17
+  },
+  {
+    "_id": 235,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 97118,
+    "fechaInicio": "02-07-2018",
+    "fechaFin": "02-07-2019",
+    "idUsuario": 2
+  },
+  {
+    "_id": 236,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 56335,
+    "fechaInicio": "30-05-2018",
+    "fechaFin": "30-05-2019",
+    "idUsuario": 18
+  },
+  {
+    "_id": 237,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 76329,
+    "fechaInicio": "20-11-2019",
+    "fechaFin": "20-11-2020",
+    "idUsuario": 9
+  },
+  {
+    "_id": 238,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 10827,
+    "fechaInicio": "05-04-2023",
+    "fechaFin": "05-04-2024",
+    "idUsuario": 14
+  },
+  {
+    "_id": 239,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 10166,
+    "fechaInicio": "22-08-2021",
+    "fechaFin": "22-08-2022",
+    "idUsuario": 2
+  },
+  {
+    "_id": 240,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 89394,
+    "fechaInicio": "21-10-2020",
+    "fechaFin": "21-10-2021",
+    "idUsuario": 11
+  },
+  {
+    "_id": 241,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 56583,
+    "fechaInicio": "16-07-2021",
+    "fechaFin": "16-07-2022",
+    "idUsuario": 17
+  },
+  {
+    "_id": 242,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 48300,
+    "fechaInicio": "27-11-2023",
+    "fechaFin": "27-11-2024",
+    "idUsuario": 1
+  },
+  {
+    "_id": 243,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 69879,
+    "fechaInicio": "03-03-2024",
+    "fechaFin": "03-03-2025",
+    "idUsuario": 5
+  },
+  {
+    "_id": 244,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 22639,
+    "fechaInicio": "23-03-2022",
+    "fechaFin": "23-03-2023",
+    "idUsuario": 11
+  },
+  {
+    "_id": 245,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 54821,
+    "fechaInicio": "08-05-2023",
+    "fechaFin": "08-05-2024",
+    "idUsuario": 8
+  },
+  {
+    "_id": 246,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 87100,
+    "fechaInicio": "15-04-2023",
+    "fechaFin": "15-04-2024",
+    "idUsuario": 1
+  },
+  {
+    "_id": 247,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 82016,
+    "fechaInicio": "08-12-2021",
+    "fechaFin": "08-12-2022",
+    "idUsuario": 2
+  },
+  {
+    "_id": 248,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 11949,
+    "fechaInicio": "22-08-2021",
+    "fechaFin": "22-08-2022",
+    "idUsuario": 1
+  },
+  {
+    "_id": 249,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 22389,
+    "fechaInicio": "01-03-2019",
+    "fechaFin": "01-03-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 250,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 77984,
+    "fechaInicio": "26-05-2022",
+    "fechaFin": "26-05-2023",
+    "idUsuario": 12
+  },
+  {
+    "_id": 251,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 77338,
+    "fechaInicio": "28-05-2021",
+    "fechaFin": "28-05-2022",
+    "idUsuario": 4
+  },
+  {
+    "_id": 252,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 98345,
+    "fechaInicio": "22-04-2022",
+    "fechaFin": "22-04-2023",
+    "idUsuario": 6
+  },
+  {
+    "_id": 253,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 80570,
+    "fechaInicio": "02-06-2018",
+    "fechaFin": "02-06-2019",
+    "idUsuario": 5
+  },
+  {
+    "_id": 254,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 43545,
+    "fechaInicio": "17-01-2024",
+    "fechaFin": "17-01-2025",
+    "idUsuario": 15
+  },
+  {
+    "_id": 255,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 37017,
+    "fechaInicio": "01-09-2020",
+    "fechaFin": "01-09-2021",
+    "idUsuario": 1
+  },
+  {
+    "_id": 256,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 70312,
+    "fechaInicio": "13-11-2018",
+    "fechaFin": "13-11-2019",
+    "idUsuario": 8
+  },
+  {
+    "_id": 257,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 89254,
+    "fechaInicio": "15-01-2022",
+    "fechaFin": "15-01-2023",
+    "idUsuario": 15
+  },
+  {
+    "_id": 258,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 16476,
+    "fechaInicio": "17-07-2018",
+    "fechaFin": "17-07-2019",
+    "idUsuario": 20
+  },
+  {
+    "_id": 259,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 84704,
+    "fechaInicio": "27-09-2019",
+    "fechaFin": "27-09-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 260,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 53144,
+    "fechaInicio": "01-10-2018",
+    "fechaFin": "01-10-2019",
+    "idUsuario": 20
+  },
+  {
+    "_id": 261,
+    "nombre": "Presupuesto de emergencias",
+    "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+    "montoTotal": 96524,
+    "fechaInicio": "05-09-2021",
+    "fechaFin": "05-09-2022",
+    "idUsuario": 1
+  },
+  {
+    "_id": 262,
+    "nombre": "Presupuesto de capacitación y desarrollo",
+    "descripcion": "Gastos en cursos, talleres y desarrollo profesional.",
+    "montoTotal": 14140,
+    "fechaInicio": "20-07-2019",
+    "fechaFin": "20-07-2020",
+    "idUsuario": 13
+  },
+  {
+    "_id": 263,
+    "nombre": "Presupuesto de guardería y cuidado infantil",
+    "descripcion": "Gastos en servicios de cuidado de niños.",
+    "montoTotal": 49811,
+    "fechaInicio": "28-08-2020",
+    "fechaFin": "28-08-2021",
+    "idUsuario": 12
+  },
+  {
+    "_id": 264,
+    "nombre": "Presupuesto de mudanza",
+    "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+    "montoTotal": 95551,
+    "fechaInicio": "16-04-2021",
+    "fechaFin": "16-04-2022",
+    "idUsuario": 4
+  },
+  {
+    "_id": 265,
+    "nombre": "Presupuesto de eventos familiares",
+    "descripcion": "Gastos en bodas, graduaciones y otros eventos familiares importantes.",
+    "montoTotal": 98032,
+    "fechaInicio": "22-02-2021",
+    "fechaFin": "22-02-2022",
+    "idUsuario": 9
+  },
+  {
+    "_id": 266,
+    "nombre": "Presupuesto de hobbies y aficiones",
+    "descripcion": "Gastos en actividades recreativas y pasatiempos.",
+    "montoTotal": 99998,
+    "fechaInicio": "26-06-2019",
+    "fechaFin": "26-06-2020",
+    "idUsuario": 10
+  },
+  {
+    "_id": 267,
+    "nombre": "Presupuesto de servicios legales",
+    "descripcion": "Gastos en servicios de abogados y trámites legales.",
+    "montoTotal": 44963,
+    "fechaInicio": "21-08-2022",
+    "fechaFin": "21-08-2023",
+    "idUsuario": 18
+  },
+  {
+    "_id": 268,
+    "nombre": "Presupuesto de cuidado de ancianos",
+    "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+    "montoTotal": 11512,
+    "fechaInicio": "17-11-2023",
+    "fechaFin": "17-11-2024",
+    "idUsuario": 11
+  },
+  {
+    "_id": 269,
+    "nombre": "Presupuesto de suministros de oficina",
+    "descripcion": "Gastos en materiales y equipos de oficina para trabajar desde casa.",
+    "montoTotal": 77651,
+    "fechaInicio": "06-01-2022",
+    "fechaFin": "06-01-2023",
+    "idUsuario": 18
+  },
+  {
+    "_id": 270,
+    "nombre": "Presupuesto de reparación de vehículos",
+    "descripcion": "Gastos en mantenimiento y reparaciones de automóviles.",
+    "montoTotal": 74220,
+    "fechaInicio": "19-05-2018",
+    "fechaFin": "19-05-2019",
+    "idUsuario": 19
+  },
+  {
+    "_id": 271,
+    "nombre": "Presupuesto de servicios de limpieza",
+    "descripcion": "Gastos en servicios de limpieza profesional para el hogar.",
+    "montoTotal": 94908,
+    "fechaInicio": "16-03-2024",
+    "fechaFin": "16-03-2025",
+    "idUsuario": 12
+  },
+  {
+    "_id": 272,
+    "nombre": "Presupuesto de tecnología y electrónicos",
+    "descripcion": "Gastos en dispositivos electrónicos, software y accesorios.",
+    "montoTotal": 16652,
+    "fechaInicio": "11-01-2020",
+    "fechaFin": "11-01-2021",
+    "idUsuario": 13
+  },
+  {
+    "_id": 273,
+    "nombre": "Presupuesto de seguridad y protección",
+    "descripcion": "Gastos en sistemas de seguridad, alarmas y servicios de vigilancia.",
+    "montoTotal": 77878,
+    "fechaInicio": "05-07-2021",
+    "fechaFin": "05-07-2022",
+    "idUsuario": 20
+  },
+  {
+    "_id": 274,
+    "nombre": "Presupuesto de renovación de licencias",
+    "descripcion": "Gastos en la renovación de licencias, permisos y certificaciones.",
+    "montoTotal": 58090,
+    "fechaInicio": "05-01-2024",
+    "fechaFin": "05-01-2025",
+    "idUsuario": 12
+  },
+  {
+    "_id": 275,
+    "nombre": "Presupuesto de decoración y muebles",
+    "descripcion": "Gastos en muebles, accesorios y decoración del hogar.",
+    "montoTotal": 18328,
+    "fechaInicio": "02-02-2023",
+    "fechaFin": "02-02-2024",
+    "idUsuario": 5
+  },
+  {
+    "_id": 276,
+    "nombre": "Presupuesto de reparación de electrodomésticos",
+    "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+    "montoTotal": 91691,
+    "fechaInicio": "26-12-2022",
+    "fechaFin": "26-12-2023",
+    "idUsuario": 1
+  },
+  {
+    "_id": 277,
+    "nombre": "Presupuesto de publicaciones y suscripciones",
+    "descripcion": "Gastos en revistas, periódicos y publicaciones.",
+    "montoTotal": 41625,
+    "fechaInicio": "27-12-2021",
+    "fechaFin": "27-12-2022",
+    "idUsuario": 4
+  },
+  {
+    "_id": 278,
+    "nombre": "Presupuesto de cuidado personal",
+    "descripcion": "Gastos en servicios de peluquería, spa y tratamientos de belleza.",
+    "montoTotal": 86259,
+    "fechaInicio": "03-04-2019",
+    "fechaFin": "03-04-2020",
+    "idUsuario": 15
+  },
+  {
+    "_id": 279,
+    "nombre": "Presupuesto de eventos sociales",
+    "descripcion": "Gastos en fiestas, reuniones y eventos sociales.",
+    "montoTotal": 53938,
+    "fechaInicio": "21-04-2018",
+    "fechaFin": "21-04-2019",
+    "idUsuario": 9
+  },
+  {
+    "_id": 280,
+    "nombre": "Presupuesto de servicios de entrega",
+    "descripcion": "Gastos en servicios de entrega a domicilio y envíos.",
+    "montoTotal": 16911,
+    "fechaInicio": "20-04-2021",
+    "fechaFin": "20-04-2022",
+    "idUsuario": 7
+  },
+  {
+    "_id": 281,
+    "nombre": "Presupuesto familiar",
+    "descripcion": "Planificación y control de los ingresos y gastos del hogar.",
+    "montoTotal": 23136,
+    "fechaInicio": "28-07-2019",
+    "fechaFin": "28-07-2020",
+    "idUsuario": 7
+  },
+  {
+    "_id": 282,
+    "nombre": "Presupuesto personal",
+    "descripcion": "Gestión de los ingresos y gastos individuales.",
+    "montoTotal": 94757,
+    "fechaInicio": "14-01-2024",
+    "fechaFin": "14-01-2025",
+    "idUsuario": 4
+  },
+  {
+    "_id": 283,
+    "nombre": "Presupuesto de vivienda",
+    "descripcion": "Gastos relacionados con la hipoteca, alquiler, servicios públicos y mantenimiento del hogar.",
+    "montoTotal": 10710,
+    "fechaInicio": "12-12-2018",
+    "fechaFin": "12-12-2019",
+    "idUsuario": 2
+  },
+  {
+    "_id": 284,
+    "nombre": "Presupuesto de transporte",
+    "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+    "montoTotal": 61091,
+    "fechaInicio": "27-11-2023",
+    "fechaFin": "27-11-2024",
+    "idUsuario": 17
+  },
+  {
+    "_id": 285,
+    "nombre": "Presupuesto de alimentación",
+    "descripcion": "Gastos en compras de comestibles, suministros y comidas fuera del hogar.",
+    "montoTotal": 90272,
+    "fechaInicio": "15-01-2019",
+    "fechaFin": "15-01-2020",
+    "idUsuario": 14
+  },
+  {
+    "_id": 286,
+    "nombre": "Presupuesto de vacaciones",
+    "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+    "montoTotal": 73532,
+    "fechaInicio": "12-04-2018",
+    "fechaFin": "12-04-2019",
+    "idUsuario": 15
+  },
+  {
+    "_id": 287,
+    "nombre": "Presupuesto de educación",
+    "descripcion": "Gastos de colegiaturas, cuotas, materiales y actividades escolares.",
+    "montoTotal": 65002,
+    "fechaInicio": "04-09-2019",
+    "fechaFin": "04-09-2020",
+    "idUsuario": 5
+  },
+  {
+    "_id": 288,
+    "nombre": "Presupuesto de salud",
+    "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+    "montoTotal": 64303,
+    "fechaInicio": "03-09-2022",
+    "fechaFin": "03-09-2023",
+    "idUsuario": 3
+  },
+  {
+    "_id": 289,
+    "nombre": "Presupuesto de entretenimiento",
+    "descripcion": "Gastos en actividades recreativas, suscripciones y eventos.",
+    "montoTotal": 97685,
+    "fechaInicio": "29-10-2021",
+    "fechaFin": "29-10-2022",
+    "idUsuario": 12
+  },
+  {
+    "_id": 290,
+    "nombre": "Presupuesto de ahorro e inversiones",
+    "descripcion": "Planificación y control de ahorros, inversiones y planes de jubilación.",
+    "montoTotal": 66763,
+    "fechaInicio": "22-08-2022",
+    "fechaFin": "22-08-2023",
+    "idUsuario": 15
+  },
+  {
+    "_id": 291,
+    "nombre": "Presupuesto de deudas",
+    "descripcion": "Gestión y pago de préstamos, tarjetas de crédito y otras deudas.",
+    "montoTotal": 69355,
+    "fechaInicio": "09-04-2023",
+    "fechaFin": "09-04-2024",
+    "idUsuario": 9
+  },
+  {
+    "_id": 292,
+    "nombre": "Presupuesto de regalos y celebraciones",
+    "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+    "montoTotal": 76009,
+    "fechaInicio": "24-01-2024",
+    "fechaFin": "24-01-2025",
+    "idUsuario": 16
+  },
+  {
+    "_id": 293,
+    "nombre": "Presupuesto de ropa y cuidado personal",
+    "descripcion": "Gastos en vestimenta, calzado, peluquería y productos de belleza.",
+    "montoTotal": 27638,
+    "fechaInicio": "02-01-2024",
+    "fechaFin": "02-01-2025",
+    "idUsuario": 12
+  },
+  {
+    "_id": 294,
+    "nombre": "Presupuesto de mascotas",
+    "descripcion": "Gastos en alimentos, atención veterinaria y suministros para mascotas.",
+    "montoTotal": 73632,
+    "fechaInicio": "15-07-2019",
+    "fechaFin": "15-07-2020",
+    "idUsuario": 19
+  },
+  {
+    "_id": 295,
+    "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+    "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+    "montoTotal": 58578,
+    "fechaInicio": "18-05-2020",
+    "fechaFin": "18-05-2021",
+    "idUsuario": 18
+  },
+  {
+    "_id": 296,
+    "nombre": "Presupuesto de suscripciones y membresías",
+    "descripcion": "Gastos en suscripciones a revistas, streaming, clubes y asociaciones.",
+    "montoTotal": 47768,
+    "fechaInicio": "01-01-2022",
+    "fechaFin": "01-01-2023",
+    "idUsuario": 17
+  },
+  {
+    "_id": 297,
+    "nombre": "Presupuesto de donaciones y caridad",
+    "descripcion": "Planificación de contribuciones a organizaciones benéficas.",
+    "montoTotal": 10094,
+    "fechaInicio": "19-02-2020",
+    "fechaFin": "19-02-2021",
+    "idUsuario": 10
+  },
+  {
+    "_id": 298,
+    "nombre": "Presupuesto de impuestos",
+    "descripcion": "Estimación y pago de impuestos sobre la renta, prediales y otros.",
+    "montoTotal": 80441,
+    "fechaInicio": "12-01-2024",
+    "fechaFin": "12-01-2025",
+    "idUsuario": 3
+  },
+  {
+    "_id": 299,
+    "nombre": "Presupuesto de seguros",
+    "descripcion": "Gastos en pólizas de seguro de vida, hogar, vehículo y otros.",
+    "montoTotal": 66258,
+    "fechaInicio": "01-11-2020",
+    "fechaFin": "01-11-2021",
+    "idUsuario": 18
+  },
+  {
+    "_id": 300,
+    "nombre": "Presupuesto de mantenimiento del hogar",
+    "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+    "montoTotal": 59724,
+    "fechaInicio": "15-03-2024",
+    "fechaFin": "15-03-2025",
+    "idUsuario": 4
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "_id": 1,
+    "nombre": "Depósito de salarios y bonificaciones.",
+    "saldo": 11120.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 6
+    }
+  },
+  {
+    "_id": 2,
+    "nombre": "Acumulación de fondos y ganancias por intereses.",
+    "saldo": 6962.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 3,
+    "nombre": "Compra y venta de activos financieros.",
+    "saldo": 6572.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 13
+    }
+  },
+  {
+    "_id": 4,
+    "nombre": "Gestión de ingresos y gastos empresariales.",
+    "saldo": 5889.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 5,
+    "nombre": "Pagos por trabajos independientes y freelance.",
+    "saldo": 11322,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 6,
+    "nombre": "Gestión de ingresos por alquiler.",
+    "saldo": 3999.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 7,
+    "nombre": "Gastos y reembolsos relacionados con estudios.",
+    "saldo": 12078.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 8,
+    "nombre": "_Ingresos y gastos relacionados con viajes.",
+    "saldo": 12574.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 9,
+    "nombre": "Pagos médicos y compra de medicamentos.",
+    "saldo": 3796.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 10,
+    "nombre": "Fondos para gastos inesperados.",
+    "saldo": 6050.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 11,
+    "nombre": "Gastos en alquiler, hipoteca y servicios.",
+    "saldo": 12789.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 12,
+    "nombre": "Costos de transporte y mantenimiento vehicular.",
+    "saldo": 14055.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 13,
+    "nombre": "Gastos en ocio y actividades recreativas.",
+    "saldo": 5915.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 14,
+    "nombre": "Compras de alimentos y restaurantes.",
+    "saldo": 12512.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 15,
+    "nombre": "Compras de vestimenta y accesorios.",
+    "saldo": 9862.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 8
+    }
+  },
+  {
+    "_id": 16,
+    "nombre": "Pagos de pólizas de seguro.",
+    "saldo": 5982.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 17,
+    "nombre": "Gastos en cuidado y alimentación de mascotas.",
+    "saldo": 3510.1,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 6
+    }
+  },
+  {
+    "_id": 18,
+    "nombre": "Compra y mantenimiento de dispositivos electrónicos.",
+    "saldo": 6853.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 19,
+    "nombre": "Ahorros destinados a la jubilación.",
+    "saldo": 5213.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 13
+    }
+  },
+  {
+    "_id": 20,
+    "nombre": "Gastos en celebraciones y reuniones.",
+    "saldo": 12313.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 11
+    }
+  },
+  {
+    "_id": 21,
+    "nombre": "Contribuciones a causas benéficas.",
+    "saldo": 12025,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 22,
+    "nombre": "_Ingresos y gastos en actividades recreativas.",
+    "saldo": 6808.1,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 23,
+    "nombre": "Reparaciones y mejoras del hogar.",
+    "saldo": 6286.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 24,
+    "nombre": "Gastos en promoción de productos o servicios.",
+    "saldo": 14201,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 6
+    }
+  },
+  {
+    "_id": 25,
+    "nombre": "_Ingresos y pagos por asesoría profesional.",
+    "saldo": 11473,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 26,
+    "nombre": "Gastos en estrategias de marketing.",
+    "saldo": 12203.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 27,
+    "nombre": "Pagos a profesionales por servicios.",
+    "saldo": 6556,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 28,
+    "nombre": "Costos de cuidado infantil.",
+    "saldo": 12942.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 29,
+    "nombre": "Membresías y gastos en ejercicios.",
+    "saldo": 3702.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 30,
+    "nombre": "Facturas de agua, luz y gas.",
+    "saldo": 3673.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 31,
+    "nombre": "Depósito de salarios y bonificaciones.",
+    "saldo": 12036.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 32,
+    "nombre": "Acumulación de fondos y ganancias por intereses.",
+    "saldo": 6885.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 33,
+    "nombre": "Compra y venta de activos financieros.",
+    "saldo": 4722,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 34,
+    "nombre": "Gestión de ingresos y gastos empresariales.",
+    "saldo": 3674.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 35,
+    "nombre": "Pagos por trabajos independientes y freelance.",
+    "saldo": 11112.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 36,
+    "nombre": "Gestión de ingresos por alquiler.",
+    "saldo": 8540.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 37,
+    "nombre": "Gastos y reembolsos relacionados con estudios.",
+    "saldo": 12897.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 13
+    }
+  },
+  {
+    "_id": 38,
+    "nombre": "_Ingresos y gastos relacionados con viajes.",
+    "saldo": 9271.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 13
+    }
+  },
+  {
+    "_id": 39,
+    "nombre": "Pagos médicos y compra de medicamentos.",
+    "saldo": 13778,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 6
+    }
+  },
+  {
+    "_id": 40,
+    "nombre": "Fondos para gastos inesperados.",
+    "saldo": 7416.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 41,
+    "nombre": "Gastos en alquiler, hipoteca y servicios.",
+    "saldo": 12549.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 42,
+    "nombre": "Costos de transporte y mantenimiento vehicular.",
+    "saldo": 10393.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 43,
+    "nombre": "Gastos en ocio y actividades recreativas.",
+    "saldo": 9276.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 44,
+    "nombre": "Compras de alimentos y restaurantes.",
+    "saldo": 9735.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 45,
+    "nombre": "Compras de vestimenta y accesorios.",
+    "saldo": 10992.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 46,
+    "nombre": "Pagos de pólizas de seguro.",
+    "saldo": 14262,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 8
+    }
+  },
+  {
+    "_id": 47,
+    "nombre": "Gastos en cuidado y alimentación de mascotas.",
+    "saldo": 11510.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 48,
+    "nombre": "Compra y mantenimiento de dispositivos electrónicos.",
+    "saldo": 6763.1,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 11
+    }
+  },
+  {
+    "_id": 49,
+    "nombre": "Ahorros destinados a la jubilación.",
+    "saldo": 6385.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 12
+    }
+  },
+  {
+    "_id": 50,
+    "nombre": "Gastos en celebraciones y reuniones.",
+    "saldo": 4423.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 51,
+    "nombre": "Contribuciones a causas benéficas.",
+    "saldo": 10192.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 52,
+    "nombre": "_Ingresos y gastos en actividades recreativas.",
+    "saldo": 3899.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 53,
+    "nombre": "Reparaciones y mejoras del hogar.",
+    "saldo": 9481.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 54,
+    "nombre": "Gastos en promoción de productos o servicios.",
+    "saldo": 5935.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 55,
+    "nombre": "_Ingresos y pagos por asesoría profesional.",
+    "saldo": 6215.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 56,
+    "nombre": "Gastos en estrategias de marketing.",
+    "saldo": 5179.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 57,
+    "nombre": "Pagos a profesionales por servicios.",
+    "saldo": 5766.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 11
+    }
+  },
+  {
+    "_id": 58,
+    "nombre": "Costos de cuidado infantil.",
+    "saldo": 12017.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 59,
+    "nombre": "Membresías y gastos en ejercicios.",
+    "saldo": 4512,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 60,
+    "nombre": "Facturas de agua, luz y gas.",
+    "saldo": 10507.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 61,
+    "nombre": "Depósito de salarios y bonificaciones.",
+    "saldo": 9014.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 62,
+    "nombre": "Acumulación de fondos y ganancias por intereses.",
+    "saldo": 12446.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 63,
+    "nombre": "Compra y venta de activos financieros.",
+    "saldo": 4864.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 64,
+    "nombre": "Gestión de ingresos y gastos empresariales.",
+    "saldo": 11928.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 65,
+    "nombre": "Pagos por trabajos independientes y freelance.",
+    "saldo": 12448.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 10
+    }
+  },
+  {
+    "_id": 66,
+    "nombre": "Gestión de ingresos por alquiler.",
+    "saldo": 8257.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 67,
+    "nombre": "Gastos y reembolsos relacionados con estudios.",
+    "saldo": 14430,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 68,
+    "nombre": "_Ingresos y gastos relacionados con viajes.",
+    "saldo": 7588.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 11
+    }
+  },
+  {
+    "_id": 69,
+    "nombre": "Pagos médicos y compra de medicamentos.",
+    "saldo": 8806.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 70,
+    "nombre": "Fondos para gastos inesperados.",
+    "saldo": 11522,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 8
+    }
+  },
+  {
+    "_id": 71,
+    "nombre": "Gastos en alquiler, hipoteca y servicios.",
+    "saldo": 10601.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 72,
+    "nombre": "Costos de transporte y mantenimiento vehicular.",
+    "saldo": 10225.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 73,
+    "nombre": "Gastos en ocio y actividades recreativas.",
+    "saldo": 4237.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 74,
+    "nombre": "Compras de alimentos y restaurantes.",
+    "saldo": 14519.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 75,
+    "nombre": "Compras de vestimenta y accesorios.",
+    "saldo": 4645,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 76,
+    "nombre": "Pagos de pólizas de seguro.",
+    "saldo": 3013.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 77,
+    "nombre": "Gastos en cuidado y alimentación de mascotas.",
+    "saldo": 10706,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 78,
+    "nombre": "Compra y mantenimiento de dispositivos electrónicos.",
+    "saldo": 3644.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 79,
+    "nombre": "Ahorros destinados a la jubilación.",
+    "saldo": 4501.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 8
+    }
+  },
+  {
+    "_id": 80,
+    "nombre": "Gastos en celebraciones y reuniones.",
+    "saldo": 9713.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 81,
+    "nombre": "Contribuciones a causas benéficas.",
+    "saldo": 5113.1,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 82,
+    "nombre": "_Ingresos y gastos en actividades recreativas.",
+    "saldo": 3100.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 83,
+    "nombre": "Reparaciones y mejoras del hogar.",
+    "saldo": 10439.8,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 84,
+    "nombre": "Gastos en promoción de productos o servicios.",
+    "saldo": 10612.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 14
+    }
+  },
+  {
+    "_id": 85,
+    "nombre": "_Ingresos y pagos por asesoría profesional.",
+    "saldo": 8885.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 86,
+    "nombre": "Gastos en estrategias de marketing.",
+    "saldo": 13375.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 87,
+    "nombre": "Pagos a profesionales por servicios.",
+    "saldo": 5940.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 11
+    }
+  },
+  {
+    "_id": 88,
+    "nombre": "Costos de cuidado infantil.",
+    "saldo": 10880.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 4
+    }
+  },
+  {
+    "_id": 89,
+    "nombre": "Membresías y gastos en ejercicios.",
+    "saldo": 10278,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 90,
+    "nombre": "Facturas de agua, luz y gas.",
+    "saldo": 9668,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 91,
+    "nombre": "Depósito de salarios y bonificaciones.",
+    "saldo": 12695.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 13
+    }
+  },
+  {
+    "_id": 92,
+    "nombre": "Acumulación de fondos y ganancias por intereses.",
+    "saldo": 3164.1,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 2
+    }
+  },
+  {
+    "_id": 93,
+    "nombre": "Compra y venta de activos financieros.",
+    "saldo": 5252.9,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 9
+    }
+  },
+  {
+    "_id": 94,
+    "nombre": "Gestión de ingresos y gastos empresariales.",
+    "saldo": 7713.4,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 95,
+    "nombre": "Pagos por trabajos independientes y freelance.",
+    "saldo": 10705,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 3
+    }
+  },
+  {
+    "_id": 96,
+    "nombre": "Gestión de ingresos por alquiler.",
+    "saldo": 12111.5,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  },
+  {
+    "_id": 97,
+    "nombre": "Gastos y reembolsos relacionados con estudios.",
+    "saldo": 14338.2,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 1
+    }
+  },
+  {
+    "_id": 98,
+    "nombre": "_Ingresos y gastos relacionados con viajes.",
+    "saldo": 4730.3,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 7
+    }
+  },
+  {
+    "_id": 99,
+    "nombre": "Pagos médicos y compra de medicamentos.",
+    "saldo": 10853.6,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 5
+    }
+  },
+  {
+    "_id": 100,
+    "nombre": "Fondos para gastos inesperados.",
+    "saldo": 8579.7,
+    "usuarioID": {
+      "$ref": "Usuario",
+      "$id": 15
+    }
+  }
+]

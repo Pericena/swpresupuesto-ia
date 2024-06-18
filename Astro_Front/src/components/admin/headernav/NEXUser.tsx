@@ -1,37 +1,53 @@
-const NEXHeadernavUser = () => {
-  return (
-    <div className="header-user-actions">
-      <button className="action-btn" data-mobile-menu-open-btn>
-        <i className="bx bx-bell bx-sm"></i>
-        <span className="count">0</span>
-      </button>
-      <li className="action-btn-head dropdown">
-        <button
-          data-mobile-menu-open-btn
-          className="action-btn dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <i className="bx bx-user bx-sm"></i>
-        </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li className="dropdown-item">
-            <a href="#">
-              <i className="bx bxs-cog"></i> Configuración
-            </a>
-          </li>
-          <li className="dropdown-item">
-            <a href="/login">
-              <i className="bx bx-log-out"></i> Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </li>
-    </div>
-  )
+import React, { useState, useEffect } from 'react';
+
+interface AvatarProps {
+  imgAvatar: string;
+  onLogout: () => void;
 }
 
-export default NEXHeadernavUser
+const Avatar: React.FC<AvatarProps> = ({ imgAvatar, onLogout }) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Verificar si hay un token almacenado al cargar el componente
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    // Limpiar token en localStorage y manejar el cierre de sesión
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+    // Llamar a la función de cierre de sesión proporcionada por el padre
+    onLogout();
+  };
+
+  return (
+    <button
+      id="dropdownUserAvatarButton"
+      data-dropdown-toggle="dropdownAvatar"
+      className="flex rounded-full bg-blue-800 text-sm focus:ring-4 focus:ring-blue-300 md:me-0 dark:focus:ring-blue-600"
+      type="button"
+    >
+      <span className="sr-only">Abrir menú de usuario</span>
+      {isLoggedIn ? (
+        <>
+          <a href="/" className="inline-block transform transition-transform hover:scale-110">
+          
+          </a>
+          <button onClick={handleLogout} className="ml-2 text-white hover:underline">
+            Cerrar sesión
+          </button>
+        </>
+      ) : (
+        <span>Iniciar sesión</span> // Aquí puedes cambiar el texto o agregar un enlace al formulario de inicio de sesión
+      )}
+    </button>
+  );
+};
+
+export default Avatar;
