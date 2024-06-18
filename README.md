@@ -39,6 +39,15 @@ Este proyecto es una aplicación para gestionar presupuestos que integra diversa
 ### Nube
 - **Oracle**
 - **Railway**
+- **DigitalOcean**
+
+## Diagrama de despliegue general 
+![Diagrama de despliegue general ](screencapture/screencapture5.png) <!-- Reemplazar con la URL de tu imagen -->
+*Diagrama de despliegue general *
+
+## Modelo Conceptual
+![Modelo Conceptual ](screencapture/screencapture6.png) <!-- Reemplazar con la URL de tu imagen -->
+*Modelo Conceptual *
 
 ## Repositorios y Herramientas
 
@@ -48,7 +57,7 @@ Este proyecto es una aplicación para gestionar presupuestos que integra diversa
 ## Descargas
 
 - [Descargar la App](https://drive.google.com/file/d/1ezbsAwMqPHzvZD14QJBCWuZ0PcnHwmIL/view)
-
+- Cuenta usuario user1@gmail.com contraseña: 12345678
 ## Imágenes del Proyecto
 
 ![Interfaz Principal](screencapture/screencapture2.png) <!-- Reemplazar con la URL de tu imagen -->
