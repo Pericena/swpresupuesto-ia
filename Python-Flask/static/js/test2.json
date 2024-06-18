@@ -1,0 +1,145 @@
+  {
+    "usuario": {
+      "id": 1,
+      "nombre": "oscar",
+      "email": "user1@gmail.com",
+      "password": "12345678"
+    },
+    "presupuestos": [
+      {
+        "id": 42,
+        "idUsuario": 1,
+        "nombre": "Presupuesto personal",
+        "descripcion": "Gestión de los ingresos y gastos individuales.",
+        "montoTotal": 39465.0,
+        "fechaInicio": "16-12-2022",
+        "fechaFin": "16-12-2023"
+      },
+      {
+        "id": 48,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de salud",
+        "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+        "montoTotal": 57068.0,
+        "fechaInicio": "15-04-2022",
+        "fechaFin": "15-04-2023"
+      },
+      {
+        "id": 52,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de regalos y celebraciones",
+        "descripcion": "Gastos en regalos, fiestas y eventos especiales.",
+        "montoTotal": 47434.0,
+        "fechaInicio": "04-09-2020",
+        "fechaFin": "04-09-2021"
+      },
+      {
+        "id": 68,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de cuidado de ancianos",
+        "descripcion": "Gastos en servicios de cuidado y atención para personas mayores.",
+        "montoTotal": 67366.0,
+        "fechaInicio": "04-02-2023",
+        "fechaFin": "04-02-2024"
+      },
+      {
+        "id": 164,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de transporte",
+        "descripcion": "Gastos de vehículos, combustible, seguros, mantenimiento y transporte público.",
+        "montoTotal": 45981.0,
+        "fechaInicio": "16-08-2019",
+        "fechaFin": "16-08-2019"
+      },
+      {
+        "id": 183,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de guardería y cuidado infantil",
+        "descripcion": "Gastos en servicios de cuidado de niños.",
+        "montoTotal": 63012.0,
+        "fechaInicio": "04-08-2023",
+        "fechaFin": "04-08-2024"
+      },
+      {
+        "id": 202,
+        "idUsuario": 1,
+        "nombre": "Presupuesto personal",
+        "descripcion": "Gestión de los ingresos y gastos individuales.",
+        "montoTotal": 95150.0,
+        "fechaInicio": "13-03-2023",
+        "fechaFin": "13-03-2024"
+      },
+      {
+        "id": 220,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de mantenimiento del hogar",
+        "descripcion": "Gastos en reparaciones, mejoras y suministros para el hogar.",
+        "montoTotal": 29976.0,
+        "fechaInicio": "08-04-2018",
+        "fechaFin": "08-04-2019"
+      },
+      {
+        "id": 224,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de mudanza",
+        "descripcion": "Gastos relacionados con el proceso de mudanza a una nueva vivienda.",
+        "montoTotal": 36218.0,
+        "fechaInicio": "18-01-2019",
+        "fechaFin": "18-01-2020"
+      },
+      {
+        "id": 242,
+        "idUsuario": 1,
+        "nombre": "Presupuesto personal",
+        "descripcion": "Gestión de los ingresos y gastos individuales.",
+        "montoTotal": 48300.0,
+        "fechaInicio": "27-11-2023",
+        "fechaFin": "27-11-2024"
+      },
+      {
+        "id": 246,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de vacaciones",
+        "descripcion": "Planificación y control de los gastos durante las vacaciones y viajes.",
+        "montoTotal": 87100.0,
+        "fechaInicio": "15-04-2023",
+        "fechaFin": "15-04-2024"
+      },
+      {
+        "id": 248,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de salud",
+        "descripcion": "Gastos médicos, seguros de salud y medicamentos.",
+        "montoTotal": 11949.0,
+        "fechaInicio": "22-08-2021",
+        "fechaFin": "22-08-2022"
+      },
+      {
+        "id": 255,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de jardinería y mantenimiento exterior",
+        "descripcion": "Gastos en servicios de jardinería, herramientas y suministros.",
+        "montoTotal": 37017.0,
+        "fechaInicio": "01-09-2020",
+        "fechaFin": "01-09-2021"
+      },
+      {
+        "id": 261,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de emergencias",
+        "descripcion": "Fondo de emergencia para imprevistos y gastos inesperados.",
+        "montoTotal": 96524.0,
+        "fechaInicio": "05-09-2021",
+        "fechaFin": "05-09-2022"
+      },
+      {
+        "id": 276,
+        "idUsuario": 1,
+        "nombre": "Presupuesto de reparación de electrodomésticos",
+        "descripcion": "Gastos en reparación y mantenimiento de electrodomésticos.",
+        "montoTotal": 91691.0,
+        "fechaInicio": "26-12-2022",
+        "fechaFin": "26-12-2023"
+      }
+    ]
+  },
