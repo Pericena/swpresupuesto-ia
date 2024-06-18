@@ -23,7 +23,7 @@ public class EgresoRestController {
     private EgresoServices egresoServices;
 
     @GetMapping("/listaIngresoByUsuaio")
-    public List<UsuarioIngresoResponse> listGastobyUsuario(@Argument String id) {
+    public List<UsuarioIngresoResponse> listGastobyUsuario() {
         return egresoServices.getAllUsuariosConGasto();
     }
 

@@ -49,8 +49,8 @@ public class EgresoServices {
         List<UsuarioIngresoResponse> response = new ArrayList<>();
 
         for (UsuarioEntity usuario : usuarios) {
-            List<IngresoEntity> gasto = ingresoRepository.findByCuentaID_UsuarioID(usuario.getId());
-            response.add(new UsuarioIngresoResponse(usuario, gasto));
+            List<IngresoEntity> gastos = ingresoRepository.findByCuentaID_UsuarioID(usuario.getId());
+            response.add(new UsuarioIngresoResponse(usuario, gastos));
         }
 
         return response;
